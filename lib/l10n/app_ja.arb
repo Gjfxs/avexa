@@ -1,0 +1,1038 @@
+
+{
+  "@@locale": "ja",
+  "appName": "Avexa",
+  "language": "言語",
+  "chooseLanguage": "言語を選択",
+  "settings": "設定",
+  "general": "一般",
+  "notifications": "通知",
+  "notificationsSubtitle": "通知と通知設定を管理します。",
+  "appearance": "外観",
+  "languageSection": "言語",
+  "lightMode": "ライト",
+  "darkMode": "ダーク",
+  "systemDefault": "システム設定",
+
+    "alerts": "アラート",
+    "pushNotifications": "プッシュ通知",
+    "pushNotificationsSubtitle": "Avexaから重要な通知を受け取ります。",
+    "freeSignals": "FREEシグナル",
+    "freeSignalsSubtitle": "新しいFREEシグナルが生成されたときに通知します。",
+    "proSignals": "PROシグナル",
+    "proSignalsSubtitle": "新しいPROシグナルが生成されたときに通知します。",
+    "takeProfitHits": "利確目標の到達",
+    "takeProfitHitsSubtitle": "TP1、TP2、TP3に到達したときに通知します。",
+    "experience": "操作設定",
+    "hapticFeedback": "触覚フィードバック",
+    "hapticFeedbackSubtitle": "重要なアラートや操作で振動を使用します。",
+    "savingPreferences": "設定を保存しています...",
+    "notificationPreferences": "通知設定",
+
+    "themeSection": "テーマ",
+    "darkModeSubtitle": "暗い場所での使用に適しています。",
+    "lightModeSubtitle": "明るい表示を使用します。",
+    "systemDefaultSubtitle": "デバイスの設定に従います。",
+    "appIconSection": "アプリアイコン",
+    "lightAppIcon": "明るいアプリアイコン",
+    "useLightAvexaIcon": "明るいAvexaアイコンを使用します。",
+    "useDarkAvexaIcon": "暗いAvexaアイコンを使用します。",
+
+    "contactSupport": "サポートに問い合わせる",
+    "supportIntroTitle": "いつでもお手伝いします",
+    "supportIntroSubtitle": "お困りの内容をお知らせください。サポートチームからご連絡します。",
+    "supportTopicQuestion": "どのようなご用件ですか？",
+    "supportSelectTopic": "トピックを選択",
+    "supportTapToChange": "タップして変更",
+    "supportYourTopic": "トピック",
+    "supportCustomTopicHint": "ご質問の内容を入力してください",
+    "supportMessage": "メッセージ",
+    "supportMessageHint": "お困りの内容をお聞かせください...",
+    "supportSendMessage": "メッセージを送信",
+    "supportResponseTime": "通常24時間以内に返信します。",
+    "supportAccount": "アカウント",
+    "supportSubscriptionBilling": "サブスクリプションと請求",
+    "supportTradingSignals": "トレードシグナル",
+    "supportTechnicalIssue": "技術的な問題",
+    "supportBugReport": "不具合の報告",
+    "supportFeatureRequest": "機能のリクエスト",
+    "supportOther": "その他",
+    "supportMessageSent": "メッセージを送信しました",
+    "supportSuccessDescription": "メッセージはAvexaサポートチームに送信されました。できるだけ早く返信します。",
+    "supportDone": "完了",
+    "supportLoginRequired": "サポートに問い合わせるにはログインが必要です。",
+    "supportSelectTopicError": "トピックを選択してください。",
+    "supportEnterTopicError": "トピックを入力してください。",
+    "supportEnterMessageError": "メッセージを入力してください。",
+    "supportMessageMinLengthError": "メッセージは10文字以上で入力してください。",
+    "supportSendError": "エラーが発生しました。もう一度お試しください。",
+    "supportSending": "メッセージを送信中...",
+
+  "helpCenter": "ヘルプセンター",
+  "helpMainTitle": "どのようにお手伝いできますか？",
+  "helpMainSubtitle": "Avexaについての回答や情報をご確認ください。",
+  "helpSearchHint": "ヘルプを検索...",
+  "helpPopularTopics": "人気のトピック",
+  "helpSearchResults": "検索結果",
+  "helpNeedMore": "さらにサポートが必要ですか？",
+  "helpNoResults": "結果が見つかりません",
+  "helpTryAnotherSearch": "別のキーワードで検索してください。",
+  "helpSupportSubtitle": "サポートいたします",
+  "helpFaqTitle": "よくある質問",
+  "helpStillNeed": "まだお困りですか？",
+  "helpContactPrompt": "回答が見つからない場合は、サポートチームにお問い合わせください。",
+  "helpSignals": "シグナル",
+  "helpSignalsSubtitle": "Avexaのシグナルの仕組み",
+  "helpPro": "Avexa PRO",
+  "helpProSubtitle": "PRO機能とサブスクリプション",
+  "helpTrading": "トレード",
+  "helpTradingSubtitle": "トレード、TP、SL、エントリー",
+  "helpAccount": "アカウント",
+  "helpAccountSubtitle": "アカウントとプロフィール",
+  "helpNotifications": "通知",
+  "helpNotificationsSubtitle": "アラートと通知",
+
+  "faqSignalsQ1": "Avexaのシグナルとは何ですか？",
+  "faqSignalsA1": "Avexaのシグナルは、市場データと分析に基づいて生成される取引機会です。エントリー価格、利確目標、損切り水準、市場の方向などが含まれる場合があります。",
+  "faqSignalsQ2": "新しいシグナルはどのくらいの頻度で配信されますか？",
+  "faqSignalsA2": "利用できるシグナルの数はAvexaのプランによって異なります。Freeユーザーのアクセスは限定され、PROユーザーは追加のプレミアムシグナルを利用できます。",
+  "faqSignalsQ3": "Entry、TP、SLは何を意味しますか？",
+  "faqSignalsA3": "Entryは取引に入るための推奨価格または価格帯です。TP（Take Profit）は利益確定の目標価格、SL（Stop Loss）は潜在的な損失を抑えるための水準です。",
+  "faqSignalsQ4": "Avexaのシグナルは利益を保証しますか？",
+  "faqSignalsA4": "いいえ。利益を保証する取引シグナルはありません。シグナルは分析と利用可能な市場データに基づきますが、暗号資産市場は変動が大きく、すべての取引にはリスクがあります。",
+  "faqSignalsQ5": "利用可能なシグナルはどこで確認できますか？",
+  "faqSignalsA5": "Avexaのシグナル画面で確認できます。利用できる範囲は現在のプランによって異なります。",
+
+  "faqProQ1": "Avexa PROとは何ですか？",
+  "faqProA1": "Avexa PROはAvexaのプレミアム版です。Freeプランでは利用できない追加の分析、プレミアムシグナル、高度な機能を利用できます。",
+  "faqProQ2": "PROにアップグレードするにはどうすればよいですか？",
+  "faqProA2": "サブスクリプション画面を開き、「PROにアップグレード」を選択してください。支払い手順に従って登録を完了します。",
+  "faqProQ3": "PRO会員かどうかはどこで確認できますか？",
+  "faqProA3": "プロフィールまたはサブスクリプション画面で現在のプランを確認できます。PROが有効な場合は会員状態が表示されます。",
+  "faqProQ4": "PROのサブスクリプションを解約できますか？",
+  "faqProA4": "はい。サブスクリプション画面から管理または解約できます。現在の請求期間が終了するまではアクセスが有効な場合があります。",
+  "faqProQ5": "PROの有効期限が切れるとどうなりますか？",
+  "faqProA5": "PROの期限が切れると、アカウントはFreeプランに戻り、PROを再び有効にするまでプレミアム機能を利用できなくなります。",
+
+  "faqTradingQ1": "Take Profit（TP）とは何ですか？",
+  "faqTradingA1": "Take Profitは事前に設定する目標価格です。市場がその価格に達したとき、ポジションを閉じて予定した利益を確定できます。",
+  "faqTradingQ2": "Stop Loss（SL）とは何ですか？",
+  "faqTradingA2": "Stop Lossは、市場が取引に不利な方向へ動いた場合に潜在的な損失を抑えるための価格水準です。",
+  "faqTradingQ3": "Entryとは何ですか？",
+  "faqTradingA3": "Entryは、シグナルがポジション開始を検討するよう提案する価格または価格帯です。",
+  "faqTradingQ4": "実際の結果がシグナルと異なるのはなぜですか？",
+  "faqTradingA4": "市場価格は急速に変動します。スリッページ、約定速度、流動性、手数料などにより、実際のエントリー価格や決済価格がシグナルと異なる場合があります。",
+  "faqTradingQ5": "Avexaは自動で取引を実行しますか？",
+  "faqTradingA5": "Avexaのシグナルは取引判断を支援する情報を提供します。対応する自動取引機能が有効になっていない限り、取引の実行と管理はご自身の責任となります。",
+
+  "faqAccountQ1": "ユーザー名を変更するにはどうすればよいですか？",
+  "faqAccountA1": "プロフィールを開き、「個人情報」を選択してください。そこでプロフィール情報を更新できます。",
+  "faqAccountQ2": "パスワードを変更するにはどうすればよいですか？",
+  "faqAccountA2": "プロフィール → セキュリティを開き、利用可能なパスワード管理オプションを使用してください。",
+  "faqAccountQ3": "メールアドレスを変更できますか？",
+  "faqAccountA3": "変更機能が利用可能な場合は、アカウントのセキュリティ設定からメールアドレスを変更してください。追加認証が必要になることがあります。",
+  "faqAccountQ4": "ログアウトするにはどうすればよいですか？",
+  "faqAccountA4": "プロフィールを開き、画面の一番下までスクロールして「ログアウト」を選択してください。",
+  "faqAccountQ5": "アカウントを削除できますか？",
+  "faqAccountA5": "アカウントまたはセキュリティのセクションから削除を申請できます。削除すると関連データが永久に失われる場合があります。",
+
+  "faqNotificationsQ1": "通知を有効にするにはどうすればよいですか？",
+  "faqNotificationsA1": "その他 → アプリ設定 → 通知を開いてください。一般通知、シグナルアラート、触覚フィードバックを管理できます。",
+  "faqNotificationsQ2": "シグナルアラートとは何ですか？",
+  "faqNotificationsA2": "シグナルアラートは、新しい関連シグナルが利用可能になったときに通知します。",
+  "faqNotificationsQ3": "通知が届かないのはなぜですか？",
+  "faqNotificationsA3": "Avexa内の設定と端末の設定で通知が有効になっているか確認してください。シグナル通知を受け取りたい場合は、シグナルアラートも有効にしてください。",
+  "faqNotificationsQ4": "触覚フィードバックとは何ですか？",
+  "faqNotificationsA4": "触覚フィードバックは端末の振動を利用して、対応する操作やアラートに追加のフィードバックを提供します。",
+
+  "aboutTitle": "Avexaについて",
+  "aboutTagline": "AIを活用した暗号資産インテリジェンス",
+  "aboutVersion": "バージョン 1.0.0",
+  "aboutSection": "AVEXAについて",
+  "aboutDescription": "Avexaは、トレーダーが市場を理解し、取引機会を発見し、より多くの情報に基づいて判断できるよう支援する、AI搭載の暗号資産分析プラットフォームです。",
+  "aboutGettingStarted": "はじめに",
+  "aboutViewOnboarding": "紹介ガイドを見る",
+  "aboutOnboardingDescription": "短いガイドでAvexaの主な機能を確認できます。",
+  "aboutWhatWeDo": "主な機能",
+  "aboutTradingSignals": "トレーディングシグナル",
+  "aboutTradingSignalsDescription": "市場の取引機会を見つけるためのAI搭載シグナルを提供します。",
+  "aboutWhaleTracking": "大口ウォレット追跡",
+  "aboutWhaleTrackingDescription": "大口ウォレットの動きを追跡し、市場の異常な変動を発見します。",
+  "aboutMarketIntelligence": "市場分析",
+  "aboutMarketIntelligenceDescription": "高度なAI分析で、市場を動かしている要因を理解できます。",
+  "aboutOurMission": "私たちの使命",
+  "aboutMissionStatement": "高度な暗号資産市場分析を、誰もが利用できるようにすること。",
+  "aboutBuiltForTraders": "トレーダーのために。",
+  "aboutPoweredByIntelligence": "インテリジェンスで進化。",
+  "aboutCopyright": "© 2026 Avexa",
+
+    "onboardingHomeSection": "ホーム",
+    "onboardingHomeTitle": "あなたの暗号資産ダッシュボード",
+    "onboardingHomeDescription": "重要な情報をひと目で確認。市場を追跡し、Avexaの最新情報をチェックしましょう。",
+    "onboardingChartsSection": "チャート",
+    "onboardingChartsTitle": "市場を探索",
+    "onboardingChartsDescription": "DEX、Trending、現物、先物市場を確認し、価格の動きを追跡しましょう。",
+    "onboardingSignalsSection": "シグナル",
+    "onboardingSignalsTitle": "AIを活用したシグナル",
+    "onboardingSignalsDescription": "エントリー、損切り、利確、信頼度の情報を含むAI生成の取引候補を確認しましょう。",
+    "onboardingAiChartSection": "AIチャート",
+    "onboardingAiChartTitle": "AIチャート分析",
+    "onboardingAiChartDescription": "暗号資産のチャートをアップロードして、Avexa AIでトレンド、モメンタム、サポート、レジスタンスを分析しましょう。",
+    "onboardingPortfolioSection": "ポートフォリオ",
+    "onboardingPortfolioTitle": "あなたのポートフォリオ",
+    "onboardingPortfolioDescription": "対応するアカウントを接続し、暗号資産ポートフォリオを一か所で管理しましょう。",
+    "onboardingSkip": "スキップ",
+    "onboardingNext": "次へ",
+    "onboardingGetStarted": "始める",
+
+    "securityTitle": "セキュリティ",
+    "securityAccountTitle": "アカウントのセキュリティ",
+    "securityAccountDescription": "パスワードとアカウントのセキュリティを管理します。",
+    "securityAccountSection": "アカウント",
+    "securityAccountEmail": "アカウントのメールアドレス",
+    "securityChangePassword": "パスワードの変更",
+    "securityCurrentPassword": "現在のパスワード",
+    "securityNewPassword": "新しいパスワード",
+    "securityConfirmNewPassword": "新しいパスワードを確認",
+    "securityEnterNewPassword": "新しいパスワードを入力",
+    "securityPasswordLengthError": "パスワードは8文字以上である必要があります。",
+    "securityPasswordsMismatch": "パスワードが一致しません。",
+    "securityPasswordChanged": "パスワードを変更しました。",
+    "securityPasswordChangeError": "パスワードを変更できませんでした。",
+    "securityAppLockSection": "アプリロック",
+    "securityAppLockTitle": "アプリロック",
+    "securityAppLockEnabledDescription": "アプリの起動時に認証が必要です。",
+    "securityAppLockDisabledDescription": "ロック機能でアプリを保護します。",
+    "securityVerificationCancelled": "認証がキャンセルされました。",
+    "securityVerificationRequired": "認証が必要です。",
+    "securityAppLockEnabled": "アプリロックを有効にしました。",
+    "securityAppLockDisabled": "アプリロックを無効にしました。",
+    "securityAppLockChangeError": "ロック設定を変更できませんでした。",
+    "securitySafetyNotice": "アカウントを安全に保ちましょう。パスワードやPINを他人と共有しないでください。",
+    "securityCreatePin": "PINを作成",
+    "securityCreatePinDescription": "アプリを保護するためのPINを作成します。",
+    "securityEnterPin": "PINを入力",
+    "securityPin": "PIN",
+    "securityConfirmPin": "PINを確認",
+    "securityPinLengthError": "PINは4桁である必要があります。",
+    "securityPinDigitsError": "PINには数字のみ使用できます。",
+    "securityPinsMismatch": "PINが一致しません。",
+    "securityCancel": "キャンセル",
+    "securitySave": "保存",
+    "securityUnlock": "ロック解除",
+
+    "connectedAccountsTitle": "接続済みアカウント",
+    "connectedAccountsWalletsExchanges": "ウォレットと取引所",
+    "connectedAccountsDescription": "ウォレットや取引所を接続して、Avexaの取引機能を利用できます。",
+    "connectedAccountsSolanaWallet": "Solanaウォレット",
+    "connectedAccountsEthereumWallet": "Ethereumウォレット",
+    "connectedAccountsExchanges": "取引所",
+    "connectedAccountsExchangeAccount": "取引所アカウント",
+    "connectedAccountsSecurityNotice": "ログイン情報や秘密鍵をAvexaと共有しないでください。接続には安全な認証方法を使用します。",
+    "connectedAccountsComingSoon": "この接続機能は今後のAvexaのアップデートで利用可能になります。",
+    "connectedAccountsOk": "OK",
+
+    "personalInfoTitle": "個人情報",
+    "personalInfoDescription": "プロフィール情報とアバターを管理します。",
+    "personalInfoDefaultUser": "ユーザー",
+    "personalInfoLoadError": "プロフィールを読み込めませんでした。",
+    "personalInfoAvatarSaveError": "プロフィール画像を保存できませんでした。",
+    "personalInfoAvatarUpdated": "プロフィール画像を更新しました。",
+    "personalInfoAvatarUpdateError": "プロフィール画像を更新できませんでした。",
+    "personalInfoNameRequired": "名前を入力してください。",
+    "personalInfoUsernameRequired": "ユーザー名を入力してください。",
+    "personalInfoUsernameLengthError": "ユーザー名は3文字以上である必要があります。",
+    "personalInfoUpdateError": "プロフィールを更新できませんでした。",
+    "personalInfoDetailsSection": "個人情報",
+    "personalInfoDisplayName": "表示名",
+    "personalInfoNameHint": "名前",
+    "personalInfoUsername": "ユーザー名",
+    "personalInfoUsernameHint": "ユーザー名",
+    "personalInfoUsernameDescription": "このユーザー名はAvexa全体で表示されます。",
+    "personalInfoEmailSection": "アカウントのメールアドレス",
+    "personalInfoVerifiedEmail": "確認済みのメールアドレス",
+    "personalInfoEmailCannotChange": "ここではメールアドレスを変更できません。",
+    "personalInfoSaveChanges": "変更を保存",
+    "personalInfoSecureSaveNotice": "変更内容はアカウントに安全に保存されます。",
+
+    "subscriptionTitle": "サブスクリプション",
+    "subscriptionChoosePlan": "プランを選択",
+    "subscriptionYourPlan": "現在のプラン",
+    "subscriptionFeatures": "機能",
+    "subscriptionMonthly": "月額",
+    "subscriptionYearly": "年額",
+    "subscriptionSave33": "33%お得",
+    "subscriptionPerMonth": "/ 月",
+    "subscriptionPerYear": "/ 年",
+    "subscriptionProMonthly": "PRO 月額",
+    "subscriptionProYearly": "PRO 年額",
+    "subscriptionUpgradeMonthly": "PROにアップグレード — {price}/月",
+    "@subscriptionUpgradeMonthly": {
+    "placeholders": {
+        "price": {
+        "type": "String"
+        }
+    }
+    },
+    "subscriptionUpgradeYearly": "PROにアップグレード — {price}/年",
+    "@subscriptionUpgradeYearly": {
+    "placeholders": {
+        "price": {
+        "type": "String"
+        }
+    }
+    },
+    "subscriptionManagePurchases": "購入を管理",
+    "subscriptionRestorePurchases": "購入を復元",
+    "subscriptionManageSubscription": "サブスクリプションを管理",
+    "subscriptionChangePlan": "プランを変更",
+    "subscriptionCancelSubscription": "サブスクリプションを解約",
+    "subscriptionUnavailable": "現在、サブスクリプションを利用できません。",
+    "subscriptionCheckingPurchases": "以前の購入を確認しています...",
+    "subscriptionManagementComingSoon": "サブスクリプション管理は近日公開予定です。",
+    "subscriptionDailySignals": "毎日のシグナル",
+    "subscriptionOnePerDay": "1日1件",
+    "subscriptionUnlimited": "無制限",
+    "subscriptionAiMarketAnalysis": "AI市場分析",
+    "subscriptionWhaleTracking": "大口投資家の追跡",
+    "subscriptionAdvancedCharts": "高度なチャート",
+    "subscriptionFuturesIntelligence": "先物市場分析",
+    "subscriptionWalletTracker": "ウォレット追跡",
+    "subscriptionNewsSentiment": "ニュースとセンチメント",
+    "subscriptionLimited": "制限あり",
+    "subscriptionPrioritySupport": "優先サポート",
+    "subscriptionFreeInfoTitle": "FREEプランを利用中です",
+    "subscriptionFreeInfoDescription": "PROにアップグレードしてすべての機能を解放し、取引をさらに進化させましょう。",
+    "subscriptionActiveTitle": "PROサブスクリプションは有効です",
+    "subscriptionActiveDescription": "すべてのプレミアム機能が利用可能です。",
+    "subscriptionProInfoTitle": "PROをご利用中です",
+    "subscriptionProInfoDescription": "Avexa PROをご利用いただきありがとうございます。よりスマートな取引を。",
+
+    "profileActive": "有効",
+    "profileProPlan": "PROプラン",
+    "profileFreePlan": "FREEプラン",
+    "profileMemberSince": "{year}年から利用",
+    "@profileMemberSince": {
+    "placeholders": {
+        "year": {
+        "type": "String"
+        }
+    }
+    },
+    "profileFreeSignals": "FREEシグナル",
+    "profileAiAnalyses": "AI分析",
+    "profileSubscriptionSection": "サブスクリプション",
+    "profileAccountSection": "アカウント",
+    "profilePreferencesSection": "設定",
+    "profileSupportSection": "サポート",
+    "profilePersonalInformation": "個人情報",
+    "profileConnectedAccounts": "接続済みアカウント",
+    "profileSecurity": "セキュリティ",
+    "profileAppSettings": "アプリ設定",
+    "profileRateUs": "評価する",
+    "profileAboutAvexa": "Avexaについて",
+    "profileHelpCenter": "ヘルプセンター",
+    "profileReportBug": "不具合を報告",
+    "profileContactSupport": "サポートに連絡",
+    "profileLogOut": "ログアウト",
+    "profileActiveSubscription": "有効なサブスクリプション",
+    "profileCurrentSubscription": "現在のサブスクリプション",
+    "profileAvatarSaveError": "プロフィール画像を保存できませんでした。",
+    "profileAvatarUpdated": "プロフィール画像を更新しました。",
+    "profileAvatarUpdateError": "プロフィール画像を更新できませんでした。",
+
+  "portfolioHeaderProfile": "プロフィール",
+  "portfolioTapToViewProfile": "タップしてプロフィールを表示",
+  "portfolioValue": "ポートフォリオの価値",
+  "portfolioNoPortfolioConnected": "ポートフォリオが未接続です",
+  "portfolioConnectDescription": "取引所またはウォレットを接続すると、リアルタイム追跡、AIインサイト、リスク分析を利用できます。",
+  "portfolioConnectButton": "ポートフォリオを接続",
+  "portfolioConnectedSuccessfully": "ポートフォリオが正常に接続されました",
+  "portfolioLastSync": "最終同期：たった今",
+  "portfolioManageConnections": "接続を管理",
+  "portfolioRefreshPortfolio": "ポートフォリオを更新",
+  "portfolioSyncComingSoon": "ポートフォリオの同期機能は近日公開予定です",
+  "portfolioDisconnect": "ポートフォリオを切断",
+  "portfolioOverview": "ポートフォリオ概要",
+  "portfolioTotalValue": "ポートフォリオの合計価値",
+  "portfolioAssets": "資産",
+  "portfolioChains": "チェーン",
+  "portfolioNfts": "NFT",
+  "portfolioNoAssetsSynced": "同期された資産はありません",
+  "portfolioConnectToImport": "ウォレットを接続すると、暗号資産を自動的にインポートできます。",
+  "portfolioAiScore": "AIポートフォリオスコア",
+  "portfolioExcellent": "優れたポートフォリオ",
+  "portfolioRiskDescription": "中程度のリスクを持つ分散型ポートフォリオです。",
+  "portfolioAiInsights": "AIインサイト",
+  "portfolioInsightDiversified": "大型暗号資産を中心に、ポートフォリオは適切に分散されています。",
+  "portfolioInsightModerateRisk": "現在のリスクレベルは中程度です。",
+  "portfolioInsightStablecoins": "ステーブルコインを追加すると、価格変動を抑えられる可能性があります。",
+  "portfolioInsightNoSuspiciousTokens": "不審なトークン集中は検出されませんでした。",
+  "portfolioProPlan": "PROプラン",
+  "portfolioFreePlan": "FREEプラン",
+  "portfolioActive": "有効",
+  "portfolioNotificationsEnabled": "通知が有効です",
+  "portfolioMemberSince": "{year}年から利用",
+
+  "aiAssistantClearChat": "チャットをクリア",
+  "aiAssistantMinimize": "最小化",
+  "aiAssistantTitle": "AIトレーディングアシスタント",
+  "aiAssistantSubtitle": "あなた専属の暗号資産アナリスト",
+  "aiAssistantAnalyzeBtc": "📈 BTCを分析",
+  "aiAssistantBestTrade": "🔥 おすすめの取引",
+  "aiAssistantMarketRisk": "⚠️ 市場リスク",
+  "aiAssistantHiddenGems": "💎 注目銘柄",
+  "aiAssistantWelcome": "今日はどのようなお手伝いができますか？",
+  "aiAssistantAnalyzeBitcoin": "📈 Bitcoinを分析",
+  "aiAssistantSuggestionMarketRisk": "⚠️ 市場リスク",
+  "aiAssistantSuggestionHiddenGems": "💎 注目銘柄",
+  "aiAssistantSavedAnalyses": "保存した分析",
+  "aiAssistantNoSavedAnalyses": "保存された分析はありません",
+  "aiAssistantAnalysisRemoved": "分析を削除しました",
+  "aiAssistantAnalysisSaved": "分析を保存しました",
+  "aiAssistantFeedbackThanks": "フィードバックありがとうございます！",
+  "aiAssistantFeedbackQuestion": "この回答が役に立たなかった理由は何ですか？",
+  "aiAssistantFeedbackIncorrect": "❌ 情報が正しくない",
+  "aiAssistantFeedbackGeneric": "🤔 内容が一般的すぎる",
+  "aiAssistantFeedbackNoAnswer": "💬 質問に答えていない",
+  "aiAssistantFeedbackOutdated": "📉 市場データが古い",
+  "aiAssistantFeedbackOther": "✍️ その他",
+  "aiAssistantFeedbackThanksImprove": "AIの改善にご協力いただきありがとうございます！",
+  "aiAssistantInputHint": "暗号資産について何でも質問してください...",
+  "aiAssistantAnalyzingMarket": "市場を分析中...",
+
+  "chartsTitle": "チャート",
+  "chartsSearchHint": "コインまたはトークンを検索...",
+  "chartsMarketCap": "時価総額",
+  "chartsVolume": "取引量",
+  "chartsChange24": "24時間変動",
+  "chartsRank": "ランキング",
+  "chartsFavorites": "お気に入り",
+  "chartsTrending": "トレンド",
+  "chartsSpot": "現物",
+  "chartsFutures": "先物",
+  "chartsTrendingCoins": "人気のコイン",
+  "chartsSpotMarket": "現物市場",
+  "chartsFuturesMarket": "先物市場",
+  "chartsMostActive": "現在最も活発",
+  "chartsSpotAssets": "リアルタイムの現物市場資産",
+  "chartsFuturesAssets": "先物取引で利用できる主要資産",
+  "chartsTopGainers": "値上がり上位",
+  "chartsTopLosers": "値下がり上位",
+  "charts24HourPerformance": "24時間のパフォーマンス",
+  "chartsGainers": "値上がり",
+  "chartsLosers": "値下がり",
+  "chartsPrice": "価格",
+  "chartsMarketCapShort": "時価総額",
+  "chartsAiMarketScore": "AI市場スコア",
+  "chartsNoFavorites": "お気に入りのコインはまだありません",
+  "chartsAddFavoritesHint": "コインを追加すると、ここですぐに追跡できます。",
+  "chartsDexScanner": "DEXスキャナー",
+  "chartsDexSubtitle": "オンチェーンの機会を発見",
+  "chartsFilters": "フィルター",
+  "chartsFiltersCount": "フィルター {count}",
+  "chartsAllChains": "すべてのチェーン",
+  "chartsDexPairsCount": "{count} ペア",
+  "chartsSortLabel": "並べ替え：{sort}",
+  "chartsDexFilters": "DEXフィルター",
+  "chartsDexFiltersSubtitle": "DEXスクリーナーのようにスキャナーを調整します。",
+  "chartsPairAge": "ペアの経過時間",
+  "chartsReset": "リセット",
+  "chartsApplyFilters": "フィルターを適用",
+  "chartsAll": "すべて",
+  "chartsNoDexPairs": "DEXペアが見つかりません",
+  "chartsWidenFilters": "フィルター条件を緩めてみてください。",
+  "chartsMarketCapUpper": "時価総額",
+  "chartsLiquidity": "流動性",
+  "chartsLiquidityUpper": "流動性",
+  "chartsVolume24Upper": "24時間取引量",
+  "chartsFlow24Upper": "24時間フロー",
+  "chartsBuysCount": "買い：{count}",
+  "chartsSellsCount": "売り：{count}",
+  "@chartsFiltersCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "@chartsDexPairsCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "@chartsSortLabel": {
+    "placeholders": {
+      "sort": {
+        "type": "String"
+      }
+    }
+  },
+  "@chartsBuysCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "@chartsSellsCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+
+    "aiChartTitle": "AIチャート",
+    "aiChartDescription": "チャートの写真を撮影して、Avexaに分析させましょう。",
+    "aiChartAnalysisTitle": "AIチャート分析",
+    "aiChartDone": "完了",
+    "aiChartScannerTitle": "AIチャートスキャナー",
+    "aiChartScannerDescription": "チャートをフレーム内に配置し、AI分析用に鮮明な写真を撮影してください。",
+    "aiChartEnableCamera": "カメラを有効にする",
+    "aiChartStartingCamera": "カメラを起動しています...",
+    "aiChartAnalyze": "チャートを分析",
+    "aiChartAnalyzing": "チャートを分析中...",
+    "aiChartAnalysisHistory": "分析履歴",
+    "aiChartRecentAnalyses": "最近のチャート分析",
+    "aiChartHistoryNotice": "分析履歴は24時間保存されます。",
+    "aiChartHistoryLoadError": "履歴を読み込めませんでした",
+    "aiChartTryAgainLater": "しばらくしてからもう一度お試しください。",
+    "aiChartNoAnalyses": "分析はまだありません",
+    "aiChartHistoryEmptyDescription": "過去24時間のチャート分析がここに表示されます。",
+    "aiChartHistoryCardTitle": "チャート分析",
+    "aiChartCameraUnavailable": "カメラを利用できません",
+    "aiChartCameraError": "カメラを起動できませんでした。カメラの使用許可を確認してください。",
+    "aiChartCaptureError": "写真を撮影できませんでした。もう一度お試しください。",
+    "aiChartSelectImageError": "画像を選択できませんでした。もう一度お試しください。",
+    "aiChartAnalysisError": "AIチャートエラー: {error}",
+    "@aiChartAnalysisError": {
+    "placeholders": {
+        "error": {
+        "type": "String"
+        }
+    }
+    },
+    "aiChartNoImageError": "画像が選択されていません。",
+    "aiChartUnexpectedResponseError": "予期しない応答形式: {response}",
+    "@aiChartUnexpectedResponseError": {
+    "placeholders": {
+        "response": {
+        "type": "String"
+        }
+    }
+    },
+    "aiChartEmptyAnalysisError": "AIから空の分析結果が返されました。",
+
+  "homeTagline": "AIによる暗号資産インテリジェンス",
+  "homeRugCheck": "ラグチェック",
+  "homeRugCheckDescription": "トークンの潜在的なリスクをスキャン",
+  "homeWalletTracker": "ウォレット追跡",
+  "homeWalletTrackerDescription": "ウォレットを追跡してリアルタイム通知を受信",
+  "homeLiveMarketData": "📈 リアルタイム市場データ",
+  "homeTopMovers": "🚀 価格変動上位",
+  "homeLiveLiquidations": "💀 リアルタイム清算",
+
+  "signalDetailTitle": "シグナル詳細",
+  "signalDetailSolanaMeme": "SOLANAミーム",
+  "signalDetailDirection": "方向",
+  "signalDetailTier": "ティア",
+  "signalDetailAiConfidence": "AIの信頼度",
+  "signalDetailConfidenceDescription": "市場の状況に基づいてAIが算出した信頼度スコアです。",
+  "signalDetailTradeLevels": "取引レベル",
+  "signalDetailEntry": "エントリー",
+  "signalDetailStopLoss": "損切り",
+  "signalDetailTakeProfit1": "利確目標 1",
+  "signalDetailTakeProfit2": "利確目標 2",
+  "signalDetailTakeProfit3": "利確目標 3",
+  "signalDetailRiskLevel": "リスクレベル",
+  "signalDetailRiskReward": "リスク / リワード",
+  "signalDetailRiskLow": "低",
+  "signalDetailRiskMedium": "中",
+  "signalDetailRiskHigh": "高",
+  "signalDetailTokenAddress": "トークンアドレス",
+  "signalDetailAddressUnavailable": "アドレスを利用できません",
+  "signalDetailCopyAddress": "トークンアドレスをコピー",
+  "signalDetailViewDexScreener": "DEX SCREENERを開く",
+  "signalDetailDexLinkUnavailable": "DexScreenerのリンクを利用できません。",
+  "signalDetailDexOpenError": "DexScreenerを開けませんでした。",
+  "signalDetailAddressCopied": "トークンアドレスをコピーしました",
+  "signalDetailAiAnalysis": "AI分析",
+  "signalDetailDisclaimer": "シグナルはAIによる市場分析であり、\n金融アドバイスではありません。",
+
+  "coinDetailsCoinBadge": "コイン",
+  "coinDetailsDexBadge": "DEX",
+  "coinDetailsCurrentPrice": "現在価格",
+  "coinDetails24H": "24時間",
+  "coinDetails24HVolume": "24時間取引量",
+  "coinDetails24HChange": "24時間変動率",
+  "coinDetailsLiquidity": "流動性",
+  "coinDetailsFdv": "FDV",
+  "coinDetailsMarketCap": "時価総額",
+  "coinDetailsPriceChart": "価格チャート",
+  "coinDetailsMarketData": "市場データ",
+  "coinDetails24HHigh": "24時間最高値",
+  "coinDetails24HLow": "24時間最安値",
+  "coinDetailsAllTimeHigh": "史上最高値",
+  "coinDetailsAllTimeLow": "史上最安値",
+  "coinDetailsMarketCapRank": "時価総額ランキング",
+  "coinDetailsCirculatingSupply": "流通供給量",
+  "coinDetailsTotalSupply": "総供給量",
+  "coinDetailsMaxSupply": "最大供給量",
+  "coinDetailsSupply": "供給量",
+  "coinDetailsInCirculation": "流通中",
+  "coinDetailsCirculatingAmount": "流通量：{amount}",
+  "@coinDetailsCirculatingAmount": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "coinDetailsDexPair": "DEXペア",
+  "coinDetailsNetwork": "ネットワーク",
+  "coinDetailsDex": "DEX",
+  "coinDetailsPair": "取引ペア",
+  "coinDetails24HBuys": "24時間の買い",
+  "coinDetails24HSells": "24時間の売り",
+  "coinDetailsPairAge": "ペア作成からの時間",
+  "coinDetailsDexMetrics": "DEX指標",
+  "coinDetailsDexSourceNotice": "ペアのデータはDexScreenerから提供されています。",
+  "coinDetailsDays": "{count}日",
+  "@coinDetailsDays": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "coinDetailsHours": "{count}時間",
+  "@coinDetailsHours": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "coinDetailsMinutes": "{count}分",
+  "@coinDetailsMinutes": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+
+  "portfolioConnectTitle": "ポートフォリオを接続",
+  "portfolioReadOnlyApiConnection": "読み取り専用のAPI接続",
+  "portfolioWalletAddressConnection": "ウォレットアドレスで接続",
+  "portfolioConnected": "接続済み",
+
+  "connectedAccountsWalletsExchanges": "ウォレットと取引所",
+  "connectedAccountsYourAccounts": "接続済みアカウント",
+  "connectedAccountsCount": "接続済みアカウント：{count}件",
+  "@connectedAccountsCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "connectedAccountsConnectDescription": "Avexaの取引機能を利用するには、ウォレットと取引所を接続してください。",
+  "connectedAccountsRenameTitle": "アカウント名を変更",
+  "connectedAccountsAccountName": "アカウント名",
+  "connectedAccountsCancel": "キャンセル",
+  "connectedAccountsSave": "保存",
+  "connectedAccountsRemoveTitle": "アカウントを削除しますか？",
+  "connectedAccountsRemoveConfirmation": "「{account}」をAvexaの接続済みアカウント一覧から削除します。",
+  "@connectedAccountsRemoveConfirmation": {
+    "placeholders": {
+      "account": {
+        "type": "String"
+      }
+    }
+  },
+  "connectedAccountsRemove": "削除",
+  "connectedAccountsChangeName": "名前を変更",
+  "connectedAccountsNoAccounts": "接続済みアカウントはありません",
+  "connectedAccountsEmptyDescription": "ウォレットと取引所を接続して、連携したアカウントをまとめて管理しましょう。",
+  "connectedAccountsConnectPortfolio": "ポートフォリオを接続",
+  "connectedAccountsBalancesNotice": "残高と資産は引き続きPortfolioに表示されます。",
+  "connectedAccountsAddAccount": "アカウントを追加",
+  "connectedAccountsSecurityNotice": "削除すると、この一覧から接続が解除されます。資金の移動やウォレット自体の削除は行われません。",
+  "connectedAccountsReadOnlyApi": "読み取り専用API",
+
+  "loginTitle": "ログイン",
+  "loginSubtitle": "Avexaアカウントで続行",
+  "loginEmail": "メールアドレス",
+  "loginPassword": "パスワード",
+  "loginButton": "ログイン",
+  "loginOrContinueWith": "または次の方法で続行",
+  "loginForgotPassword": "パスワードをお忘れですか？",
+  "loginNoAccount": "アカウントをお持ちでないですか？ ",
+  "loginSignUp": "新規登録",
+  "loginResetPasswordTitle": "パスワードをリセット",
+  "loginResetPasswordDescription": "メールアドレスを入力すると、パスワードリセット用のリンクをお送りします。",
+  "loginEnterEmail": "メールアドレスを入力",
+  "loginSendResetLink": "リセットリンクを送信",
+  "loginCancel": "キャンセル",
+  "loginEnterEmailError": "メールアドレスを入力してください。",
+  "loginInvalidEmailError": "有効なメールアドレスを入力してください。",
+  "loginResetGenericError": "問題が発生しました。もう一度お試しください。",
+  "loginResetSuccess": "リセットリンクを送信しました。受信トレイをご確認ください。",
+  "loginAppleSignInFailed": "Appleでのログインに失敗しました：{message}",
+  "@loginAppleSignInFailed": {
+    "placeholders": {
+      "message": {
+        "type": "String"
+      }
+    }
+  },
+
+  "registerTitle": "アカウントを作成",
+  "registerSubtitle": "AIトレーディングの旅を始めましょう。",
+  "registerEmail": "メールアドレス",
+  "registerPassword": "パスワード",
+  "registerConfirmPassword": "パスワードを確認",
+  "registerButton": "アカウントを作成",
+  "registerPasswordMismatch": "パスワードが一致しません",
+  "registerSuccess": "アカウントを作成しました。メールをご確認ください。",
+  "registerGenericError": "問題が発生しました",
+
+  "rugCheckTitle": "Rug Check",
+  "rugCheckHeadline": "取引前にスキャン",
+  "rugCheckDescription": "取引を始める前に、トークンのセキュリティリスクを確認しましょう。",
+  "rugCheckTokenAddress": "トークンアドレス",
+  "rugCheckAddressHint": "Solanaトークンのアドレスを貼り付け",
+  "rugCheckScanning": "スキャン中...",
+  "rugCheckScanButton": "トークンをスキャン",
+  "rugCheckWhatWeCheck": "Avexaのチェック項目",
+  "rugCheckLiquiditySecurity": "流動性とLPの安全性",
+  "rugCheckHolderConcentration": "保有者の集中度",
+  "rugCheckAuthorities": "Mint・Freeze権限",
+  "rugCheckDevExposure": "開発者ウォレットの保有割合",
+  "rugCheckEnterAddress": "先にトークンアドレスを入力してください。",
+  "rugCheckAnalysisTitle": "トークンのセキュリティ分析",
+  "rugCheckTokenOverview": "トークン概要",
+  "rugCheckLiquidity": "流動性",
+  "rugCheckLpLocked": "ロック済みLP",
+  "rugCheckHolders": "保有者数",
+  "rugCheckTopHolder": "最大保有者",
+  "rugCheckTop10Holders": "上位10保有者",
+  "rugCheckSecurityChecks": "セキュリティチェック",
+  "rugCheckMintAuthority": "Mint権限",
+  "rugCheckFreezeAuthority": "Freeze権限",
+  "rugCheckDevWallet": "開発者ウォレット",
+  "rugCheckEnabled": "有効",
+  "rugCheckDisabled": "無効",
+  "rugCheckUnknown": "不明",
+  "rugCheckExposure": "保有割合：{value}%",
+  "@rugCheckExposure": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "rugCheckDetectedRisks": "検出されたリスク",
+  "rugCheckNoRisks": "スキャナーは重大なリスクを検出しませんでした。",
+  "rugCheckRiskDetected": "リスクを検出",
+  "rugCheckDisclaimer": "Rug Checkは利用可能なセキュリティ指標を分析します。リスクスコアが低くても、トークンの安全性が保証されるわけではありません。",
+  "rugCheckUnknownToken": "不明なトークン",
+  "rugCheckUnavailable": "データなし",
+
+  "walletTrackerTitle": "ウォレットトラッカー",
+  "walletTrackerAddWallet": "ウォレットを追加",
+  "walletTrackerWalletName": "ウォレット名",
+  "walletTrackerWalletNameHint": "例：Smart Money",
+  "walletTrackerWalletAddress": "ウォレットアドレス",
+  "walletTrackerAddressHint": "Solanaウォレットアドレス",
+  "walletTrackerCancel": "キャンセル",
+  "walletTrackerAddError": "ウォレットを追加できませんでした",
+  "walletTrackerYourWallets": "あなたのウォレット",
+  "walletTrackerTracked": "追跡中",
+  "walletTrackerEyebrow": "ウォレット分析",
+  "walletTrackerHeroTitle": "スマートマネーを追跡",
+  "walletTrackerHeroDescription": "ウォレットの動きを追跡し、重要な動きについて通知を受け取ります。",
+  "walletTrackerLoadError": "ウォレットを読み込めませんでした",
+  "walletTrackerRetry": "下に引いて再試行してください。",
+  "walletTrackerEmptyTitle": "ウォレットはまだありません",
+  "walletTrackerEmptyDescription": "ウォレットを追加してアクティビティの追跡を始めましょう。",
+  "walletTrackerDefaultName": "ウォレット",
+  "walletTrackerActive": "有効",
+  "walletTrackerInactive": "無効",
+  "walletTrackerAddButton": "ウォレットを追加",
+
+  "languagePickerTitle": "言語を選択",
+  "languagePolish": "ポーランド語",
+  "languageEnglish": "英語",
+  "languageGerman": "ドイツ語",
+  "languageJapanese": "日本語",
+  "languageRussian": "ロシア語",
+  "languageArabic": "アラビア語",
+  "languageChinese": "中国語",
+  "languageSpanish": "スペイン語",
+  "languagePortuguese": "ポルトガル語",
+
+  "portfolioValue": "ポートフォリオの価値",
+  "portfolioWalletCount": "{count} / {max} 個のウォレット",
+  "@portfolioWalletCount": {
+    "placeholders": {
+      "count": {"type": "int"},
+      "max": {"type": "int"}
+    }
+  },
+  "portfolioNoWallets": "ウォレットが接続されていません",
+  "portfolioConnectSolanaWallet": "残高を表示するにはSolanaウォレットを接続してください。",
+  "portfolioConnectWallet": "ウォレットを接続",
+  "portfolioRefreshWallet": "ウォレットを更新",
+  "portfolioWalletPosition": "{total} 個中 {current} 番目のウォレット",
+  "@portfolioWalletPosition": {
+    "placeholders": {
+      "current": {"type": "int"},
+      "total": {"type": "int"}
+    }
+  },
+  "portfolioLoading": "読み込み中...",
+  "portfolioUnavailable": "利用できません",
+  "portfolioWalletBalance": "ウォレット残高",
+  "portfolioSwipeWallets": "横にスワイプして別のウォレットを表示",
+  "portfolioCombinedValue": "すべてのウォレットの合計価値",
+  "portfolioConnectedWallets": "接続済みウォレット",
+  "portfolioConnectedCount": "{count} 件接続済み",
+  "@portfolioConnectedCount": {
+    "placeholders": {
+      "count": {"type": "int"}
+    }
+  },
+  "portfolioWalletAddressesConnected": "ウォレットアドレスが接続されています",
+  "portfolioManageAddressesNetworks": "アドレスとネットワークを管理",
+  "portfolioConnectPublicAddress": "開始するには公開ウォレットアドレスを接続してください",
+  "portfolioManageConnections": "接続を管理",
+  "portfolioMaxWalletsReached": "ウォレットは最大3件までです",
+  "portfolioAddAnotherWallet": "別のウォレットを追加",
+  "portfolioConnectToBuild": "ウォレットを接続してポートフォリオを作成しましょう。",
+  "portfolioAssetsSyncPending": "ウォレットアドレスは接続されています。資産の同期機能はまだ実装されていません。",
+  "portfolioAnalytics": "ポートフォリオ分析",
+  "portfolioAnalyticsDescription": "実際のウォレット残高とポートフォリオ履歴の同期後、過去のパフォーマンス、資産配分分析、AIインサイトを利用できるようになります。",
+  "portfolioLoadError": "ポートフォリオを読み込めませんでした。",
+  "portfolioSyncError": "ウォレット残高を同期できませんでした。",
+  "portfolioDefaultUser": "ユーザー",
+
+  "loginLegalNotice": "アカウントの作成またはログインを行うことで、16歳以上であること、および以下の法的文書を確認したことを表明するものとします。",
+  "loginLegalTerms": "利用規約",
+  "loginLegalPrivacy": "プライバシーポリシー",
+  "loginLegalRisk": "リスクに関する免責事項",
+
+  "connectedAccountsAddressCopied": "ウォレットアドレスをコピーしました。",
+  "connectedAccountsRenameWallet": "ウォレット名を変更",
+  "connectedAccountsWalletNameHint": "例：メインウォレット",
+  "connectedAccountsCancel": "キャンセル",
+  "connectedAccountsSave": "保存",
+  "connectedAccountsRenameSuccess": "ウォレット名を更新しました。",
+  "connectedAccountsRenameError": "ウォレット名を変更できませんでした：{error}",
+  "@connectedAccountsRenameError": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "connectedAccountsRemoveWalletTitle": "ウォレットを削除しますか？",
+  "connectedAccountsRemoveWalletDescription": "このアドレスをAvexaから削除してもよろしいですか？いつでも再追加できます。",
+  "connectedAccountsRemove": "削除",
+  "connectedAccountsRemoveSuccess": "ウォレットを削除しました。",
+  "connectedAccountsRemoveError": "ウォレットを削除できませんでした：{error}",
+  "@connectedAccountsRemoveError": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "connectedAccountsHeader": "接続済みウォレット",
+  "connectedAccountsSubtitle": "ブロックチェーンアドレスを管理",
+  "connectedAccountsConnectedCount": "{count} 件接続中",
+  "@connectedAccountsConnectedCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "connectedAccountsHeaderDescription": "すべてのウォレットを1か所で管理できます。各アドレスは、それぞれのブロックチェーンネットワークごとに個別に追跡されます。",
+  "connectedAccountsWallet": "ウォレット",
+  "connectedAccountsRename": "名前を変更",
+  "connectedAccountsRemoveWallet": "ウォレットを削除",
+  "connectedAccountsEmptyTitle": "接続済みのウォレットはありません",
+  "connectedAccountsEmptyDescription": "最初の公開ウォレットアドレスを接続して、Avexaのポートフォリオを作成しましょう。",
+  "connectedAccountsConnectWallet": "ウォレットを接続",
+  "connectedAccountsLegacyNotice": "以前のPortfolioシステムから{count}件の古い接続が保存されています。これらは保持されていますが、新しいウォレット一覧には含まれません。",
+  "@connectedAccountsLegacyNotice": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "connectedAccountsSecurityNotice": "Avexaは公開ブロックチェーンアドレスのみを使用します。秘密鍵と資金は引き続きご自身で管理できます。アドレスを接続しても取引が許可されることはありません。",
+  "connectedAccountsTitle": "接続済みアカウント",
+  "connectedAccountsRefresh": "更新",
+  "connectedAccountsYourWallets": "あなたのウォレット",
+  "connectedAccountsAddWallet": "ウォレットを追加",
+
+  "connectPortfolioSolanaDescription": "Solanaブロックチェーン",
+  "connectPortfolioEthereumDescription": "Ethereumメインネット",
+  "connectPortfolioBaseDescription": "Baseネットワーク",
+  "connectPortfolioArbitrumDescription": "Arbitrum One",
+  "connectPortfolioPolygonDescription": "Polygon PoS",
+  "connectPortfolioEnterAddress": "ウォレットアドレスを入力してください。",
+  "connectPortfolioInvalidSolanaAddress": "Solanaウォレットアドレスが無効です。",
+  "connectPortfolioInvalidNetworkAddress": "{network}ウォレットアドレスが無効です。",
+  "@connectPortfolioInvalidNetworkAddress": {
+    "placeholders": {
+      "network": {
+        "type": "String"
+      }
+    }
+  },
+  "connectPortfolioAlreadyConnected": "このアドレスはすでに{network}に接続されています。",
+  "@connectPortfolioAlreadyConnected": {
+    "placeholders": {
+      "network": {
+        "type": "String"
+      }
+    }
+  },
+  "connectPortfolioSuccess": "{network}ウォレットが正常に接続されました。",
+  "@connectPortfolioSuccess": {
+    "placeholders": {
+      "network": {
+        "type": "String"
+      }
+    }
+  },
+  "connectPortfolioError": "ウォレットを接続できませんでした。もう一度お試しください。",
+  "connectPortfolioSelectNetwork": "ネットワークを選択",
+  "connectPortfolioChooseNetwork": "ブロックチェーンネットワークを選択してください",
+  "connectPortfolioSectionNetwork": "01  ネットワークを選択",
+  "connectPortfolioSectionNetworkSubtitle": "ウォレットが存在するブロックチェーンを選択してください。",
+  "connectPortfolioSectionAddress": "02  ウォレットアドレス",
+  "connectPortfolioSectionAddressSubtitle": "公開ウォレットアドレスを貼り付けてください。",
+  "connectPortfolioAddressLabel": "{network}アドレス",
+  "@connectPortfolioAddressLabel": {
+    "placeholders": {
+      "network": {
+        "type": "String"
+      }
+    }
+  },
+  "connectPortfolioSolanaAddressHint": "Solanaアドレスを貼り付けてください",
+  "connectPortfolioSectionWalletName": "03  ウォレット名",
+  "connectPortfolioSectionWalletNameSubtitle": "任意。このアドレスを識別しやすい名前に設定できます。",
+  "connectPortfolioCustomNameLabel": "カスタム名（任意）",
+  "connectPortfolioCustomNameHint": "例：メインウォレット",
+  "connectPortfolioSecurityTitle": "あなたの資産はあなたのものです。",
+  "connectPortfolioSecurityDescription": "Avexaは一般公開されているブロックチェーンデータのみを使用します。秘密鍵、Secret Keys、API認証情報を要求することはなく、ウォレットから取引を実行することもできません。",
+  "connectPortfolioHeader": "ウォレットを接続",
+  "connectPortfolioSubtitle": "公開ウォレットアドレスを追加して、複数のブロックチェーンネットワーク上の資産を1つのポートフォリオで追跡できます。",
+  "connectPortfolioButton": "ウォレットを接続",
+
+  "walletTrackerHeroTitle": "スマートマネーを追跡",
+  "walletTrackerHeroDescription": "ウォレットの動向を追跡し、監視対象のウォレットがどのトークンを売買しているか確認できます。",
+  "walletTrackerEnterWalletDetails": "ウォレット名とアドレスを入力してください。",
+  "walletTrackerSyncComplete": "同期完了：ウォレット {wallets} 件、確認 {checked} 件、スワップ {swaps} 件、追加 {inserted} 件。",
+  "@walletTrackerSyncComplete": {
+    "placeholders": {
+      "wallets": {"type": "int"},
+      "checked": {"type": "int"},
+      "swaps": {"type": "int"},
+      "inserted": {"type": "int"}
+    }
+  },
+  "walletTrackerSyncError": "ウォレットの同期エラー：{error}",
+  "@walletTrackerSyncError": {
+    "placeholders": {
+      "error": {"type": "String"}
+    }
+  },
+
+  "walletDetailsTitle": "ウォレット詳細",
+  "walletDetailsRename": "ウォレット名を変更",
+  "walletDetailsLiveActivity": "ウォレットのリアルタイムアクティビティ",
+  "walletDetailsTransactionCount": "{count} 件の取引",
+  "@walletDetailsTransactionCount": {
+    "placeholders": {
+      "count": {"type": "int"}
+    }
+  },
+  "walletDetailsRefreshActivity": "ウォレットのアクティビティを更新",
+  "walletDetailsNotifications": "通知",
+  "walletDetailsSaving": "保存中...",
+  "walletDetailsActive": "有効",
+  "walletDetailsRefreshing": "アクティビティを更新中...",
+  "walletDetailsNoTransactions": "取引はまだありません",
+  "walletDetailsActivityDescription": "ウォレットのアクティビティがここに表示されます。",
+  "walletDetailsBuy": "購入",
+  "walletDetailsSell": "売却",
+  "walletDetailsTransaction": "取引",
+  "walletDetailsWalletAlerts": "ウォレット通知",
+  "walletDetailsWalletAlertsDescription": "このウォレットの通知を有効にする",
+  "walletDetailsBuyAlerts": "購入通知",
+  "walletDetailsBuyAlertsDescription": "このウォレットが購入したときに通知する",
+  "walletDetailsSellAlerts": "売却通知",
+  "walletDetailsSellAlertsDescription": "このウォレットが売却したときに通知する",
+  "walletDetailsLargeTransactions": "大口取引",
+  "walletDetailsLargeTransactionsDescription": "大きなウォレット移動を通知する",
+  "walletDetailsDeleteWallet": "ウォレットを削除",
+  "walletDetailsDeleteWalletDescription": "このウォレットと履歴を削除する",
+  "walletDetailsDeleteTitle": "ウォレットを削除しますか？",
+  "walletDetailsDeleteDescription": "このウォレットと追跡された取引履歴が削除されます。",
+  "walletDetailsCancel": "キャンセル",
+  "walletDetailsDelete": "削除",
+  "walletDetailsSave": "保存",
+  "walletDetailsRenameTitle": "ウォレット名を変更",
+  "walletDetailsWalletNameHint": "ウォレット名",
+  "walletDetailsUnknownTime": "時刻不明",
+  "walletDetailsSyncComplete": "ウォレットを同期しました。{count} 件の取引を確認しました。",
+  "@walletDetailsSyncComplete": {
+    "placeholders": {
+      "count": {"type": "int"}
+    }
+  },
+  "walletDetailsSyncError": "ウォレットを同期できませんでした。ログを確認してください。",
+  "walletDetailsUpdateSettingsError": "ウォレット設定を更新できませんでした。",
+  "walletDetailsRenameError": "ウォレット名を変更できませんでした。",
+  "walletDetailsDeleteError": "ウォレットを削除できませんでした。",
+
+  "liveMarketLive": "ライブ",
+  "liveMarketUpdateInterval": "30秒ごとに更新",
+  "liveMarket24hLabel": "24時間市場",
+  "liveMarketLoading": "市場データを読み込み中...",
+  "liveMarketError": "市場データを読み込めませんでした。",
+  "liveMarketEmpty": "利用可能な市場データがありません。",
+
+  "communityPartnersTitle": "AVEXAコミュニティ",
+  "communityPartnersSubtitle": "提携コミュニティに参加しましょう",
+  "communityPartnersDefaultName": "コミュニティ",
+  "communityPartnersTelegramError": "Telegramを開けませんでした。",
+
+  "marketSentimentTitle": "市場センチメント",
+  "marketSentimentLoading": "読み込み中",
+  "marketSentimentFear": "恐怖",
+  "marketSentimentNeutral": "中立",
+  "marketSentimentGreed": "強欲",
+  "marketSentimentExtremeGreed": "極度の強欲",
+  "marketSentimentExtremeFear": "極度の恐怖",
+  "marketSentimentBalanced": "市場は現在、均衡状態です。",
+  "marketSentimentStrongBullish": "市場全体で強い上昇傾向が見られます。",
+  "marketSentimentBullish": "市場では現在、上昇傾向が優勢です。",
+  "marketSentimentBearish": "市場の下落圧力が強まっています。",
+  "marketSentimentStrongBearish": "市場全体で強い下落圧力が優勢です。",
+  "marketSentimentError": "市場センチメントを読み込めませんでした。",
+  "marketSentimentLoadingDescription": "現在の市場状況を分析しています...",
+  "marketSentimentLiveUpdates": "LIVE • 30秒ごとに更新"
+
+}

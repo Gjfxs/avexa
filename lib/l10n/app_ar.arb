@@ -1,0 +1,1060 @@
+
+{
+  "@@locale": "ar",
+  "appName": "Avexa",
+  "language": "اللغة",
+  "chooseLanguage": "اختر اللغة",
+  "settings": "الإعدادات",
+  "general": "عام",
+  "notifications": "الإشعارات",
+  "notificationsSubtitle": "إدارة التنبيهات وتفضيلات الإشعارات.",
+  "appearance": "المظهر",
+  "languageSection": "اللغة",
+  "lightMode": "فاتح",
+  "darkMode": "داكن",
+  "systemDefault": "النظام",
+
+    "alerts": "التنبيهات",
+    "pushNotifications": "الإشعارات الفورية",
+    "pushNotificationsSubtitle": "تلقي الإشعارات المهمة من Avexa.",
+    "freeSignals": "إشارات FREE",
+    "freeSignalsSubtitle": "تلقي إشعار عند إنشاء إشارة FREE جديدة.",
+    "proSignals": "إشارات PRO",
+    "proSignalsSubtitle": "تلقي إشعار عند إنشاء إشارة PRO جديدة.",
+    "takeProfitHits": "تحقق أهداف جني الأرباح",
+    "takeProfitHitsSubtitle": "تلقي إشعار عند الوصول إلى TP1 أو TP2 أو TP3.",
+    "experience": "تجربة الاستخدام",
+    "hapticFeedback": "الاستجابة اللمسية",
+    "hapticFeedbackSubtitle": "استخدام الاهتزاز للتنبيهات والإجراءات المهمة.",
+    "savingPreferences": "جارٍ حفظ التفضيلات...",
+    "notificationPreferences": "تفضيلات الإشعارات",
+
+    "themeSection": "السمة",
+    "darkModeSubtitle": "مناسب للأماكن ذات الإضاءة الخافتة.",
+    "lightModeSubtitle": "استخدام مظهر أكثر إشراقًا.",
+    "systemDefaultSubtitle": "اتباع إعدادات الجهاز.",
+    "appIconSection": "أيقونة التطبيق",
+    "lightAppIcon": "أيقونة التطبيق الفاتحة",
+    "useLightAvexaIcon": "استخدام أيقونة Avexa الفاتحة.",
+    "useDarkAvexaIcon": "استخدام أيقونة Avexa الداكنة.",
+
+    "contactSupport": "التواصل مع الدعم",
+    "supportIntroTitle": "نحن هنا لمساعدتك",
+    "supportIntroSubtitle": "أخبرنا بما تحتاج إلى المساعدة فيه وسيتواصل معك فريقنا.",
+    "supportTopicQuestion": "كيف يمكننا مساعدتك؟",
+    "supportSelectTopic": "اختر موضوعًا",
+    "supportTapToChange": "اضغط للتغيير",
+    "supportYourTopic": "موضوعك",
+    "supportCustomTopicHint": "ما موضوع سؤالك؟",
+    "supportMessage": "الرسالة",
+    "supportMessageHint": "أخبرنا كيف يمكننا مساعدتك...",
+    "supportSendMessage": "إرسال الرسالة",
+    "supportResponseTime": "نرد عادةً خلال 24 ساعة.",
+    "supportAccount": "الحساب",
+    "supportSubscriptionBilling": "الاشتراك والفواتير",
+    "supportTradingSignals": "إشارات التداول",
+    "supportTechnicalIssue": "مشكلة تقنية",
+    "supportBugReport": "الإبلاغ عن خطأ",
+    "supportFeatureRequest": "اقتراح ميزة",
+    "supportOther": "أخرى",
+    "supportMessageSent": "تم إرسال الرسالة",
+    "supportSuccessDescription": "تم إرسال رسالتك إلى فريق دعم Avexa. سنرد عليك في أقرب وقت ممكن.",
+    "supportDone": "تم",
+    "supportLoginRequired": "يجب تسجيل الدخول للتواصل مع الدعم.",
+    "supportSelectTopicError": "يرجى اختيار موضوع.",
+    "supportEnterTopicError": "يرجى إدخال الموضوع.",
+    "supportEnterMessageError": "يرجى إدخال رسالتك.",
+    "supportMessageMinLengthError": "يجب أن تحتوي الرسالة على 10 أحرف على الأقل.",
+    "supportSendError": "حدث خطأ ما. يرجى المحاولة مرة أخرى.",
+    "supportSending": "جارٍ إرسال الرسالة...",
+
+    "reportBug": "الإبلاغ عن خطأ",
+    "bugIntroTitle": "هل وجدت مشكلة؟",
+    "bugIntroSubtitle": "أخبرنا بما حدث وسنعمل على التحقق منه.",
+    "bugCategorySection": "الفئة",
+    "bugWhatHappened": "ماذا حدث؟",
+    "bugDescriptionHint": "صف المشكلة وما كنت تفعله وما الذي حدث...",
+    "bugSendButton": "إرسال بلاغ عن خطأ",
+    "bugFooter": "سيتم إرسال بلاغك مباشرة إلى فريق دعم Avexa.",
+    "bugPickerTitle": "فئة الخطأ",
+    "bugCategoryApp": "خطأ في التطبيق",
+    "bugCategorySignals": "الإشارات",
+    "bugCategoryTrading": "التداول",
+    "bugCategoryAccount": "الحساب",
+    "bugCategorySubscription": "الاشتراك",
+    "bugCategoryNotifications": "الإشعارات",
+    "bugCategoryOther": "أخرى",
+    "bugPleaseDescribe": "يرجى وصف المشكلة.",
+    "bugLoginRequired": "يجب تسجيل الدخول للإبلاغ عن خطأ.",
+    "bugSentSuccess": "تم إرسال بلاغ الخطأ بنجاح.",
+    "bugSendFailed": "تعذر إرسال البلاغ. يرجى المحاولة مرة أخرى.",
+    "bugSending": "جارٍ إرسال البلاغ...",
+
+  "helpCenter": "مركز المساعدة",
+  "helpMainTitle": "كيف يمكننا مساعدتك؟",
+  "helpMainSubtitle": "اعثر على الإجابات وتعرّف على المزيد حول Avexa.",
+  "helpSearchHint": "ابحث في المساعدة...",
+  "helpPopularTopics": "المواضيع الشائعة",
+  "helpSearchResults": "نتائج البحث",
+  "helpNeedMore": "هل تحتاج إلى مزيد من المساعدة؟",
+  "helpNoResults": "لم يتم العثور على نتائج",
+  "helpTryAnotherSearch": "جرّب البحث عن شيء آخر.",
+  "helpSupportSubtitle": "نحن هنا لمساعدتك",
+  "helpFaqTitle": "الأسئلة الشائعة",
+  "helpStillNeed": "هل ما زلت بحاجة إلى المساعدة؟",
+  "helpContactPrompt": "إذا لم تجد الإجابة، فتواصل مع فريق الدعم.",
+  "helpSignals": "الإشارات",
+  "helpSignalsSubtitle": "كيف تعمل إشارات Avexa",
+  "helpPro": "Avexa PRO",
+  "helpProSubtitle": "ميزات PRO والاشتراك",
+  "helpTrading": "التداول",
+  "helpTradingSubtitle": "التداول وTP وSL ونقاط الدخول",
+  "helpAccount": "الحساب",
+  "helpAccountSubtitle": "الحساب والملف الشخصي",
+  "helpNotifications": "الإشعارات",
+  "helpNotificationsSubtitle": "التنبيهات والإشعارات",
+
+  "faqSignalsQ1": "ما هي إشارات Avexa؟",
+  "faqSignalsA1": "إشارات Avexa هي فرص تداول يتم إنشاؤها بناءً على بيانات السوق والتحليل. قد تتضمن الإشارة سعر الدخول وأهداف جني الأرباح ومستوى وقف الخسارة واتجاه السوق.",
+  "faqSignalsQ2": "كم مرة تصدر إشارات جديدة؟",
+  "faqSignalsA2": "يعتمد عدد الإشارات المتاحة على خطة Avexa الخاصة بك. يحصل مستخدمو الخطة المجانية على وصول محدود، بينما يحصل مستخدمو PRO على إشارات مميزة إضافية.",
+  "faqSignalsQ3": "ماذا تعني Entry وTP وSL؟",
+  "faqSignalsA3": "Entry هو السعر أو النطاق السعري المقترح للدخول في الصفقة. يشير TP (جني الأرباح) إلى السعر المستهدف لتحقيق الربح، بينما يشير SL (وقف الخسارة) إلى المستوى المستخدم للحد من الخسائر المحتملة.",
+  "faqSignalsQ4": "هل تضمن إشارات Avexa تحقيق الأرباح؟",
+  "faqSignalsA4": "لا. لا يمكن لأي إشارة تداول ضمان الربح. تعتمد الإشارات على التحليل وبيانات السوق المتاحة، لكن أسواق العملات الرقمية متقلبة وكل صفقة تنطوي على مخاطر.",
+  "faqSignalsQ5": "أين يمكنني رؤية الإشارات المتاحة؟",
+  "faqSignalsA5": "يمكنك العثور على الإشارات المتاحة في قسم الإشارات في Avexa. يعتمد الوصول إليها على خطتك الحالية.",
+
+  "faqProQ1": "ما هي Avexa PRO؟",
+  "faqProA1": "Avexa PRO هي النسخة المميزة من Avexa، وتوفر الوصول إلى تحليلات تداول إضافية وإشارات مميزة وميزات متقدمة غير متاحة في الخطة المجانية.",
+  "faqProQ2": "كيف يمكنني الترقية إلى PRO؟",
+  "faqProA2": "افتح شاشة الاشتراك واختر الترقية إلى PRO. اتبع تعليمات الدفع لإكمال الاشتراك.",
+  "faqProQ3": "كيف أعرف أن لدي اشتراك PRO؟",
+  "faqProA3": "يمكنك التحقق من خطتك الحالية في الملف الشخصي أو شاشة الاشتراك. ستظهر عضوية PRO عندما يكون الحساب مفعّلًا.",
+  "faqProQ4": "هل يمكنني إلغاء اشتراك PRO؟",
+  "faqProA4": "نعم. يمكنك إدارة الاشتراك أو إلغاؤه من شاشة الاشتراك. قد يظل الوصول متاحًا حتى نهاية فترة الفوترة الحالية.",
+  "faqProQ5": "ماذا يحدث عند انتهاء اشتراك PRO؟",
+  "faqProA5": "عند انتهاء صلاحية PRO، يعود حسابك إلى الخطة المجانية وتصبح الميزات المميزة غير متاحة حتى إعادة تفعيل PRO.",
+
+  "faqTradingQ1": "ما هو جني الأرباح (TP)؟",
+  "faqTradingA1": "جني الأرباح هو سعر مستهدف محدد مسبقًا. عندما يصل السوق إلى هذا المستوى، يمكن للمتداول إغلاق الصفقة وتحصيل الربح المخطط له.",
+  "faqTradingQ2": "ما هو وقف الخسارة (SL)؟",
+  "faqTradingA2": "وقف الخسارة هو مستوى محدد مسبقًا للحد من الخسائر المحتملة إذا تحرك السوق عكس اتجاه الصفقة.",
+  "faqTradingQ3": "ما هي نقطة الدخول؟",
+  "faqTradingA3": "نقطة الدخول هي السعر أو النطاق السعري الذي تقترح الإشارة عنده التفكير في فتح صفقة.",
+  "faqTradingQ4": "لماذا قد تختلف نتيجتي عن الإشارة؟",
+  "faqTradingA4": "قد تتغير أسعار السوق بسرعة كبيرة. يمكن أن يؤدي الانزلاق السعري وسرعة التنفيذ والسيولة والرسوم إلى اختلاف سعر الدخول أو الخروج الفعلي عن السعر المعروض في الإشارة.",
+  "faqTradingQ5": "هل تنفذ Avexa الصفقات تلقائيًا؟",
+  "faqTradingA5": "توفر إشارات Avexa معلومات تساعد في التداول. ما لم تكن هناك ميزة تداول آلي مدعومة ومفعّلة، فأنت مسؤول عن تنفيذ الصفقات وإدارتها.",
+
+  "faqAccountQ1": "كيف أغيّر اسم المستخدم؟",
+  "faqAccountA1": "افتح الملف الشخصي واختر المعلومات الشخصية. يمكنك تحديث معلومات ملفك الشخصي من هناك.",
+  "faqAccountQ2": "كيف أغيّر كلمة المرور؟",
+  "faqAccountA2": "افتح الملف الشخصي ← الأمان واستخدم خيارات إدارة كلمة المرور المتاحة.",
+  "faqAccountQ3": "هل يمكنني تغيير عنوان البريد الإلكتروني؟",
+  "faqAccountA3": "يمكن تغيير البريد الإلكتروني من إعدادات أمان الحساب عندما يكون هذا الخيار متاحًا. قد يلزم إجراء تحقق إضافي.",
+  "faqAccountQ4": "كيف أسجّل الخروج؟",
+  "faqAccountA4": "افتح ملفك الشخصي وانتقل إلى أسفل الشاشة، ثم اختر تسجيل الخروج لإنهاء الجلسة الحالية.",
+  "faqAccountQ5": "هل يمكنني حذف حسابي؟",
+  "faqAccountA5": "يمكن طلب حذف الحساب من قسم الحساب أو الأمان. يُرجى الانتباه إلى أن الحذف قد يؤدي إلى إزالة البيانات المرتبطة نهائيًا.",
+
+  "faqNotificationsQ1": "كيف أفعّل الإشعارات؟",
+  "faqNotificationsA1": "افتح المزيد ← إعدادات التطبيق ← الإشعارات. يمكنك التحكم في الإشعارات العامة وتنبيهات الإشارات والاستجابة اللمسية.",
+  "faqNotificationsQ2": "ما هي تنبيهات الإشارات؟",
+  "faqNotificationsA2": "تنبهك إشعارات الإشارات عند توفر إشارة تداول جديدة وذات صلة.",
+  "faqNotificationsQ3": "لماذا لا أتلقى الإشعارات؟",
+  "faqNotificationsA3": "تحقق أولًا من تفعيل الإشعارات في إعدادات Avexa وإعدادات جهازك. تأكد أيضًا من تفعيل تنبيهات الإشارات إذا كنت تريد تلقيها.",
+  "faqNotificationsQ4": "ما هي الاستجابة اللمسية؟",
+  "faqNotificationsA4": "تستخدم الاستجابة اللمسية اهتزاز الجهاز لتوفير إشعارات إضافية عند التفاعلات والتنبيهات المدعومة.",
+
+  "aboutTitle": "حول Avexa",
+  "aboutTagline": "ذكاء العملات الرقمية المدعوم بالذكاء الاصطناعي",
+  "aboutVersion": "الإصدار 1.0.0",
+  "aboutSection": "حول AVEXA",
+  "aboutDescription": "Avexa منصة لتحليل العملات الرقمية مدعومة بالذكاء الاصطناعي، تساعد المتداولين على فهم السوق واكتشاف الفرص واتخاذ قرارات أكثر وعيًا.",
+  "aboutGettingStarted": "البدء",
+  "aboutViewOnboarding": "عرض المقدمة",
+  "aboutOnboardingDescription": "تعرّف على أهم ميزات Avexa من خلال جولة سريعة.",
+  "aboutWhatWeDo": "ما نقدمه",
+  "aboutTradingSignals": "إشارات التداول",
+  "aboutTradingSignalsDescription": "إشارات مدعومة بالذكاء الاصطناعي للمساعدة في اكتشاف فرص السوق المحتملة.",
+  "aboutWhaleTracking": "تتبع المحافظ الكبيرة",
+  "aboutWhaleTrackingDescription": "تابع نشاط المحافظ الكبيرة واكتشف تحركات السوق غير المعتادة.",
+  "aboutMarketIntelligence": "تحليل السوق",
+  "aboutMarketIntelligenceDescription": "افهم العوامل المؤثرة في السوق من خلال تحليلات متقدمة مدعومة بالذكاء الاصطناعي.",
+  "aboutOurMission": "مهمتنا",
+  "aboutMissionStatement": "إتاحة التحليلات المتقدمة لسوق العملات الرقمية للجميع.",
+  "aboutBuiltForTraders": "صُمم للمتداولين.",
+  "aboutPoweredByIntelligence": "مدعوم بالذكاء.",
+  "aboutCopyright": "© 2026 Avexa",
+
+    "onboardingHomeSection": "الرئيسية",
+    "onboardingHomeTitle": "مركزك لإدارة العملات الرقمية",
+    "onboardingHomeDescription": "كل ما يهمك في لمحة واحدة. تابع السوق واكتشف ما يحدث في Avexa.",
+    "onboardingChartsSection": "الرسوم البيانية",
+    "onboardingChartsTitle": "استكشف السوق",
+    "onboardingChartsDescription": "استكشف أسواق DEX وTrending وSpot وFutures وتابع تحركات الأسعار.",
+    "onboardingSignalsSection": "الإشارات",
+    "onboardingSignalsTitle": "إشارات مدعومة بالذكاء الاصطناعي",
+    "onboardingSignalsDescription": "اكتشف فرص التداول التي ينشئها الذكاء الاصطناعي، مع سعر الدخول ووقف الخسارة وجني الأرباح ومستوى الثقة.",
+    "onboardingAiChartSection": "مخطط الذكاء الاصطناعي",
+    "onboardingAiChartTitle": "تحليل الرسوم البيانية بالذكاء الاصطناعي",
+    "onboardingAiChartDescription": "ارفع أي مخطط للعملات الرقمية ودع Avexa AI يحلل الاتجاهات والزخم ومستويات الدعم والمقاومة.",
+    "onboardingPortfolioSection": "المحفظة",
+    "onboardingPortfolioTitle": "محفظتك",
+    "onboardingPortfolioDescription": "اربط الحسابات المدعومة وأدر محفظتك من العملات الرقمية في مكان واحد.",
+    "onboardingSkip": "تخطي",
+    "onboardingNext": "التالي",
+    "onboardingGetStarted": "ابدأ الآن",
+
+    "securityTitle": "الأمان",
+    "securityAccountTitle": "أمان الحساب",
+    "securityAccountDescription": "إدارة كلمة المرور وأمان حسابك.",
+    "securityAccountSection": "الحساب",
+    "securityAccountEmail": "البريد الإلكتروني للحساب",
+    "securityChangePassword": "تغيير كلمة المرور",
+    "securityCurrentPassword": "كلمة المرور الحالية",
+    "securityNewPassword": "كلمة المرور الجديدة",
+    "securityConfirmNewPassword": "تأكيد كلمة المرور الجديدة",
+    "securityEnterNewPassword": "أدخل كلمة المرور الجديدة",
+    "securityPasswordLengthError": "يجب أن تتكون كلمة المرور من 8 أحرف على الأقل.",
+    "securityPasswordsMismatch": "كلمتا المرور غير متطابقتين.",
+    "securityPasswordChanged": "تم تغيير كلمة المرور بنجاح.",
+    "securityPasswordChangeError": "تعذر تغيير كلمة المرور.",
+    "securityAppLockSection": "قفل التطبيق",
+    "securityAppLockTitle": "قفل التطبيق",
+    "securityAppLockEnabledDescription": "يتطلب فتح التطبيق التحقق من الهوية.",
+    "securityAppLockDisabledDescription": "احمِ التطبيق باستخدام القفل.",
+    "securityVerificationCancelled": "تم إلغاء التحقق.",
+    "securityVerificationRequired": "التحقق مطلوب.",
+    "securityAppLockEnabled": "تم تفعيل قفل التطبيق.",
+    "securityAppLockDisabled": "تم تعطيل قفل التطبيق.",
+    "securityAppLockChangeError": "تعذر تغيير إعدادات القفل.",
+    "securitySafetyNotice": "حافظ على أمان حسابك. لا تشارك كلمة المرور أو رمز PIN مع أي شخص.",
+    "securityCreatePin": "إنشاء رمز PIN",
+    "securityCreatePinDescription": "أنشئ رمز PIN لحماية التطبيق.",
+    "securityEnterPin": "أدخل رمز PIN",
+    "securityPin": "رمز PIN",
+    "securityConfirmPin": "تأكيد رمز PIN",
+    "securityPinLengthError": "يجب أن يتكون رمز PIN من 4 أرقام.",
+    "securityPinDigitsError": "يمكن أن يحتوي رمز PIN على أرقام فقط.",
+    "securityPinsMismatch": "رمزا PIN غير متطابقين.",
+    "securityCancel": "إلغاء",
+    "securitySave": "حفظ",
+    "securityUnlock": "إلغاء القفل",
+
+    "connectedAccountsTitle": "الحسابات المتصلة",
+    "connectedAccountsWalletsExchanges": "المحافظ ومنصات التداول",
+    "connectedAccountsDescription": "اربط محافظك ومنصات التداول لاستخدام ميزات التداول داخل Avexa.",
+    "connectedAccountsSolanaWallet": "محفظة Solana",
+    "connectedAccountsEthereumWallet": "محفظة Ethereum",
+    "connectedAccountsExchanges": "منصات التداول",
+    "connectedAccountsExchangeAccount": "حساب منصة تداول",
+    "connectedAccountsSecurityNotice": "يجب ألا تشارك بيانات تسجيل الدخول أو المفاتيح الخاصة مع Avexa مطلقًا. ستستخدم الاتصالات طرق مصادقة آمنة.",
+    "connectedAccountsComingSoon": "سيصبح هذا الاتصال متاحًا في إصدار مستقبلي من Avexa.",
+    "connectedAccountsOk": "حسنًا",
+
+    "personalInfoTitle": "المعلومات الشخصية",
+    "personalInfoDescription": "أدِر معلومات ملفك الشخصي وصورتك الرمزية.",
+    "personalInfoDefaultUser": "مستخدم",
+    "personalInfoLoadError": "تعذر تحميل ملفك الشخصي.",
+    "personalInfoAvatarSaveError": "تعذر حفظ صورة الملف الشخصي.",
+    "personalInfoAvatarUpdated": "تم تحديث صورة الملف الشخصي.",
+    "personalInfoAvatarUpdateError": "تعذر تحديث صورة الملف الشخصي.",
+    "personalInfoNameRequired": "يرجى إدخال اسمك.",
+    "personalInfoUsernameRequired": "يرجى إدخال اسم مستخدم.",
+    "personalInfoUsernameLengthError": "يجب ألا يقل اسم المستخدم عن 3 أحرف.",
+    "personalInfoUpdateError": "تعذر تحديث ملفك الشخصي.",
+    "personalInfoDetailsSection": "التفاصيل الشخصية",
+    "personalInfoDisplayName": "الاسم المعروض",
+    "personalInfoNameHint": "اسمك",
+    "personalInfoUsername": "اسم المستخدم",
+    "personalInfoUsernameHint": "اسم المستخدم",
+    "personalInfoUsernameDescription": "سيظهر اسم المستخدم هذا في جميع أنحاء Avexa.",
+    "personalInfoEmailSection": "البريد الإلكتروني للحساب",
+    "personalInfoVerifiedEmail": "البريد الإلكتروني المؤكد للحساب",
+    "personalInfoEmailCannotChange": "لا يمكنك تغيير عنوان البريد الإلكتروني من هنا.",
+    "personalInfoSaveChanges": "حفظ التغييرات",
+    "personalInfoSecureSaveNotice": "يتم حفظ تغييراتك بأمان في حسابك.",
+
+    "subscriptionTitle": "الاشتراك",
+    "subscriptionChoosePlan": "اختر خطتك",
+    "subscriptionYourPlan": "خطتك",
+    "subscriptionFeatures": "الميزات",
+    "subscriptionMonthly": "شهري",
+    "subscriptionYearly": "سنوي",
+    "subscriptionSave33": "وفّر 33%",
+    "subscriptionPerMonth": "/ شهريًا",
+    "subscriptionPerYear": "/ سنويًا",
+    "subscriptionProMonthly": "PRO شهري",
+    "subscriptionProYearly": "PRO سنوي",
+    "subscriptionUpgradeMonthly": "الترقية إلى PRO — {price}/شهريًا",
+    "@subscriptionUpgradeMonthly": {
+    "placeholders": {
+        "price": {
+        "type": "String"
+        }
+    }
+    },
+    "subscriptionUpgradeYearly": "الترقية إلى PRO — {price}/سنويًا",
+    "@subscriptionUpgradeYearly": {
+    "placeholders": {
+        "price": {
+        "type": "String"
+        }
+    }
+    },
+    "subscriptionManagePurchases": "إدارة المشتريات",
+    "subscriptionRestorePurchases": "استعادة المشتريات",
+    "subscriptionManageSubscription": "إدارة الاشتراك",
+    "subscriptionChangePlan": "تغيير الخطة",
+    "subscriptionCancelSubscription": "إلغاء الاشتراك",
+    "subscriptionUnavailable": "الاشتراك غير متاح حاليًا.",
+    "subscriptionCheckingPurchases": "جارٍ التحقق من مشترياتك السابقة...",
+    "subscriptionManagementComingSoon": "ستتوفر إدارة الاشتراك قريبًا.",
+    "subscriptionDailySignals": "الإشارات اليومية",
+    "subscriptionOnePerDay": "واحدة يوميًا",
+    "subscriptionUnlimited": "غير محدود",
+    "subscriptionAiMarketAnalysis": "تحليل السوق بالذكاء الاصطناعي",
+    "subscriptionWhaleTracking": "تتبع كبار المستثمرين",
+    "subscriptionAdvancedCharts": "رسوم بيانية متقدمة",
+    "subscriptionFuturesIntelligence": "تحليلات العقود الآجلة",
+    "subscriptionWalletTracker": "تتبع المحفظة",
+    "subscriptionNewsSentiment": "الأخبار ومعنويات السوق",
+    "subscriptionLimited": "محدود",
+    "subscriptionPrioritySupport": "دعم ذو أولوية",
+    "subscriptionFreeInfoTitle": "أنت تستخدم الخطة المجانية",
+    "subscriptionFreeInfoDescription": "قم بالترقية إلى PRO لفتح جميع الميزات والارتقاء بتداولك إلى مستوى جديد.",
+    "subscriptionActiveTitle": "اشتراك PRO الخاص بك نشط",
+    "subscriptionActiveDescription": "جميع الميزات المميزة متاحة حاليًا.",
+    "subscriptionProInfoTitle": "أنت تستخدم PRO",
+    "subscriptionProInfoDescription": "شكرًا لاستخدامك Avexa PRO. تداول بذكاء أكبر.",
+
+    "profileActive": "نشط",
+    "profileProPlan": "خطة PRO",
+    "profileFreePlan": "الخطة المجانية",
+    "profileMemberSince": "عضو منذ {year}",
+    "@profileMemberSince": {
+    "placeholders": {
+        "year": {
+        "type": "String"
+        }
+    }
+    },
+    "profileFreeSignals": "إشارات FREE",
+    "profileAiAnalyses": "تحليلات الذكاء الاصطناعي",
+    "profileSubscriptionSection": "الاشتراك",
+    "profileAccountSection": "الحساب",
+    "profilePreferencesSection": "التفضيلات",
+    "profileSupportSection": "الدعم",
+    "profilePersonalInformation": "المعلومات الشخصية",
+    "profileConnectedAccounts": "الحسابات المتصلة",
+    "profileSecurity": "الأمان",
+    "profileAppSettings": "إعدادات التطبيق",
+    "profileRateUs": "قيّمنا",
+    "profileAboutAvexa": "حول Avexa",
+    "profileHelpCenter": "مركز المساعدة",
+    "profileReportBug": "الإبلاغ عن خطأ",
+    "profileContactSupport": "التواصل مع الدعم",
+    "profileLogOut": "تسجيل الخروج",
+    "profileActiveSubscription": "اشتراك نشط",
+    "profileCurrentSubscription": "الاشتراك الحالي",
+    "profileAvatarSaveError": "تعذر حفظ صورة الملف الشخصي.",
+    "profileAvatarUpdated": "تم تحديث صورة الملف الشخصي.",
+    "profileAvatarUpdateError": "تعذر تحديث صورة الملف الشخصي.",
+
+  "portfolioHeaderProfile": "الملف الشخصي",
+  "portfolioTapToViewProfile": "اضغط لعرض ملفك الشخصي",
+  "portfolioValue": "قيمة المحفظة",
+  "portfolioNoPortfolioConnected": "لا توجد محفظة متصلة",
+  "portfolioConnectDescription": "اربط منصة التداول أو المحفظة للاستفادة من تتبع المحفظة المباشر ورؤى الذكاء الاصطناعي وتحليل المخاطر.",
+  "portfolioConnectButton": "ربط المحفظة",
+  "portfolioConnectedSuccessfully": "تم ربط المحفظة بنجاح",
+  "portfolioLastSync": "آخر مزامنة: الآن",
+  "portfolioManageConnections": "إدارة الاتصالات",
+  "portfolioRefreshPortfolio": "تحديث المحفظة",
+  "portfolioSyncComingSoon": "ستتوفر مزامنة المحفظة قريبًا",
+  "portfolioDisconnect": "قطع اتصال المحفظة",
+  "portfolioOverview": "نظرة عامة على المحفظة",
+  "portfolioTotalValue": "القيمة الإجمالية للمحفظة",
+  "portfolioAssets": "الأصول",
+  "portfolioChains": "الشبكات",
+  "portfolioNfts": "رموز NFT",
+  "portfolioNoAssetsSynced": "لا توجد أصول تمت مزامنتها",
+  "portfolioConnectToImport": "اربط محفظتك لاستيراد العملات الرقمية تلقائيًا.",
+  "portfolioAiScore": "تقييم المحفظة بالذكاء الاصطناعي",
+  "portfolioExcellent": "محفظة ممتازة",
+  "portfolioRiskDescription": "محفظة متنوعة بمستوى مخاطر متوسط.",
+  "portfolioAiInsights": "رؤى الذكاء الاصطناعي",
+  "portfolioInsightDiversified": "المحفظة متنوعة جيدًا بين العملات الرقمية ذات القيمة السوقية الكبيرة.",
+  "portfolioInsightModerateRisk": "مستوى المخاطر الحالي متوسط.",
+  "portfolioInsightStablecoins": "قد تساعد إضافة العملات المستقرة في تقليل التقلبات.",
+  "portfolioInsightNoSuspiciousTokens": "لم يتم اكتشاف تركّز مريب للرموز.",
+  "portfolioProPlan": "خطة PRO",
+  "portfolioFreePlan": "خطة FREE",
+  "portfolioActive": "نشط",
+  "portfolioNotificationsEnabled": "الإشعارات مفعّلة",
+  "portfolioMemberSince": "عضو منذ {year}",
+
+  "aiAssistantClearChat": "مسح المحادثة",
+  "aiAssistantMinimize": "تصغير",
+  "aiAssistantTitle": "مساعد التداول بالذكاء الاصطناعي",
+  "aiAssistantSubtitle": "محللك الشخصي للعملات الرقمية",
+  "aiAssistantAnalyzeBtc": "📈 تحليل BTC",
+  "aiAssistantBestTrade": "🔥 أفضل صفقة",
+  "aiAssistantMarketRisk": "⚠️ مخاطر السوق",
+  "aiAssistantHiddenGems": "💎 فرص واعدة",
+  "aiAssistantWelcome": "كيف يمكنني مساعدتك اليوم؟",
+  "aiAssistantAnalyzeBitcoin": "📈 تحليل Bitcoin",
+  "aiAssistantSuggestionMarketRisk": "⚠️ مخاطر السوق",
+  "aiAssistantSuggestionHiddenGems": "💎 فرص واعدة",
+  "aiAssistantSavedAnalyses": "التحليلات المحفوظة",
+  "aiAssistantNoSavedAnalyses": "لا توجد تحليلات محفوظة",
+  "aiAssistantAnalysisRemoved": "تم حذف التحليل",
+  "aiAssistantAnalysisSaved": "تم حفظ التحليل",
+  "aiAssistantFeedbackThanks": "شكرًا على ملاحظاتك!",
+  "aiAssistantFeedbackQuestion": "لماذا لم تكن هذه الإجابة مفيدة؟",
+  "aiAssistantFeedbackIncorrect": "❌ معلومات غير صحيحة",
+  "aiAssistantFeedbackGeneric": "🤔 عامة أكثر من اللازم",
+  "aiAssistantFeedbackNoAnswer": "💬 لم تجب عن سؤالي",
+  "aiAssistantFeedbackOutdated": "📉 بيانات السوق قديمة",
+  "aiAssistantFeedbackOther": "✍️ أخرى",
+  "aiAssistantFeedbackThanksImprove": "شكرًا لمساعدتك في تحسين الذكاء الاصطناعي!",
+  "aiAssistantInputHint": "اسأل عن أي شيء يتعلق بالعملات الرقمية...",
+  "aiAssistantAnalyzingMarket": "جارٍ تحليل السوق...",
+
+  "chartsTitle": "الرسوم البيانية",
+  "chartsSearchHint": "ابحث عن عملة أو رمز...",
+  "chartsMarketCap": "القيمة السوقية",
+  "chartsVolume": "حجم التداول",
+  "chartsChange24": "التغير خلال 24 ساعة",
+  "chartsRank": "الترتيب",
+  "chartsFavorites": "المفضلة",
+  "chartsTrending": "الرائج",
+  "chartsSpot": "فوري",
+  "chartsFutures": "العقود الآجلة",
+  "chartsTrendingCoins": "العملات الرائجة",
+  "chartsSpotMarket": "السوق الفوري",
+  "chartsFuturesMarket": "سوق العقود الآجلة",
+  "chartsMostActive": "الأكثر نشاطًا الآن",
+  "chartsSpotAssets": "أصول السوق الفوري المباشرة",
+  "chartsFuturesAssets": "أصول رئيسية متاحة للعقود الآجلة",
+  "chartsTopGainers": "الأعلى ارتفاعًا",
+  "chartsTopLosers": "الأعلى انخفاضًا",
+  "charts24HourPerformance": "الأداء خلال 24 ساعة",
+  "chartsGainers": "الرابحون",
+  "chartsLosers": "الخاسرون",
+  "chartsPrice": "السعر",
+  "chartsMarketCapShort": "القيمة السوقية",
+  "chartsAiMarketScore": "تقييم السوق بالذكاء الاصطناعي",
+  "chartsNoFavorites": "لا توجد عملات مفضلة بعد",
+  "chartsAddFavoritesHint": "أضف العملات لتتبعها بسرعة هنا.",
+  "chartsDexScanner": "ماسح DEX",
+  "chartsDexSubtitle": "اكتشف فرص السلسلة",
+  "chartsFilters": "عوامل التصفية",
+  "chartsFiltersCount": "عوامل التصفية {count}",
+  "chartsAllChains": "كل الشبكات",
+  "chartsDexPairsCount": "الأزواج: {count}",
+  "chartsSortLabel": "الترتيب: {sort}",
+  "chartsDexFilters": "فلاتر DEX",
+  "chartsDexFiltersSubtitle": "اضبط الماسح مثل أداة فحص DEX.",
+  "chartsPairAge": "عمر الزوج",
+  "chartsReset": "إعادة ضبط",
+  "chartsApplyFilters": "تطبيق الفلاتر",
+  "chartsAll": "الكل",
+  "chartsNoDexPairs": "لم يتم العثور على أزواج DEX",
+  "chartsWidenFilters": "جرّب توسيع الفلاتر.",
+  "chartsMarketCapUpper": "القيمة السوقية",
+  "chartsLiquidity": "السيولة",
+  "chartsLiquidityUpper": "السيولة",
+  "chartsVolume24Upper": "حجم 24 ساعة",
+  "chartsFlow24Upper": "تدفق 24 ساعة",
+  "chartsBuysCount": "عمليات شراء: {count}",
+  "chartsSellsCount": "عمليات بيع: {count}",
+  "@chartsFiltersCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "@chartsDexPairsCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "@chartsSortLabel": {
+    "placeholders": {
+      "sort": {
+        "type": "String"
+      }
+    }
+  },
+  "@chartsBuysCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "@chartsSellsCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+
+    "aiChartTitle": "مخطط الذكاء الاصطناعي",
+    "aiChartDescription": "التقط صورة للمخطط ودع Avexa يحلله.",
+    "aiChartAnalysisTitle": "تحليل المخطط بالذكاء الاصطناعي",
+    "aiChartDone": "تم",
+    "aiChartScannerTitle": "ماسح المخططات بالذكاء الاصطناعي",
+    "aiChartScannerDescription": "ضع المخطط داخل الإطار والتقط صورة واضحة لتحليلها بالذكاء الاصطناعي.",
+    "aiChartEnableCamera": "تفعيل الكاميرا",
+    "aiChartStartingCamera": "جارٍ تشغيل الكاميرا...",
+    "aiChartAnalyze": "تحليل المخطط",
+    "aiChartAnalyzing": "جارٍ تحليل المخطط...",
+    "aiChartAnalysisHistory": "سجل التحليلات",
+    "aiChartRecentAnalyses": "أحدث تحليلات المخططات",
+    "aiChartHistoryNotice": "يتوفر سجل التحليلات لمدة 24 ساعة.",
+    "aiChartHistoryLoadError": "تعذر تحميل السجل",
+    "aiChartTryAgainLater": "يرجى المحاولة مرة أخرى لاحقًا.",
+    "aiChartNoAnalyses": "لا توجد تحليلات حتى الآن",
+    "aiChartHistoryEmptyDescription": "ستظهر هنا تحليلات المخططات من آخر 24 ساعة.",
+    "aiChartHistoryCardTitle": "تحليل المخطط",
+    "aiChartCameraUnavailable": "الكاميرا غير متاحة",
+    "aiChartCameraError": "تعذر تشغيل الكاميرا. يُرجى التحقق من أذونات الكاميرا.",
+    "aiChartCaptureError": "تعذر التقاط الصورة. يُرجى المحاولة مرة أخرى.",
+    "aiChartSelectImageError": "تعذر اختيار الصورة. يُرجى المحاولة مرة أخرى.",
+    "aiChartAnalysisError": "خطأ في AI Chart: {error}",
+    "@aiChartAnalysisError": {
+    "placeholders": {
+        "error": {
+        "type": "String"
+        }
+    }
+    },
+    "aiChartNoImageError": "لم يتم اختيار صورة.",
+    "aiChartUnexpectedResponseError": "تنسيق استجابة غير متوقع: {response}",
+    "@aiChartUnexpectedResponseError": {
+    "placeholders": {
+        "response": {
+        "type": "String"
+        }
+    }
+    },
+    "aiChartEmptyAnalysisError": "أعاد الذكاء الاصطناعي نتيجة تحليل فارغة.",
+
+  "homeTagline": "ذكاء اصطناعي لتحليل العملات الرقمية",
+  "homeRugCheck": "فحص مخاطر الاحتيال",
+  "homeRugCheckDescription": "افحص العملات الرقمية بحثًا عن المخاطر المحتملة",
+  "homeWalletTracker": "تتبع المحافظ",
+  "homeWalletTrackerDescription": "تتبع المحافظ واحصل على تنبيهات مباشرة",
+  "homeLiveMarketData": "📈 بيانات السوق المباشرة",
+  "homeTopMovers": "🚀 أكبر تحركات الأسعار",
+  "homeLiveLiquidations": "💀 التصفية المباشرة",
+
+  "signalDetailTitle": "تفاصيل الإشارة",
+  "signalDetailSolanaMeme": "ميم كوين سولانا",
+  "signalDetailDirection": "الاتجاه",
+  "signalDetailTier": "الفئة",
+  "signalDetailAiConfidence": "ثقة الذكاء الاصطناعي",
+  "signalDetailConfidenceDescription": "درجة ثقة أنشأها الذكاء الاصطناعي بناءً على ظروف السوق.",
+  "signalDetailTradeLevels": "مستويات التداول",
+  "signalDetailEntry": "الدخول",
+  "signalDetailStopLoss": "وقف الخسارة",
+  "signalDetailTakeProfit1": "هدف الربح 1",
+  "signalDetailTakeProfit2": "هدف الربح 2",
+  "signalDetailTakeProfit3": "هدف الربح 3",
+  "signalDetailRiskLevel": "مستوى المخاطرة",
+  "signalDetailRiskReward": "المخاطرة / العائد",
+  "signalDetailRiskLow": "منخفض",
+  "signalDetailRiskMedium": "متوسط",
+  "signalDetailRiskHigh": "مرتفع",
+  "signalDetailTokenAddress": "عنوان الرمز",
+  "signalDetailAddressUnavailable": "العنوان غير متاح",
+  "signalDetailCopyAddress": "نسخ عنوان الرمز",
+  "signalDetailViewDexScreener": "فتح DEX SCREENER",
+  "signalDetailDexLinkUnavailable": "رابط DexScreener غير متاح.",
+  "signalDetailDexOpenError": "تعذّر فتح DexScreener.",
+  "signalDetailAddressCopied": "تم نسخ عنوان الرمز",
+  "signalDetailAiAnalysis": "تحليل الذكاء الاصطناعي",
+  "signalDetailDisclaimer": "الإشارات عبارة عن تحليل للسوق أنشأه الذكاء الاصطناعي،\nوليست نصيحة مالية.",
+
+  "coinDetailsCoinBadge": "عملة",
+  "coinDetailsDexBadge": "DEX",
+  "coinDetailsCurrentPrice": "السعر الحالي",
+  "coinDetails24H": "24 ساعة",
+  "coinDetails24HVolume": "حجم التداول خلال 24 ساعة",
+  "coinDetails24HChange": "التغير خلال 24 ساعة",
+  "coinDetailsLiquidity": "السيولة",
+  "coinDetailsFdv": "FDV",
+  "coinDetailsMarketCap": "القيمة السوقية",
+  "coinDetailsPriceChart": "مخطط السعر",
+  "coinDetailsMarketData": "بيانات السوق",
+  "coinDetails24HHigh": "أعلى سعر خلال 24 ساعة",
+  "coinDetails24HLow": "أدنى سعر خلال 24 ساعة",
+  "coinDetailsAllTimeHigh": "أعلى سعر على الإطلاق",
+  "coinDetailsAllTimeLow": "أدنى سعر على الإطلاق",
+  "coinDetailsMarketCapRank": "ترتيب القيمة السوقية",
+  "coinDetailsCirculatingSupply": "المعروض المتداول",
+  "coinDetailsTotalSupply": "إجمالي المعروض",
+  "coinDetailsMaxSupply": "الحد الأقصى للمعروض",
+  "coinDetailsSupply": "المعروض",
+  "coinDetailsInCirculation": "قيد التداول",
+  "coinDetailsCirculatingAmount": "{amount} قيد التداول",
+  "@coinDetailsCirculatingAmount": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "coinDetailsDexPair": "زوج DEX",
+  "coinDetailsNetwork": "الشبكة",
+  "coinDetailsDex": "DEX",
+  "coinDetailsPair": "زوج التداول",
+  "coinDetails24HBuys": "عمليات الشراء خلال 24 ساعة",
+  "coinDetails24HSells": "عمليات البيع خلال 24 ساعة",
+  "coinDetailsPairAge": "عمر الزوج",
+  "coinDetailsDexMetrics": "مؤشرات DEX",
+  "coinDetailsDexSourceNotice": "بيانات الزوج مقدمة من DexScreener.",
+  "coinDetailsDays": "{count} يوم",
+  "@coinDetailsDays": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "coinDetailsHours": "{count} ساعة",
+  "@coinDetailsHours": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "coinDetailsMinutes": "{count} دقيقة",
+  "@coinDetailsMinutes": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+
+  "portfolioConnectTitle": "ربط المحفظة",
+  "portfolioReadOnlyApiConnection": "اتصال API للقراءة فقط",
+  "portfolioWalletAddressConnection": "الاتصال عبر عنوان المحفظة",
+  "portfolioConnected": "متصل",
+
+  "connectedAccountsWalletsExchanges": "المحافظ ومنصات التداول",
+  "connectedAccountsYourAccounts": "حساباتك المتصلة",
+  "connectedAccountsCount": "عدد الحسابات المتصلة: {count}",
+  "@connectedAccountsCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "connectedAccountsConnectDescription": "اربط محافظك ومنصات التداول لاستخدام ميزات التداول في Avexa.",
+  "connectedAccountsRenameTitle": "إعادة تسمية الحساب",
+  "connectedAccountsAccountName": "اسم الحساب",
+  "connectedAccountsCancel": "إلغاء",
+  "connectedAccountsSave": "حفظ",
+  "connectedAccountsRemoveTitle": "هل تريد إزالة الحساب؟",
+  "connectedAccountsRemoveConfirmation": "ستتم إزالة «{account}» من قائمة الحسابات المتصلة في Avexa.",
+  "@connectedAccountsRemoveConfirmation": {
+    "placeholders": {
+      "account": {
+        "type": "String"
+      }
+    }
+  },
+  "connectedAccountsRemove": "إزالة",
+  "connectedAccountsChangeName": "تغيير الاسم",
+  "connectedAccountsNoAccounts": "لا توجد حسابات متصلة",
+  "connectedAccountsEmptyDescription": "اربط محافظك ومنصات التداول لإدارة جميع حساباتك المرتبطة في مكان واحد.",
+  "connectedAccountsConnectPortfolio": "ربط المحفظة",
+  "connectedAccountsBalancesNotice": "ستظل أرصدتك وأصولك متاحة في Portfolio.",
+  "connectedAccountsAddAccount": "إضافة حساب",
+  "connectedAccountsSecurityNotice": "تؤدي إزالة الحساب إلى فصله عن هذه القائمة فقط، ولا تنقل الأموال أو تحذف المحفظة نفسها.",
+  "connectedAccountsReadOnlyApi": "واجهة API للقراءة فقط",
+
+  "loginTitle": "تسجيل الدخول",
+  "loginSubtitle": "تابع باستخدام حساب Avexa",
+  "loginEmail": "البريد الإلكتروني",
+  "loginPassword": "كلمة المرور",
+  "loginButton": "تسجيل الدخول",
+  "loginOrContinueWith": "أو تابع باستخدام",
+  "loginForgotPassword": "هل نسيت كلمة المرور؟",
+  "loginNoAccount": "ليس لديك حساب؟ ",
+  "loginSignUp": "إنشاء حساب",
+  "loginResetPasswordTitle": "إعادة تعيين كلمة المرور",
+  "loginResetPasswordDescription": "أدخل بريدك الإلكتروني وسنرسل إليك رابطًا لإعادة تعيين كلمة المرور.",
+  "loginEnterEmail": "أدخل بريدك الإلكتروني",
+  "loginSendResetLink": "إرسال رابط إعادة التعيين",
+  "loginCancel": "إلغاء",
+  "loginEnterEmailError": "أدخل عنوان بريدك الإلكتروني.",
+  "loginInvalidEmailError": "أدخل عنوان بريد إلكتروني صالحًا.",
+  "loginResetGenericError": "حدث خطأ ما. حاول مرة أخرى.",
+  "loginResetSuccess": "تم إرسال رابط إعادة التعيين. تحقق من صندوق الوارد.",
+  "loginAppleSignInFailed": "فشل تسجيل الدخول باستخدام Apple: {message}",
+  "@loginAppleSignInFailed": {
+    "placeholders": {
+      "message": {
+        "type": "String"
+      }
+    }
+  },
+
+  "registerTitle": "إنشاء حساب",
+  "registerSubtitle": "ابدأ رحلتك في التداول باستخدام الذكاء الاصطناعي.",
+  "registerEmail": "البريد الإلكتروني",
+  "registerPassword": "كلمة المرور",
+  "registerConfirmPassword": "تأكيد كلمة المرور",
+  "registerButton": "إنشاء حساب",
+  "registerPasswordMismatch": "كلمتا المرور غير متطابقتين",
+  "registerSuccess": "تم إنشاء الحساب بنجاح. تحقق من بريدك الإلكتروني.",
+  "registerGenericError": "حدث خطأ ما",
+
+  "rugCheckTitle": "فحص Rug Check",
+  "rugCheckHeadline": "افحص قبل التداول",
+  "rugCheckDescription": "تحقق من مخاطر أمان الرمز المحتملة قبل بدء التداول.",
+  "rugCheckTokenAddress": "عنوان الرمز",
+  "rugCheckAddressHint": "الصق عنوان رمز Solana",
+  "rugCheckScanning": "جارٍ الفحص...",
+  "rugCheckScanButton": "فحص الرمز",
+  "rugCheckWhatWeCheck": "ما الذي تفحصه Avexa",
+  "rugCheckLiquiditySecurity": "السيولة وأمان LP",
+  "rugCheckHolderConcentration": "تركيز حاملي الرمز",
+  "rugCheckAuthorities": "صلاحيات Mint وFreeze",
+  "rugCheckDevExposure": "حصة محفظة المطور",
+  "rugCheckEnterAddress": "أدخل عنوان الرمز أولاً.",
+  "rugCheckAnalysisTitle": "تحليل أمان الرمز",
+  "rugCheckTokenOverview": "نظرة عامة على الرمز",
+  "rugCheckLiquidity": "السيولة",
+  "rugCheckLpLocked": "السيولة المقفلة",
+  "rugCheckHolders": "عدد الحاملين",
+  "rugCheckTopHolder": "أكبر حامل",
+  "rugCheckTop10Holders": "أكبر 10 حاملين",
+  "rugCheckSecurityChecks": "فحوصات الأمان",
+  "rugCheckMintAuthority": "صلاحية Mint",
+  "rugCheckFreezeAuthority": "صلاحية Freeze",
+  "rugCheckDevWallet": "محفظة المطور",
+  "rugCheckEnabled": "مفعّل",
+  "rugCheckDisabled": "معطّل",
+  "rugCheckUnknown": "غير معروف",
+  "rugCheckExposure": "نسبة الحيازة: {value}%",
+  "@rugCheckExposure": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "rugCheckDetectedRisks": "المخاطر المكتشفة",
+  "rugCheckNoRisks": "لم يكتشف الفاحص مخاطر كبيرة.",
+  "rugCheckRiskDetected": "تم اكتشاف خطر",
+  "rugCheckDisclaimer": "يحلل Rug Check مؤشرات أمان الرمز المتاحة. لا تضمن درجة المخاطر المنخفضة أن الرمز آمن.",
+  "rugCheckUnknownToken": "رمز غير معروف",
+  "rugCheckUnavailable": "غير متاح",
+
+  "walletTrackerTitle": "متتبع المحافظ",
+  "walletTrackerAddWallet": "إضافة محفظة",
+  "walletTrackerWalletName": "اسم المحفظة",
+  "walletTrackerWalletNameHint": "مثال: Smart Money",
+  "walletTrackerWalletAddress": "عنوان المحفظة",
+  "walletTrackerAddressHint": "عنوان محفظة Solana",
+  "walletTrackerCancel": "إلغاء",
+  "walletTrackerAddError": "تعذرت إضافة المحفظة",
+  "walletTrackerYourWallets": "محافظك",
+  "walletTrackerTracked": "قيد التتبع",
+  "walletTrackerEyebrow": "ذكاء المحافظ",
+  "walletTrackerHeroTitle": "تتبّع الأموال الذكية",
+  "walletTrackerHeroDescription": "تابع نشاط المحافظ وتلقَّ إشعارات بالحركات المهمة.",
+  "walletTrackerLoadError": "تعذر تحميل المحافظ",
+  "walletTrackerRetry": "اسحب للأسفل للمحاولة مجددًا.",
+  "walletTrackerEmptyTitle": "لم تتم إضافة محافظ بعد",
+  "walletTrackerEmptyDescription": "أضف محفظة لبدء تتبع نشاطها.",
+  "walletTrackerDefaultName": "محفظة",
+  "walletTrackerActive": "نشطة",
+  "walletTrackerInactive": "غير نشطة",
+  "walletTrackerAddButton": "إضافة محفظة",
+
+  "languagePickerTitle": "اختر اللغة",
+  "languagePolish": "البولندية",
+  "languageEnglish": "الإنجليزية",
+  "languageGerman": "الألمانية",
+  "languageJapanese": "اليابانية",
+  "languageRussian": "الروسية",
+  "languageArabic": "العربية",
+  "languageChinese": "الصينية",
+  "languageSpanish": "الإسبانية",
+  "languagePortuguese": "البرتغالية",
+
+  "portfolioValue": "قيمة المحفظة",
+  "portfolioWalletCount": "{count} / {max} محافظ",
+  "@portfolioWalletCount": {
+    "placeholders": {
+      "count": {"type": "int"},
+      "max": {"type": "int"}
+    }
+  },
+  "portfolioNoWallets": "لا توجد محافظ متصلة",
+  "portfolioConnectSolanaWallet": "قم بتوصيل محفظة Solana لعرض رصيدها.",
+  "portfolioConnectWallet": "توصيل المحفظة",
+  "portfolioRefreshWallet": "تحديث المحفظة",
+  "portfolioWalletPosition": "المحفظة {current} من {total}",
+  "@portfolioWalletPosition": {
+    "placeholders": {
+      "current": {"type": "int"},
+      "total": {"type": "int"}
+    }
+  },
+  "portfolioLoading": "جارٍ التحميل...",
+  "portfolioUnavailable": "غير متاح",
+  "portfolioWalletBalance": "رصيد المحفظة",
+  "portfolioSwipeWallets": "اسحب جانبياً لعرض محفظة أخرى",
+  "portfolioCombinedValue": "القيمة الإجمالية لجميع المحافظ",
+  "portfolioConnectedWallets": "المحافظ المتصلة",
+  "portfolioConnectedCount": "متصل: {count}",
+  "@portfolioConnectedCount": {
+    "placeholders": {
+      "count": {"type": "int"}
+    }
+  },
+  "portfolioWalletAddressesConnected": "عناوين المحافظ متصلة",
+  "portfolioManageAddressesNetworks": "إدارة العناوين والشبكات",
+  "portfolioConnectPublicAddress": "قم بتوصيل عنوان محفظة عام للبدء",
+  "portfolioManageConnections": "إدارة الاتصالات",
+  "portfolioMaxWalletsReached": "تم الوصول إلى الحد الأقصى وهو 3 محافظ",
+  "portfolioAddAnotherWallet": "إضافة محفظة أخرى",
+  "portfolioConnectToBuild": "قم بتوصيل محفظة لبدء إنشاء محفظتك الاستثمارية.",
+  "portfolioAssetsSyncPending": "عناوين المحافظ متصلة. لم يتم تنفيذ مزامنة الأصول بعد.",
+  "portfolioAnalytics": "تحليلات المحفظة",
+  "portfolioAnalyticsDescription": "ستتوفر معلومات الأداء التاريخي وتحليل توزيع الأصول ورؤى الذكاء الاصطناعي بعد مزامنة أرصدة المحافظ وسجل المحفظة الفعلي.",
+  "portfolioLoadError": "تعذر تحميل المحفظة.",
+  "portfolioSyncError": "تعذرت مزامنة أرصدة المحافظ.",
+  "portfolioDefaultUser": "مستخدم",
+
+  "loginLegalNotice": "بإنشاء حساب أو تسجيل الدخول، فإنك تؤكد أن عمرك لا يقل عن 16 عامًا وأنك على علم بالمستندات القانونية أدناه.",
+  "loginLegalTerms": "شروط الاستخدام",
+  "loginLegalPrivacy": "سياسة الخصوصية",
+  "loginLegalRisk": "إخلاء المسؤولية عن المخاطر",
+
+  "connectedAccountsAddressCopied": "تم نسخ عنوان المحفظة.",
+  "connectedAccountsRenameWallet": "إعادة تسمية المحفظة",
+  "connectedAccountsWalletNameHint": "مثلاً: المحفظة الرئيسية",
+  "connectedAccountsCancel": "إلغاء",
+  "connectedAccountsSave": "حفظ",
+  "connectedAccountsRenameSuccess": "تم تحديث اسم المحفظة.",
+  "connectedAccountsRenameError": "تعذرت إعادة تسمية المحفظة: {error}",
+  "@connectedAccountsRenameError": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "connectedAccountsRemoveWalletTitle": "هل تريد إزالة المحفظة؟",
+  "connectedAccountsRemoveWalletDescription": "هل أنت متأكد أنك تريد إزالة هذا العنوان من Avexa؟ يمكنك إضافته مجدداً في أي وقت.",
+  "connectedAccountsRemove": "إزالة",
+  "connectedAccountsRemoveSuccess": "تمت إزالة المحفظة بنجاح.",
+  "connectedAccountsRemoveError": "تعذرت إزالة المحفظة: {error}",
+  "@connectedAccountsRemoveError": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "connectedAccountsHeader": "المحافظ المتصلة",
+  "connectedAccountsSubtitle": "إدارة عناوين البلوكشين الخاصة بك",
+  "connectedAccountsConnectedCount": "{count} متصلة",
+  "@connectedAccountsConnectedCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "connectedAccountsHeaderDescription": "تتم إدارة جميع محافظك في مكان واحد. تتم متابعة كل عنوان بشكل منفصل ضمن شبكة البلوكشين الخاصة به.",
+  "connectedAccountsWallet": "محفظة",
+  "connectedAccountsRename": "إعادة تسمية",
+  "connectedAccountsRemoveWallet": "إزالة المحفظة",
+  "connectedAccountsEmptyTitle": "لا توجد محافظ متصلة بعد",
+  "connectedAccountsEmptyDescription": "قم بتوصيل أول عنوان محفظة عام لبدء إنشاء محفظتك الاستثمارية في Avexa.",
+  "connectedAccountsConnectWallet": "توصيل المحفظة",
+  "connectedAccountsLegacyNotice": "تم حفظ {count} من الاتصالات القديمة من نظام Portfolio السابق. تم الاحتفاظ بها ولا تظهر ضمن قائمة المحافظ الجديدة.",
+  "@connectedAccountsLegacyNotice": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "connectedAccountsSecurityNotice": "تستخدم Avexa عناوين البلوكشين العامة فقط. تظل مفاتيحك الخاصة وأموالك تحت سيطرتك. لا يمنح توصيل العنوان أي إذن لتنفيذ المعاملات.",
+  "connectedAccountsTitle": "الحسابات المتصلة",
+  "connectedAccountsRefresh": "تحديث",
+  "connectedAccountsYourWallets": "محافظك",
+  "connectedAccountsAddWallet": "إضافة محفظة",
+
+  "connectPortfolioSolanaDescription": "بلوكتشين Solana",
+  "connectPortfolioEthereumDescription": "الشبكة الرئيسية لـ Ethereum",
+  "connectPortfolioBaseDescription": "شبكة Base",
+  "connectPortfolioArbitrumDescription": "Arbitrum One",
+  "connectPortfolioPolygonDescription": "Polygon PoS",
+  "connectPortfolioEnterAddress": "يرجى إدخال عنوان المحفظة.",
+  "connectPortfolioInvalidSolanaAddress": "عنوان محفظة Solana غير صالح.",
+  "connectPortfolioInvalidNetworkAddress": "عنوان محفظة {network} غير صالح.",
+  "@connectPortfolioInvalidNetworkAddress": {
+    "placeholders": {
+      "network": {
+        "type": "String"
+      }
+    }
+  },
+  "connectPortfolioAlreadyConnected": "هذا العنوان متصل بالفعل بشبكة {network}.",
+  "@connectPortfolioAlreadyConnected": {
+    "placeholders": {
+      "network": {
+        "type": "String"
+      }
+    }
+  },
+  "connectPortfolioSuccess": "تم ربط محفظة {network} بنجاح.",
+  "@connectPortfolioSuccess": {
+    "placeholders": {
+      "network": {
+        "type": "String"
+      }
+    }
+  },
+  "connectPortfolioError": "تعذر ربط المحفظة. يرجى المحاولة مرة أخرى.",
+  "connectPortfolioSelectNetwork": "اختر الشبكة",
+  "connectPortfolioChooseNetwork": "اختر شبكة بلوكتشين",
+  "connectPortfolioSectionNetwork": "01  اختيار الشبكة",
+  "connectPortfolioSectionNetworkSubtitle": "اختر شبكة البلوكتشين التي توجد عليها محفظتك.",
+  "connectPortfolioSectionAddress": "02  عنوان المحفظة",
+  "connectPortfolioSectionAddressSubtitle": "الصق عنوان محفظتك العام.",
+  "connectPortfolioAddressLabel": "عنوان {network}",
+  "@connectPortfolioAddressLabel": {
+    "placeholders": {
+      "network": {
+        "type": "String"
+      }
+    }
+  },
+  "connectPortfolioSolanaAddressHint": "الصق عنوان Solana الخاص بك",
+  "connectPortfolioSectionWalletName": "03  اسم المحفظة",
+  "connectPortfolioSectionWalletNameSubtitle": "اختياري. امنح هذا العنوان اسماً يسهل تمييزه.",
+  "connectPortfolioCustomNameLabel": "اسم مخصص (اختياري)",
+  "connectPortfolioCustomNameHint": "مثال: المحفظة الرئيسية",
+  "connectPortfolioSecurityTitle": "أصولك تظل ملكاً لك.",
+  "connectPortfolioSecurityDescription": "تستخدم Avexa بيانات البلوكتشين المتاحة للعامة فقط. لا نطلب أبداً المفاتيح الخاصة أو Secret Keys أو بيانات اعتماد API، ولا يمكننا تنفيذ معاملات من محفظتك.",
+  "connectPortfolioHeader": "اربط محفظتك",
+  "connectPortfolioSubtitle": "أضف عنوان محفظة عاماً لتتبع أصولك عبر شبكات بلوكتشين متعددة في محفظة واحدة.",
+  "connectPortfolioButton": "ربط المحفظة",
+
+  "walletTrackerHeroTitle": "تتبّع الأموال الذكية",
+  "walletTrackerHeroDescription": "تابع نشاط المحافظ واكتشف الرموز التي تشتريها أو تبيعها المحافظ التي تراقبها.",
+  "walletTrackerEnterWalletDetails": "أدخل اسم المحفظة وعنوانها.",
+  "walletTrackerSyncComplete": "اكتملت المزامنة: المحافظ {wallets}، تم فحص {checked}، عمليات المبادلة {swaps}، تمت الإضافة {inserted}.",
+  "@walletTrackerSyncComplete": {
+    "placeholders": {
+      "wallets": {"type": "int"},
+      "checked": {"type": "int"},
+      "swaps": {"type": "int"},
+      "inserted": {"type": "int"}
+    }
+  },
+  "walletTrackerSyncError": "خطأ في مزامنة المحافظ: {error}",
+  "@walletTrackerSyncError": {
+    "placeholders": {
+      "error": {"type": "String"}
+    }
+  },
+
+  "walletDetailsTitle": "تفاصيل المحفظة",
+  "walletDetailsRename": "إعادة تسمية المحفظة",
+  "walletDetailsLiveActivity": "نشاط المحفظة المباشر",
+  "walletDetailsTransactionCount": "{count} معاملة",
+  "@walletDetailsTransactionCount": {
+    "placeholders": {
+      "count": {"type": "int"}
+    }
+  },
+  "walletDetailsRefreshActivity": "تحديث نشاط المحفظة",
+  "walletDetailsNotifications": "الإشعارات",
+  "walletDetailsSaving": "جارٍ الحفظ...",
+  "walletDetailsActive": "نشطة",
+  "walletDetailsRefreshing": "جارٍ تحديث النشاط...",
+  "walletDetailsNoTransactions": "لا توجد معاملات حتى الآن",
+  "walletDetailsActivityDescription": "سيظهر نشاط المحفظة هنا.",
+  "walletDetailsBuy": "شراء",
+  "walletDetailsSell": "بيع",
+  "walletDetailsTransaction": "معاملة",
+  "walletDetailsWalletAlerts": "تنبيهات المحفظة",
+  "walletDetailsWalletAlertsDescription": "تفعيل الإشعارات لهذه المحفظة",
+  "walletDetailsBuyAlerts": "تنبيهات الشراء",
+  "walletDetailsBuyAlertsDescription": "إشعار عند قيام هذه المحفظة بالشراء",
+  "walletDetailsSellAlerts": "تنبيهات البيع",
+  "walletDetailsSellAlertsDescription": "إشعار عند قيام هذه المحفظة بالبيع",
+  "walletDetailsLargeTransactions": "المعاملات الكبيرة",
+  "walletDetailsLargeTransactionsDescription": "الإشعار عند حدوث تحركات كبيرة في المحفظة",
+  "walletDetailsDeleteWallet": "حذف المحفظة",
+  "walletDetailsDeleteWalletDescription": "إزالة هذه المحفظة وسجل معاملاتها",
+  "walletDetailsDeleteTitle": "هل تريد حذف المحفظة؟",
+  "walletDetailsDeleteDescription": "ستتم إزالة هذه المحفظة وسجل المعاملات التي تمت متابعتها.",
+  "walletDetailsCancel": "إلغاء",
+  "walletDetailsDelete": "حذف",
+  "walletDetailsSave": "حفظ",
+  "walletDetailsRenameTitle": "إعادة تسمية المحفظة",
+  "walletDetailsWalletNameHint": "اسم المحفظة",
+  "walletDetailsUnknownTime": "وقت غير معروف",
+  "walletDetailsSyncComplete": "تمت مزامنة المحفظة. عدد المعاملات التي تم فحصها: {count}.",
+  "@walletDetailsSyncComplete": {
+    "placeholders": {
+      "count": {"type": "int"}
+    }
+  },
+  "walletDetailsSyncError": "تعذرت مزامنة المحفظة. تحقق من السجلات.",
+  "walletDetailsUpdateSettingsError": "تعذر تحديث إعدادات المحفظة.",
+  "walletDetailsRenameError": "تعذرت إعادة تسمية المحفظة.",
+  "walletDetailsDeleteError": "تعذر حذف المحفظة.",
+
+  "liveMarketLive": "مباشر",
+  "liveMarketUpdateInterval": "تحديث كل 30 ثانية",
+  "liveMarket24hLabel": "السوق خلال 24 ساعة",
+  "liveMarketLoading": "جارٍ تحميل بيانات السوق...",
+  "liveMarketError": "تعذر تحميل بيانات السوق.",
+  "liveMarketEmpty": "لا توجد بيانات سوق متاحة.",
+
+  "communityPartnersTitle": "مجتمع AVEXA",
+  "communityPartnersSubtitle": "انضم إلى المجتمعات التي نتعاون معها",
+  "communityPartnersDefaultName": "المجتمع",
+  "communityPartnersTelegramError": "تعذر فتح تيليجرام.",
+
+  "marketSentimentTitle": "معنويات السوق",
+  "marketSentimentLoading": "جارٍ التحميل",
+  "marketSentimentFear": "خوف",
+  "marketSentimentNeutral": "محايد",
+  "marketSentimentGreed": "طمع",
+  "marketSentimentExtremeGreed": "طمع شديد",
+  "marketSentimentExtremeFear": "خوف شديد",
+  "marketSentimentBalanced": "السوق متوازن حاليًا.",
+  "marketSentimentStrongBullish": "زخم صعودي قوي في السوق.",
+  "marketSentimentBullish": "الزخم الصعودي يهيمن على السوق.",
+  "marketSentimentBearish": "ضغط هبوطي متزايد في السوق.",
+  "marketSentimentStrongBearish": "ضغط هبوطي قوي يهيمن على السوق.",
+  "marketSentimentError": "تعذر تحميل معنويات السوق.",
+  "marketSentimentLoadingDescription": "جارٍ تحليل ظروف السوق الحالية...",
+  "marketSentimentLiveUpdates": "مباشر • تحديث كل 30 ثانية"
+
+}

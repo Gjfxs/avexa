@@ -1,0 +1,1059 @@
+
+{
+  "@@locale": "ru",
+  "appName": "Avexa",
+  "language": "Язык",
+  "chooseLanguage": "Выберите язык",
+  "settings": "Настройки",
+  "general": "ОБЩИЕ",
+  "notifications": "Уведомления",
+  "notificationsSubtitle": "Управление уведомлениями и их настройками.",
+  "appearance": "Внешний вид",
+  "languageSection": "ЯЗЫК",
+  "lightMode": "Светлая",
+  "darkMode": "Тёмная",
+  "systemDefault": "Системная",
+
+
+    "alerts": "ОПОВЕЩЕНИЯ",
+    "pushNotifications": "Push-уведомления",
+    "pushNotificationsSubtitle": "Получайте важные уведомления от Avexa.",
+    "freeSignals": "Сигналы FREE",
+    "freeSignalsSubtitle": "Получайте уведомления о новых сигналах FREE.",
+    "proSignals": "Сигналы PRO",
+    "proSignalsSubtitle": "Получайте уведомления о новых сигналах PRO.",
+    "takeProfitHits": "Достижение Take Profit",
+    "takeProfitHitsSubtitle": "Получайте уведомления при достижении TP1, TP2 или TP3.",
+    "experience": "УДОБСТВО",
+    "hapticFeedback": "Виброотклик",
+    "hapticFeedbackSubtitle": "Используйте вибрацию для важных уведомлений и действий.",
+    "savingPreferences": "Сохранение настроек...",
+    "notificationPreferences": "Настройки уведомлений",
+
+    "themeSection": "ТЕМА",
+    "darkModeSubtitle": "Лучше подходит для слабого освещения.",
+    "lightModeSubtitle": "Использовать светлое оформление.",
+    "systemDefaultSubtitle": "Следовать настройкам устройства.",
+    "appIconSection": "ЗНАЧОК ПРИЛОЖЕНИЯ",
+    "lightAppIcon": "Светлый значок приложения",
+    "useLightAvexaIcon": "Использовать светлый значок Avexa.",
+    "useDarkAvexaIcon": "Использовать тёмный значок Avexa.",
+
+    "contactSupport": "Связаться с поддержкой",
+    "supportIntroTitle": "Мы готовы помочь",
+    "supportIntroSubtitle": "Расскажите, какая помощь вам нужна, и наша команда свяжется с вами.",
+    "supportTopicQuestion": "ЧЕМ МЫ МОЖЕМ ПОМОЧЬ?",
+    "supportSelectTopic": "Выберите тему",
+    "supportTapToChange": "Нажмите, чтобы изменить",
+    "supportYourTopic": "ВАША ТЕМА",
+    "supportCustomTopicHint": "О чём ваш вопрос?",
+    "supportMessage": "СООБЩЕНИЕ",
+    "supportMessageHint": "Расскажите, чем мы можем помочь...",
+    "supportSendMessage": "ОТПРАВИТЬ СООБЩЕНИЕ",
+    "supportResponseTime": "Обычно мы отвечаем в течение 24 часов.",
+    "supportAccount": "Аккаунт",
+    "supportSubscriptionBilling": "Подписка и оплата",
+    "supportTradingSignals": "Торговые сигналы",
+    "supportTechnicalIssue": "Техническая проблема",
+    "supportBugReport": "Сообщить об ошибке",
+    "supportFeatureRequest": "Предложение функции",
+    "supportOther": "Другое",
+    "supportMessageSent": "Сообщение отправлено",
+    "supportSuccessDescription": "Ваше сообщение отправлено в службу поддержки Avexa. Мы ответим вам как можно скорее.",
+    "supportDone": "Готово",
+    "supportLoginRequired": "Войдите в аккаунт, чтобы связаться с поддержкой.",
+    "supportSelectTopicError": "Выберите тему.",
+    "supportEnterTopicError": "Укажите тему.",
+    "supportEnterMessageError": "Введите сообщение.",
+    "supportMessageMinLengthError": "Сообщение должно содержать не менее 10 символов.",
+    "supportSendError": "Что-то пошло не так. Попробуйте ещё раз.",
+    "supportSending": "Отправка сообщения...",
+
+    "reportBug": "Сообщить об ошибке",
+    "bugIntroTitle": "Обнаружили проблему?",
+    "bugIntroSubtitle": "Расскажите, что пошло не так, и мы разберёмся.",
+    "bugCategorySection": "КАТЕГОРИЯ",
+    "bugWhatHappened": "ЧТО ПРОИЗОШЛО?",
+    "bugDescriptionHint": "Опишите проблему, что вы делали и что произошло...",
+    "bugSendButton": "Отправить отчёт",
+    "bugFooter": "Ваш отчёт будет отправлен напрямую в службу поддержки Avexa.",
+    "bugPickerTitle": "Категория ошибки",
+    "bugCategoryApp": "Ошибка приложения",
+    "bugCategorySignals": "Сигналы",
+    "bugCategoryTrading": "Трейдинг",
+    "bugCategoryAccount": "Аккаунт",
+    "bugCategorySubscription": "Подписка",
+    "bugCategoryNotifications": "Уведомления",
+    "bugCategoryOther": "Другое",
+    "bugPleaseDescribe": "Пожалуйста, опишите проблему.",
+    "bugLoginRequired": "Чтобы сообщить об ошибке, необходимо войти в аккаунт.",
+    "bugSentSuccess": "Отчёт об ошибке успешно отправлен.",
+    "bugSendFailed": "Не удалось отправить отчёт. Попробуйте ещё раз.",
+    "bugSending": "Отправка отчёта...",
+
+  "helpCenter": "Центр помощи",
+  "helpMainTitle": "Чем мы можем помочь?",
+  "helpMainSubtitle": "Найдите ответы и узнайте больше об Avexa.",
+  "helpSearchHint": "Поиск в справке...",
+  "helpPopularTopics": "ПОПУЛЯРНЫЕ ТЕМЫ",
+  "helpSearchResults": "РЕЗУЛЬТАТЫ ПОИСКА",
+  "helpNeedMore": "НУЖНА ДОПОЛНИТЕЛЬНАЯ ПОМОЩЬ?",
+  "helpNoResults": "Ничего не найдено",
+  "helpTryAnotherSearch": "Попробуйте поискать что-нибудь другое.",
+  "helpSupportSubtitle": "Мы готовы помочь",
+  "helpFaqTitle": "Часто задаваемые вопросы",
+  "helpStillNeed": "Всё ещё нужна помощь?",
+  "helpContactPrompt": "Если вы не нашли ответ, свяжитесь с нашей службой поддержки.",
+  "helpSignals": "Сигналы",
+  "helpSignalsSubtitle": "Как работают сигналы Avexa",
+  "helpPro": "Avexa PRO",
+  "helpProSubtitle": "Функции PRO и подписка",
+  "helpTrading": "Трейдинг",
+  "helpTradingSubtitle": "Трейдинг, TP, SL и точки входа",
+  "helpAccount": "Аккаунт",
+  "helpAccountSubtitle": "Аккаунт и профиль",
+  "helpNotifications": "Уведомления",
+  "helpNotificationsSubtitle": "Оповещения и уведомления",
+
+  "faqSignalsQ1": "Что такое сигналы Avexa?",
+  "faqSignalsA1": "Сигналы Avexa — это торговые возможности, сформированные на основе рыночных данных и анализа. Сигнал может содержать цену входа, цели Take Profit, уровень Stop Loss и направление рынка.",
+  "faqSignalsQ2": "Как часто появляются новые сигналы?",
+  "faqSignalsA2": "Количество доступных сигналов зависит от вашего плана Avexa. Пользователи Free имеют ограниченный доступ, а пользователи PRO получают дополнительные премиальные сигналы.",
+  "faqSignalsQ3": "Что означают Entry, TP и SL?",
+  "faqSignalsA3": "Entry — рекомендуемая цена или диапазон для входа в сделку. TP (Take Profit) — целевой уровень для фиксации прибыли. SL (Stop Loss) — уровень для ограничения возможных убытков.",
+  "faqSignalsQ4": "Гарантируют ли сигналы Avexa прибыль?",
+  "faqSignalsA4": "Нет. Ни один торговый сигнал не гарантирует прибыль. Сигналы основаны на анализе и доступных рыночных данных, но рынок криптовалют волатилен, и каждая сделка сопряжена с риском.",
+  "faqSignalsQ5": "Где посмотреть доступные сигналы?",
+  "faqSignalsA5": "Доступные сигналы находятся в разделе «Сигналы» приложения Avexa. Доступность зависит от вашего текущего плана.",
+
+  "faqProQ1": "Что такое Avexa PRO?",
+  "faqProA1": "Avexa PRO — премиальная версия Avexa. Она предоставляет доступ к дополнительной торговой аналитике, премиальным сигналам и расширенным функциям, недоступным в плане Free.",
+  "faqProQ2": "Как перейти на PRO?",
+  "faqProA2": "Откройте экран подписки и выберите переход на PRO. Следуйте инструкциям по оплате, чтобы завершить оформление подписки.",
+  "faqProQ3": "Как узнать, есть ли у меня PRO?",
+  "faqProA3": "Проверить текущий план можно в профиле или на экране подписки. Для активного аккаунта PRO будет отображаться соответствующий статус.",
+  "faqProQ4": "Можно ли отменить подписку PRO?",
+  "faqProA4": "Да. Вы можете управлять подпиской или отменить её на экране подписки. Доступ может сохраняться до конца текущего расчётного периода.",
+  "faqProQ5": "Что произойдёт после окончания подписки PRO?",
+  "faqProA5": "После окончания доступа PRO ваш аккаунт вернётся к плану Free, а премиальные функции станут недоступны до повторной активации PRO.",
+
+  "faqTradingQ1": "Что такое Take Profit (TP)?",
+  "faqTradingA1": "Take Profit — заранее установленная целевая цена. Когда рынок достигает этого уровня, трейдер может закрыть позицию и зафиксировать запланированную прибыль.",
+  "faqTradingQ2": "Что такое Stop Loss (SL)?",
+  "faqTradingA2": "Stop Loss — заранее установленный уровень, предназначенный для ограничения потенциальных убытков при движении рынка против сделки.",
+  "faqTradingQ3": "Что такое Entry?",
+  "faqTradingA3": "Entry — цена или диапазон цен, при котором сигнал предлагает рассмотреть открытие позиции.",
+  "faqTradingQ4": "Почему мой результат может отличаться от сигнала?",
+  "faqTradingA4": "Рыночные цены могут быстро меняться. Проскальзывание, скорость исполнения, ликвидность и комиссии могут привести к тому, что фактическая цена входа или выхода будет отличаться от указанной в сигнале.",
+  "faqTradingQ5": "Avexa автоматически совершает сделки?",
+  "faqTradingA5": "Сигналы Avexa предоставляют торговую аналитику. Если специальная функция автоматической торговли не включена и не поддерживается, вы самостоятельно отвечаете за выполнение и управление сделками.",
+
+  "faqAccountQ1": "Как изменить имя пользователя?",
+  "faqAccountA1": "Откройте профиль и выберите личную информацию. Там можно обновить данные профиля.",
+  "faqAccountQ2": "Как изменить пароль?",
+  "faqAccountA2": "Откройте профиль → Безопасность и воспользуйтесь доступными настройками управления паролем.",
+  "faqAccountQ3": "Можно ли изменить адрес электронной почты?",
+  "faqAccountA3": "Если такая возможность доступна, измените адрес электронной почты в настройках безопасности аккаунта. Может потребоваться дополнительное подтверждение.",
+  "faqAccountQ4": "Как выйти из аккаунта?",
+  "faqAccountA4": "Откройте профиль, прокрутите экран вниз и выберите «ВЫЙТИ», чтобы завершить текущий сеанс.",
+  "faqAccountQ5": "Можно ли удалить аккаунт?",
+  "faqAccountA5": "Запрос на удаление аккаунта можно отправить через раздел аккаунта или безопасности. Удаление может привести к безвозвратной потере связанных данных.",
+
+  "faqNotificationsQ1": "Как включить уведомления?",
+  "faqNotificationsA1": "Откройте «Ещё» → «Настройки приложения» → «Уведомления». Там можно управлять общими уведомлениями, сигналами и тактильной обратной связью.",
+  "faqNotificationsQ2": "Что такое уведомления о сигналах?",
+  "faqNotificationsA2": "Они сообщают, когда становится доступен новый подходящий торговый сигнал.",
+  "faqNotificationsQ3": "Почему я не получаю уведомления?",
+  "faqNotificationsA3": "Проверьте, включены ли уведомления в настройках Avexa и устройства. Если нужны уведомления о сигналах, убедитесь, что соответствующие оповещения включены.",
+  "faqNotificationsQ4": "Что такое тактильная обратная связь?",
+  "faqNotificationsA4": "Тактильная обратная связь использует вибрацию устройства для дополнительного отклика при поддерживаемых действиях и оповещениях.",
+
+  "aboutTitle": "О Avexa",
+  "aboutTagline": "Криптоаналитика на основе ИИ",
+  "aboutVersion": "ВЕРСИЯ 1.0.0",
+  "aboutSection": "О AVEXA",
+  "aboutDescription": "Avexa — это платформа криптоаналитики на основе искусственного интеллекта, которая помогает трейдерам понимать рынок, находить возможности и принимать более обоснованные решения.",
+  "aboutGettingStarted": "НАЧАЛО РАБОТЫ",
+  "aboutViewOnboarding": "Посмотреть введение",
+  "aboutOnboardingDescription": "Познакомьтесь с основными функциями Avexa в коротком обзоре.",
+  "aboutWhatWeDo": "НАШИ ВОЗМОЖНОСТИ",
+  "aboutTradingSignals": "Торговые сигналы",
+  "aboutTradingSignalsDescription": "Сигналы на основе ИИ, помогающие находить потенциальные рыночные возможности.",
+  "aboutWhaleTracking": "Отслеживание крупных кошельков",
+  "aboutWhaleTrackingDescription": "Следите за активностью крупных кошельков и обнаруживайте необычные движения рынка.",
+  "aboutMarketIntelligence": "Аналитика рынка",
+  "aboutMarketIntelligenceDescription": "Понимайте, что влияет на рынок, с помощью продвинутого анализа на основе ИИ.",
+  "aboutOurMission": "НАША МИССИЯ",
+  "aboutMissionStatement": "Сделать передовую аналитику крипторынка доступной каждому.",
+  "aboutBuiltForTraders": "Создано для трейдеров.",
+  "aboutPoweredByIntelligence": "На основе интеллектуальных технологий.",
+  "aboutCopyright": "© 2026 Avexa",
+
+    "onboardingHomeSection": "ГЛАВНЫЙ ЭКРАН",
+    "onboardingHomeTitle": "Твой центр управления крипторынком",
+    "onboardingHomeDescription": "Всё важное с первого взгляда. Следи за рынком и узнавай, что происходит в Avexa.",
+    "onboardingChartsSection": "ГРАФИКИ",
+    "onboardingChartsTitle": "Исследуй рынок",
+    "onboardingChartsDescription": "Изучай рынки DEX, Trending, Spot и Futures и следи за движением цен.",
+    "onboardingSignalsSection": "СИГНАЛЫ",
+    "onboardingSignalsTitle": "Сигналы на основе ИИ",
+    "onboardingSignalsDescription": "Изучай торговые сценарии, созданные ИИ, с ценой входа, Stop Loss, Take Profit и оценкой уверенности.",
+    "onboardingAiChartSection": "ИИ-ГРАФИК",
+    "onboardingAiChartTitle": "ИИ-анализ графиков",
+    "onboardingAiChartDescription": "Загрузи любой криптовалютный график, чтобы Avexa AI проанализировал тренды, импульс, поддержку и сопротивление.",
+    "onboardingPortfolioSection": "ПОРТФЕЛЬ",
+    "onboardingPortfolioTitle": "Твой портфель",
+    "onboardingPortfolioDescription": "Подключай поддерживаемые аккаунты и управляй криптопортфелем в одном месте.",
+    "onboardingSkip": "ПРОПУСТИТЬ",
+    "onboardingNext": "ДАЛЕЕ",
+    "onboardingGetStarted": "НАЧАТЬ",
+
+    "securityTitle": "Безопасность",
+    "securityAccountTitle": "Безопасность аккаунта",
+    "securityAccountDescription": "Управляйте паролем и безопасностью аккаунта.",
+    "securityAccountSection": "АККАУНТ",
+    "securityAccountEmail": "Электронная почта аккаунта",
+    "securityChangePassword": "ИЗМЕНИТЬ ПАРОЛЬ",
+    "securityCurrentPassword": "Текущий пароль",
+    "securityNewPassword": "Новый пароль",
+    "securityConfirmNewPassword": "Подтвердите новый пароль",
+    "securityEnterNewPassword": "Введите новый пароль",
+    "securityPasswordLengthError": "Пароль должен содержать не менее 8 символов.",
+    "securityPasswordsMismatch": "Пароли не совпадают.",
+    "securityPasswordChanged": "Пароль успешно изменён.",
+    "securityPasswordChangeError": "Не удалось изменить пароль.",
+    "securityAppLockSection": "БЛОКИРОВКА ПРИЛОЖЕНИЯ",
+    "securityAppLockTitle": "Блокировка приложения",
+    "securityAppLockEnabledDescription": "При запуске приложения требуется проверка личности.",
+    "securityAppLockDisabledDescription": "Защитите приложение с помощью блокировки.",
+    "securityVerificationCancelled": "Проверка отменена.",
+    "securityVerificationRequired": "Требуется проверка личности.",
+    "securityAppLockEnabled": "Блокировка приложения включена.",
+    "securityAppLockDisabled": "Блокировка приложения отключена.",
+    "securityAppLockChangeError": "Не удалось изменить настройки блокировки.",
+    "securitySafetyNotice": "Защитите свой аккаунт. Не сообщайте пароль или PIN-код другим людям.",
+    "securityCreatePin": "Создать PIN-код",
+    "securityCreatePinDescription": "Создайте PIN-код для защиты приложения.",
+    "securityEnterPin": "Введите PIN-код",
+    "securityPin": "PIN-код",
+    "securityConfirmPin": "Подтвердите PIN-код",
+    "securityPinLengthError": "PIN-код должен состоять из 4 цифр.",
+    "securityPinDigitsError": "PIN-код может содержать только цифры.",
+    "securityPinsMismatch": "PIN-коды не совпадают.",
+    "securityCancel": "Отмена",
+    "securitySave": "Сохранить",
+    "securityUnlock": "Разблокировать",
+
+    "connectedAccountsTitle": "Подключённые аккаунты",
+    "connectedAccountsWalletsExchanges": "Кошельки и биржи",
+    "connectedAccountsDescription": "Подключите свои кошельки и биржи, чтобы использовать торговые функции Avexa.",
+    "connectedAccountsSolanaWallet": "Кошелёк Solana",
+    "connectedAccountsEthereumWallet": "Кошелёк Ethereum",
+    "connectedAccountsExchanges": "Биржи",
+    "connectedAccountsExchangeAccount": "Аккаунт биржи",
+    "connectedAccountsSecurityNotice": "Не передавайте Avexa свои учётные данные или приватные ключи. Для подключений будут использоваться безопасные методы аутентификации.",
+    "connectedAccountsComingSoon": "Это подключение станет доступно в будущей версии Avexa.",
+    "connectedAccountsOk": "ОК",
+
+    "personalInfoTitle": "Личная информация",
+    "personalInfoDescription": "Управляйте информацией профиля и аватаром.",
+    "personalInfoDefaultUser": "Пользователь",
+    "personalInfoLoadError": "Не удалось загрузить профиль.",
+    "personalInfoAvatarSaveError": "Не удалось сохранить изображение профиля.",
+    "personalInfoAvatarUpdated": "Изображение профиля обновлено.",
+    "personalInfoAvatarUpdateError": "Не удалось обновить изображение профиля.",
+    "personalInfoNameRequired": "Введите своё имя.",
+    "personalInfoUsernameRequired": "Введите имя пользователя.",
+    "personalInfoUsernameLengthError": "Имя пользователя должно содержать не менее 3 символов.",
+    "personalInfoUpdateError": "Не удалось обновить профиль.",
+    "personalInfoDetailsSection": "ЛИЧНЫЕ ДАННЫЕ",
+    "personalInfoDisplayName": "ОТОБРАЖАЕМОЕ ИМЯ",
+    "personalInfoNameHint": "Ваше имя",
+    "personalInfoUsername": "ИМЯ ПОЛЬЗОВАТЕЛЯ",
+    "personalInfoUsernameHint": "имя пользователя",
+    "personalInfoUsernameDescription": "Это имя пользователя будет отображаться во всём Avexa.",
+    "personalInfoEmailSection": "ЭЛЕКТРОННАЯ ПОЧТА АККАУНТА",
+    "personalInfoVerifiedEmail": "Подтверждённая электронная почта",
+    "personalInfoEmailCannotChange": "Здесь нельзя изменить адрес электронной почты.",
+    "personalInfoSaveChanges": "СОХРАНИТЬ ИЗМЕНЕНИЯ",
+    "personalInfoSecureSaveNotice": "Изменения безопасно сохраняются в вашем аккаунте.",
+
+    "subscriptionTitle": "Подписка",
+    "subscriptionChoosePlan": "ВЫБЕРИТЕ ПЛАН",
+    "subscriptionYourPlan": "ВАШ ПЛАН",
+    "subscriptionFeatures": "ВОЗМОЖНОСТИ",
+    "subscriptionMonthly": "Ежемесячно",
+    "subscriptionYearly": "Ежегодно",
+    "subscriptionSave33": "ЭКОНОМИЯ 33%",
+    "subscriptionPerMonth": "/ месяц",
+    "subscriptionPerYear": "/ год",
+    "subscriptionProMonthly": "PRO НА МЕСЯЦ",
+    "subscriptionProYearly": "PRO НА ГОД",
+    "subscriptionUpgradeMonthly": "Перейти на PRO — {price}/месяц",
+    "@subscriptionUpgradeMonthly": {
+    "placeholders": {
+        "price": {
+        "type": "String"
+        }
+    }
+    },
+    "subscriptionUpgradeYearly": "Перейти на PRO — {price}/год",
+    "@subscriptionUpgradeYearly": {
+    "placeholders": {
+        "price": {
+        "type": "String"
+        }
+    }
+    },
+    "subscriptionManagePurchases": "Управление покупками",
+    "subscriptionRestorePurchases": "Восстановить покупки",
+    "subscriptionManageSubscription": "Управление подпиской",
+    "subscriptionChangePlan": "Изменить план",
+    "subscriptionCancelSubscription": "Отменить подписку",
+    "subscriptionUnavailable": "В данный момент подписка недоступна.",
+    "subscriptionCheckingPurchases": "Проверяем предыдущие покупки...",
+    "subscriptionManagementComingSoon": "Управление подпиской скоро станет доступно.",
+    "subscriptionDailySignals": "Ежедневные сигналы",
+    "subscriptionOnePerDay": "1 в день",
+    "subscriptionUnlimited": "Без ограничений",
+    "subscriptionAiMarketAnalysis": "ИИ-анализ рынка",
+    "subscriptionWhaleTracking": "Отслеживание крупных игроков",
+    "subscriptionAdvancedCharts": "Расширенные графики",
+    "subscriptionFuturesIntelligence": "Аналитика фьючерсов",
+    "subscriptionWalletTracker": "Отслеживание кошелька",
+    "subscriptionNewsSentiment": "Новости и настроения рынка",
+    "subscriptionLimited": "Ограничено",
+    "subscriptionPrioritySupport": "Приоритетная поддержка",
+    "subscriptionFreeInfoTitle": "Вы используете план FREE",
+    "subscriptionFreeInfoDescription": "Перейдите на PRO, чтобы открыть все функции и вывести свой трейдинг на новый уровень.",
+    "subscriptionActiveTitle": "Ваша подписка PRO активна",
+    "subscriptionActiveDescription": "Все премиум-функции сейчас доступны.",
+    "subscriptionProInfoTitle": "Вы используете PRO",
+    "subscriptionProInfoDescription": "Спасибо, что выбрали Avexa PRO. Торгуйте ещё эффективнее.",
+
+    "profileActive": "АКТИВЕН",
+    "profileProPlan": "ПЛАН PRO",
+    "profileFreePlan": "ПЛАН FREE",
+    "profileMemberSince": "Пользователь с {year} года",
+    "@profileMemberSince": {
+    "placeholders": {
+        "year": {
+        "type": "String"
+        }
+    }
+    },
+    "profileFreeSignals": "Сигналы FREE",
+    "profileAiAnalyses": "ИИ-анализы",
+    "profileSubscriptionSection": "ПОДПИСКА",
+    "profileAccountSection": "АККАУНТ",
+    "profilePreferencesSection": "НАСТРОЙКИ",
+    "profileSupportSection": "ПОДДЕРЖКА",
+    "profilePersonalInformation": "Личная информация",
+    "profileConnectedAccounts": "Подключённые аккаунты",
+    "profileSecurity": "Безопасность",
+    "profileAppSettings": "Настройки приложения",
+    "profileRateUs": "Оцените нас",
+    "profileAboutAvexa": "О Avexa",
+    "profileHelpCenter": "Центр помощи",
+    "profileReportBug": "Сообщить об ошибке",
+    "profileContactSupport": "Связаться с поддержкой",
+    "profileLogOut": "ВЫЙТИ",
+    "profileActiveSubscription": "Активная подписка",
+    "profileCurrentSubscription": "Текущая подписка",
+    "profileAvatarSaveError": "Не удалось сохранить изображение профиля.",
+    "profileAvatarUpdated": "Изображение профиля обновлено.",
+    "profileAvatarUpdateError": "Не удалось обновить изображение профиля.",
+
+  "portfolioHeaderProfile": "Профиль",
+  "portfolioTapToViewProfile": "Нажмите, чтобы открыть профиль",
+  "portfolioValue": "Стоимость портфеля",
+  "portfolioNoPortfolioConnected": "Портфель не подключён",
+  "portfolioConnectDescription": "Подключите биржу или кошелёк, чтобы отслеживать портфель в реальном времени и получать ИИ-аналитику и анализ рисков.",
+  "portfolioConnectButton": "ПОДКЛЮЧИТЬ ПОРТФЕЛЬ",
+  "portfolioConnectedSuccessfully": "Портфель успешно подключён",
+  "portfolioLastSync": "Последняя синхронизация: сейчас",
+  "portfolioManageConnections": "УПРАВЛЕНИЕ ПОДКЛЮЧЕНИЯМИ",
+  "portfolioRefreshPortfolio": "ОБНОВИТЬ ПОРТФЕЛЬ",
+  "portfolioSyncComingSoon": "Синхронизация портфеля скоро появится",
+  "portfolioDisconnect": "Отключить портфель",
+  "portfolioOverview": "Обзор портфеля",
+  "portfolioTotalValue": "Общая стоимость портфеля",
+  "portfolioAssets": "Активы",
+  "portfolioChains": "Сети",
+  "portfolioNfts": "NFT",
+  "portfolioNoAssetsSynced": "Нет синхронизированных активов",
+  "portfolioConnectToImport": "Подключите кошелёк, чтобы автоматически импортировать криптовалюты.",
+  "portfolioAiScore": "Оценка портфеля ИИ",
+  "portfolioExcellent": "Отличный портфель",
+  "portfolioRiskDescription": "Диверсифицированный портфель с умеренным уровнем риска.",
+  "portfolioAiInsights": "Аналитика ИИ",
+  "portfolioInsightDiversified": "Портфель хорошо диверсифицирован за счёт крупных криптовалют.",
+  "portfolioInsightModerateRisk": "Текущий уровень риска — умеренный.",
+  "portfolioInsightStablecoins": "Добавление стейблкоинов может снизить волатильность.",
+  "portfolioInsightNoSuspiciousTokens": "Подозрительная концентрация токенов не обнаружена.",
+  "portfolioProPlan": "ПЛАН PRO",
+  "portfolioFreePlan": "ПЛАН FREE",
+  "portfolioActive": "Активен",
+  "portfolioNotificationsEnabled": "Уведомления включены",
+  "portfolioMemberSince": "Участник с {year} года",
+
+  "aiAssistantClearChat": "Очистить чат",
+  "aiAssistantMinimize": "Свернуть",
+  "aiAssistantTitle": "ИИ-ассистент трейдера",
+  "aiAssistantSubtitle": "Твой персональный криптоаналитик",
+  "aiAssistantAnalyzeBtc": "📈 Анализ BTC",
+  "aiAssistantBestTrade": "🔥 Лучшая сделка",
+  "aiAssistantMarketRisk": "⚠️ Рыночный риск",
+  "aiAssistantHiddenGems": "💎 Скрытые жемчужины",
+  "aiAssistantWelcome": "Чем я могу помочь тебе сегодня?",
+  "aiAssistantAnalyzeBitcoin": "📈 Анализ Bitcoin",
+  "aiAssistantSuggestionMarketRisk": "⚠️ Рыночный риск",
+  "aiAssistantSuggestionHiddenGems": "💎 Скрытые жемчужины",
+  "aiAssistantSavedAnalyses": "Сохранённые анализы",
+  "aiAssistantNoSavedAnalyses": "Нет сохранённых анализов",
+  "aiAssistantAnalysisRemoved": "Анализ удалён",
+  "aiAssistantAnalysisSaved": "Анализ сохранён",
+  "aiAssistantFeedbackThanks": "Спасибо за отзыв!",
+  "aiAssistantFeedbackQuestion": "Почему ответ оказался бесполезным?",
+  "aiAssistantFeedbackIncorrect": "❌ Неверная информация",
+  "aiAssistantFeedbackGeneric": "🤔 Слишком общий ответ",
+  "aiAssistantFeedbackNoAnswer": "💬 Ответ не решил мой вопрос",
+  "aiAssistantFeedbackOutdated": "📉 Устаревшие рыночные данные",
+  "aiAssistantFeedbackOther": "✍️ Другое",
+  "aiAssistantFeedbackThanksImprove": "Спасибо, что помогаете улучшать ИИ!",
+  "aiAssistantInputHint": "Спроси что угодно о криптовалютах...",
+  "aiAssistantAnalyzingMarket": "Анализ рынка...",
+
+  "chartsTitle": "Графики",
+  "chartsSearchHint": "Поиск монеты или токена...",
+  "chartsMarketCap": "Капитализация",
+  "chartsVolume": "Объём",
+  "chartsChange24": "Изменение за 24 ч.",
+  "chartsRank": "Рейтинг",
+  "chartsFavorites": "Избранное",
+  "chartsTrending": "В тренде",
+  "chartsSpot": "Спот",
+  "chartsFutures": "Фьючерсы",
+  "chartsTrendingCoins": "Популярные монеты",
+  "chartsSpotMarket": "Спотовый рынок",
+  "chartsFuturesMarket": "Фьючерсный рынок",
+  "chartsMostActive": "Самые активные сейчас",
+  "chartsSpotAssets": "Активы спотового рынка",
+  "chartsFuturesAssets": "Основные активы для фьючерсов",
+  "chartsTopGainers": "Лидеры роста",
+  "chartsTopLosers": "Лидеры падения",
+  "charts24HourPerformance": "Изменение за 24 часа",
+  "chartsGainers": "Рост",
+  "chartsLosers": "Падение",
+  "chartsPrice": "Цена",
+  "chartsMarketCapShort": "Капитал.",
+  "chartsAiMarketScore": "Оценка рынка ИИ",
+  "chartsNoFavorites": "Пока нет избранных монет",
+  "chartsAddFavoritesHint": "Добавьте монеты, чтобы быстро отслеживать их здесь.",
+  "chartsDexScanner": "DEX-сканер",
+  "chartsDexSubtitle": "Находите возможности ончейн",
+  "chartsFilters": "Фильтры",
+  "chartsFiltersCount": "Фильтры: {count}",
+  "chartsAllChains": "Все сети",
+  "chartsDexPairsCount": "Пар: {count}",
+  "chartsSortLabel": "Сортировка: {sort}",
+  "chartsDexFilters": "Фильтры DEX",
+  "chartsDexFiltersSubtitle": "Настройте сканер как DEX-скринер.",
+  "chartsPairAge": "Возраст пары",
+  "chartsReset": "Сбросить",
+  "chartsApplyFilters": "Применить фильтры",
+  "chartsAll": "Все",
+  "chartsNoDexPairs": "Пары DEX не найдены",
+  "chartsWidenFilters": "Попробуйте расширить фильтры.",
+  "chartsMarketCapUpper": "КАПИТАЛИЗАЦИЯ",
+  "chartsLiquidity": "Ликвидность",
+  "chartsLiquidityUpper": "ЛИКВИДНОСТЬ",
+  "chartsVolume24Upper": "ОБЪЁМ ЗА 24 Ч.",
+  "chartsFlow24Upper": "ПОТОК ЗА 24 Ч.",
+  "chartsBuysCount": "Покупки: {count}",
+  "chartsSellsCount": "Продажи: {count}",
+  "@chartsFiltersCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "@chartsDexPairsCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "@chartsSortLabel": {
+    "placeholders": {
+      "sort": {
+        "type": "String"
+      }
+    }
+  },
+  "@chartsBuysCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "@chartsSellsCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+
+    "aiChartTitle": "AI-график",
+    "aiChartDescription": "Сделайте фото графика и позвольте Avexa проанализировать его.",
+    "aiChartAnalysisTitle": "AI-анализ графика",
+    "aiChartDone": "Готово",
+    "aiChartScannerTitle": "AI-сканер графиков",
+    "aiChartScannerDescription": "Расположите график внутри рамки и сделайте чёткое фото для анализа ИИ.",
+    "aiChartEnableCamera": "Включить камеру",
+    "aiChartStartingCamera": "Запуск камеры...",
+    "aiChartAnalyze": "Анализировать график",
+    "aiChartAnalyzing": "Анализ графика...",
+    "aiChartAnalysisHistory": "История анализов",
+    "aiChartRecentAnalyses": "Ваши последние анализы графиков",
+    "aiChartHistoryNotice": "История анализов доступна в течение 24 часов.",
+    "aiChartHistoryLoadError": "Не удалось загрузить историю",
+    "aiChartTryAgainLater": "Пожалуйста, попробуйте позже.",
+    "aiChartNoAnalyses": "Анализов пока нет",
+    "aiChartHistoryEmptyDescription": "Здесь появятся анализы графиков за последние 24 часа.",
+    "aiChartHistoryCardTitle": "Анализ графика",
+    "aiChartCameraUnavailable": "Камера недоступна",
+    "aiChartCameraError": "Не удалось запустить камеру. Проверьте разрешения на использование камеры.",
+    "aiChartCaptureError": "Не удалось сделать фото. Попробуйте ещё раз.",
+    "aiChartSelectImageError": "Не удалось выбрать изображение. Попробуйте ещё раз.",
+    "aiChartAnalysisError": "Ошибка AI Chart: {error}",
+    "@aiChartAnalysisError": {
+    "placeholders": {
+        "error": {
+        "type": "String"
+        }
+    }
+    },
+    "aiChartNoImageError": "Изображение не выбрано.",
+    "aiChartUnexpectedResponseError": "Неожиданный формат ответа: {response}",
+    "@aiChartUnexpectedResponseError": {
+    "placeholders": {
+        "response": {
+        "type": "String"
+        }
+    }
+    },
+    "aiChartEmptyAnalysisError": "ИИ вернул пустой результат анализа.",
+
+  "homeTagline": "ИИ-аналитика криптовалют",
+  "homeRugCheck": "Проверка токенов",
+  "rugCheckDescription": "Проверьте риски токена перед сделкой.",
+  "homeWalletTracker": "Мониторинг кошельков",
+  "homeWalletTrackerDescription": "Отслеживайте кошельки и получайте уведомления в реальном времени",
+  "homeLiveMarketData": "📈 Рыночные данные в реальном времени",
+  "homeTopMovers": "🚀 Лидеры движения цены",
+  "homeLiveLiquidations": "💀 Ликвидации в реальном времени",
+
+  "signalDetailTitle": "Детали сигнала",
+  "signalDetailSolanaMeme": "МЕМКОИН SOLANA",
+  "signalDetailDirection": "НАПРАВЛЕНИЕ",
+  "signalDetailTier": "УРОВЕНЬ",
+  "signalDetailAiConfidence": "УВЕРЕННОСТЬ ИИ",
+  "signalDetailConfidenceDescription": "Оценка уверенности, рассчитанная ИИ на основе рыночных условий.",
+  "signalDetailTradeLevels": "УРОВНИ СДЕЛКИ",
+  "signalDetailEntry": "ВХОД",
+  "signalDetailStopLoss": "СТОП-ЛОСС",
+  "signalDetailTakeProfit1": "ЦЕЛЬ ПРИБЫЛИ 1",
+  "signalDetailTakeProfit2": "ЦЕЛЬ ПРИБЫЛИ 2",
+  "signalDetailTakeProfit3": "ЦЕЛЬ ПРИБЫЛИ 3",
+  "signalDetailRiskLevel": "УРОВЕНЬ РИСКА",
+  "signalDetailRiskReward": "РИСК / ПРИБЫЛЬ",
+  "signalDetailRiskLow": "НИЗКИЙ",
+  "signalDetailRiskMedium": "СРЕДНИЙ",
+  "signalDetailRiskHigh": "ВЫСОКИЙ",
+  "signalDetailTokenAddress": "АДРЕС ТОКЕНА",
+  "signalDetailAddressUnavailable": "Адрес недоступен",
+  "signalDetailCopyAddress": "КОПИРОВАТЬ АДРЕС ТОКЕНА",
+  "signalDetailViewDexScreener": "ОТКРЫТЬ DEX SCREENER",
+  "signalDetailDexLinkUnavailable": "Ссылка DexScreener недоступна.",
+  "signalDetailDexOpenError": "Не удалось открыть DexScreener.",
+  "signalDetailAddressCopied": "Адрес токена скопирован",
+  "signalDetailAiAnalysis": "АНАЛИЗ ИИ",
+  "signalDetailDisclaimer": "Сигналы — это анализ рынка, созданный ИИ,\nа не финансовая рекомендация.",
+
+  "coinDetailsCoinBadge": "МОНЕТА",
+  "coinDetailsDexBadge": "DEX",
+  "coinDetailsCurrentPrice": "Текущая цена",
+  "coinDetails24H": "24 ч",
+  "coinDetails24HVolume": "Объём за 24 ч",
+  "coinDetails24HChange": "Изменение за 24 ч",
+  "coinDetailsLiquidity": "Ликвидность",
+  "coinDetailsFdv": "FDV",
+  "coinDetailsMarketCap": "Рыночная капитализация",
+  "coinDetailsPriceChart": "График цены",
+  "coinDetailsMarketData": "Рыночные данные",
+  "coinDetails24HHigh": "Максимум за 24 ч",
+  "coinDetails24HLow": "Минимум за 24 ч",
+  "coinDetailsAllTimeHigh": "Исторический максимум",
+  "coinDetailsAllTimeLow": "Исторический минимум",
+  "coinDetailsMarketCapRank": "Рейтинг по капитализации",
+  "coinDetailsCirculatingSupply": "В обращении",
+  "coinDetailsTotalSupply": "Общее предложение",
+  "coinDetailsMaxSupply": "Максимальное предложение",
+  "coinDetailsSupply": "Предложение",
+  "coinDetailsInCirculation": "в обращении",
+  "coinDetailsCirculatingAmount": "{amount} в обращении",
+  "@coinDetailsCirculatingAmount": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "coinDetailsDexPair": "Пара DEX",
+  "coinDetailsNetwork": "Сеть",
+  "coinDetailsDex": "DEX",
+  "coinDetailsPair": "Торговая пара",
+  "coinDetails24HBuys": "Покупки за 24 ч",
+  "coinDetails24HSells": "Продажи за 24 ч",
+  "coinDetailsPairAge": "Возраст пары",
+  "coinDetailsDexMetrics": "Показатели DEX",
+  "coinDetailsDexSourceNotice": "Данные о паре предоставлены DexScreener.",
+  "coinDetailsDays": "{count} дн.",
+  "@coinDetailsDays": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "coinDetailsHours": "{count} ч",
+  "@coinDetailsHours": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "coinDetailsMinutes": "{count} мин",
+  "@coinDetailsMinutes": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+
+  "portfolioConnectTitle": "Подключить портфель",
+  "portfolioReadOnlyApiConnection": "Подключение API только для чтения",
+  "portfolioWalletAddressConnection": "Подключение по адресу кошелька",
+  "portfolioConnected": "Подключено",
+
+
+  "connectedAccountsCount": "{count, plural, =1{Подключённый аккаунт: 1} few{Подключённых аккаунта: {count}} many{Подключённых аккаунтов: {count}} other{Подключённых аккаунтов: {count}}}",
+  "@connectedAccountsCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "connectedAccountsConnectDescription": "Подключите кошельки и биржи, чтобы использовать торговые функции Avexa.",
+  "connectedAccountsRenameTitle": "Переименовать аккаунт",
+  "connectedAccountsAccountName": "Название аккаунта",
+  "connectedAccountsCancel": "Отмена",
+  "connectedAccountsSave": "Сохранить",
+  "connectedAccountsRemoveTitle": "Удалить аккаунт?",
+  "connectedAccountsRemoveConfirmation": "Аккаунт «{account}» будет удалён из списка подключённых аккаунтов Avexa.",
+  "@connectedAccountsRemoveConfirmation": {
+    "placeholders": {
+      "account": {
+        "type": "String"
+      }
+    }
+  },
+  "connectedAccountsRemove": "Удалить",
+  "connectedAccountsChangeName": "Изменить название",
+  "connectedAccountsNoAccounts": "Нет подключённых аккаунтов",
+  "connectedAccountsEmptyDescription": "Подключите кошельки и биржи, чтобы управлять всеми связанными аккаунтами в одном месте.",
+  "connectedAccountsConnectPortfolio": "Подключить портфель",
+  "connectedAccountsBalancesNotice": "Ваши балансы и активы останутся в разделе Portfolio.",
+  "connectedAccountsAddAccount": "Добавить аккаунт",
+  "connectedAccountsSecurityNotice": "Удаление отключает аккаунт от этого списка. Средства не переводятся, а сам кошелёк не удаляется.",
+  "connectedAccountsReadOnlyApi": "API только для чтения",
+
+  "loginTitle": "Войти",
+  "loginSubtitle": "Продолжите с аккаунтом Avexa",
+  "loginEmail": "Электронная почта",
+  "loginPassword": "Пароль",
+  "loginButton": "ВОЙТИ",
+  "loginOrContinueWith": "Или продолжить через",
+  "loginForgotPassword": "Забыли пароль?",
+  "loginNoAccount": "Нет аккаунта? ",
+  "loginSignUp": "Зарегистрироваться",
+  "loginResetPasswordTitle": "Сброс пароля",
+  "loginResetPasswordDescription": "Введите адрес электронной почты, и мы отправим ссылку для сброса пароля.",
+  "loginEnterEmail": "Введите электронную почту",
+  "loginSendResetLink": "ОТПРАВИТЬ ССЫЛКУ",
+  "loginCancel": "Отмена",
+  "loginEnterEmailError": "Введите адрес электронной почты.",
+  "loginInvalidEmailError": "Введите действительный адрес электронной почты.",
+  "loginResetGenericError": "Что-то пошло не так. Попробуйте ещё раз.",
+  "loginResetSuccess": "Ссылка для сброса отправлена. Проверьте почту.",
+  "loginAppleSignInFailed": "Не удалось войти через Apple: {message}",
+  "@loginAppleSignInFailed": {
+    "placeholders": {
+      "message": {
+        "type": "String"
+      }
+    }
+  },
+
+  "registerTitle": "Создать аккаунт",
+  "registerSubtitle": "Начните свой путь в AI-трейдинге.",
+  "registerEmail": "Электронная почта",
+  "registerPassword": "Пароль",
+  "registerConfirmPassword": "Подтвердите пароль",
+  "registerButton": "СОЗДАТЬ АККАУНТ",
+  "registerPasswordMismatch": "Пароли не совпадают",
+  "registerSuccess": "Аккаунт создан. Проверьте электронную почту.",
+  "registerGenericError": "Что-то пошло не так",
+
+  "rugCheckTitle": "Rug Check",
+  "rugCheckHeadline": "Проверьте перед сделкой",
+  "homeRugCheckDescription": "Проверка токенов на потенциальные риски",
+  "rugCheckTokenAddress": "АДРЕС ТОКЕНА",
+  "rugCheckAddressHint": "Вставьте адрес токена Solana",
+  "rugCheckScanning": "СКАНИРОВАНИЕ...",
+  "rugCheckScanButton": "СКАНИРОВАТЬ ТОКЕН",
+  "rugCheckWhatWeCheck": "Что проверяет Avexa",
+  "rugCheckLiquiditySecurity": "Ликвидность и безопасность LP",
+  "rugCheckHolderConcentration": "Концентрация держателей",
+  "rugCheckAuthorities": "Полномочия mint и freeze",
+  "rugCheckDevExposure": "Доля токенов у создателя",
+  "rugCheckEnterAddress": "Сначала введите адрес токена.",
+  "rugCheckAnalysisTitle": "Анализ безопасности токена",
+  "rugCheckTokenOverview": "ОБЗОР ТОКЕНА",
+  "rugCheckLiquidity": "Ликвидность",
+  "rugCheckLpLocked": "Заблокированная LP",
+  "rugCheckHolders": "Держатели",
+  "rugCheckTopHolder": "Крупнейший держатель",
+  "rugCheckTop10Holders": "Топ-10 держателей",
+  "rugCheckSecurityChecks": "ПРОВЕРКИ БЕЗОПАСНОСТИ",
+  "rugCheckMintAuthority": "Полномочия mint",
+  "rugCheckFreezeAuthority": "Полномочия freeze",
+  "rugCheckDevWallet": "Кошелёк создателя",
+  "rugCheckEnabled": "Включено",
+  "rugCheckDisabled": "Отключено",
+  "rugCheckUnknown": "Неизвестно",
+  "rugCheckExposure": "Доля: {value}%",
+  "@rugCheckExposure": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "rugCheckDetectedRisks": "ОБНАРУЖЕННЫЕ РИСКИ",
+  "rugCheckNoRisks": "Сканер не обнаружил значительных рисков.",
+  "rugCheckRiskDetected": "Обнаружен риск",
+  "rugCheckDisclaimer": "Rug Check анализирует доступные показатели безопасности токена. Низкий уровень риска не гарантирует безопасность токена.",
+  "rugCheckUnknownToken": "Неизвестный токен",
+  "rugCheckUnavailable": "Н/Д",
+
+  "walletTrackerTitle": "Трекер кошельков",
+  "walletTrackerAddWallet": "Добавить кошелёк",
+  "walletTrackerWalletName": "Название кошелька",
+  "walletTrackerWalletNameHint": "например, Smart Money",
+  "walletTrackerWalletAddress": "Адрес кошелька",
+  "walletTrackerAddressHint": "Адрес кошелька Solana",
+  "walletTrackerCancel": "Отмена",
+  "walletTrackerAddError": "Не удалось добавить кошелёк",
+  "walletTrackerYourWallets": "ВАШИ КОШЕЛЬКИ",
+  "walletTrackerTracked": "ОТСЛЕЖИВАЕТСЯ",
+  "walletTrackerEyebrow": "АНАЛИТИКА КОШЕЛЬКОВ",
+  "walletTrackerHeroTitle": "Следите за smart money",
+  "walletTrackerHeroDescription": "Следите за кошельками и их покупками/продажами токенов.",
+  "walletTrackerEmptyDescription": "Добавьте кошелёк для отслеживания активности.",
+  "walletTrackerLoadError": "Не удалось загрузить кошельки",
+  "walletTrackerRetry": "Потяните вниз, чтобы попробовать снова.",
+  "walletTrackerEmptyTitle": "Кошельки ещё не добавлены",
+  "walletTrackerDefaultName": "Кошелёк",
+  "walletTrackerActive": "АКТИВЕН",
+  "walletTrackerInactive": "НЕАКТИВЕН",
+  "walletTrackerAddButton": "ДОБАВИТЬ КОШЕЛЁК",
+
+  "languagePickerTitle": "Выберите язык",
+  "languagePolish": "Польский",
+  "languageEnglish": "Английский",
+  "languageGerman": "Немецкий",
+  "languageJapanese": "Японский",
+  "languageRussian": "Русский",
+  "languageArabic": "Арабский",
+  "languageChinese": "Китайский",
+  "languageSpanish": "Испанский",
+  "languagePortuguese": "Португальский",
+
+  "portfolioValue": "Стоимость портфеля",
+  "portfolioWalletCount": "{count} / {max} кошельков",
+  "@portfolioWalletCount": {
+    "placeholders": {
+      "count": {"type": "int"},
+      "max": {"type": "int"}
+    }
+  },
+  "portfolioNoWallets": "Нет подключённых кошельков",
+  "portfolioConnectSolanaWallet": "Подключите кошелёк Solana, чтобы увидеть его баланс.",
+  "portfolioConnectWallet": "Подключить кошелёк",
+  "portfolioRefreshWallet": "Обновить кошелёк",
+  "portfolioWalletPosition": "Кошелёк {current} из {total}",
+  "@portfolioWalletPosition": {
+    "placeholders": {
+      "current": {"type": "int"},
+      "total": {"type": "int"}
+    }
+  },
+  "portfolioLoading": "Загрузка...",
+  "portfolioUnavailable": "Недоступно",
+  "portfolioWalletBalance": "Баланс кошелька",
+  "portfolioSwipeWallets": "Проведите в сторону, чтобы увидеть другой кошелёк",
+  "portfolioCombinedValue": "Общая стоимость всех кошельков",
+  "portfolioConnectedWallets": "Подключённые кошельки",
+  "portfolioConnectedCount": "Подключено: {count}",
+  "@portfolioConnectedCount": {
+    "placeholders": {
+      "count": {"type": "int"}
+    }
+  },
+  "portfolioWalletAddressesConnected": "Адреса кошельков подключены",
+  "portfolioManageAddressesNetworks": "Управление адресами и сетями",
+  "portfolioConnectPublicAddress": "Подключите публичный адрес кошелька, чтобы начать",
+  "portfolioManageConnections": "Управление подключениями",
+  "portfolioMaxWalletsReached": "Достигнут лимит в 3 кошелька",
+  "portfolioAddAnotherWallet": "Добавить ещё один кошелёк",
+  "portfolioConnectToBuild": "Подключите кошелёк, чтобы начать создавать свой портфель.",
+  "portfolioAssetsSyncPending": "Адреса кошельков подключены. Синхронизация активов ещё не реализована.",
+  "portfolioAnalytics": "Аналитика портфеля",
+  "portfolioAnalyticsDescription": "Историческая доходность, анализ распределения активов и ИИ-инсайты станут доступны после синхронизации реальных балансов кошельков и истории портфеля.",
+  "portfolioLoadError": "Не удалось загрузить портфель.",
+  "portfolioSyncError": "Не удалось синхронизировать балансы кошельков.",
+  "portfolioDefaultUser": "Пользователь",
+
+  "loginLegalNotice": "Создавая аккаунт или входя в систему, вы подтверждаете, что вам исполнилось 16 лет, и ознакомились с приведёнными ниже юридическими документами.",
+  "loginLegalTerms": "Условия использования",
+  "loginLegalPrivacy": "Политика конфиденциальности",
+  "loginLegalRisk": "Предупреждение о рисках",
+
+  "connectedAccountsAddressCopied": "Адрес кошелька скопирован.",
+  "connectedAccountsRenameWallet": "Переименовать кошелёк",
+  "connectedAccountsWalletNameHint": "например, Основной кошелёк",
+  "connectedAccountsCancel": "Отмена",
+  "connectedAccountsSave": "Сохранить",
+  "connectedAccountsRenameSuccess": "Название кошелька обновлено.",
+  "connectedAccountsRenameError": "Не удалось переименовать кошелёк: {error}",
+  "@connectedAccountsRenameError": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "connectedAccountsRemoveWalletTitle": "Удалить кошелёк?",
+  "connectedAccountsRemoveWalletDescription": "Вы уверены, что хотите удалить этот адрес из Avexa? Вы сможете добавить его снова в любое время.",
+  "connectedAccountsRemove": "Удалить",
+  "connectedAccountsRemoveSuccess": "Кошелёк успешно удалён.",
+  "connectedAccountsRemoveError": "Не удалось удалить кошелёк: {error}",
+  "@connectedAccountsRemoveError": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "connectedAccountsHeader": "Подключённые кошельки",
+  "connectedAccountsSubtitle": "Управляйте адресами блокчейна",
+  "connectedAccountsConnectedCount": "ПОДКЛЮЧЕНО: {count}",
+  "@connectedAccountsConnectedCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "connectedAccountsHeaderDescription": "Все ваши кошельки управляются в одном месте. Каждый адрес отслеживается отдельно в своей сети блокчейна.",
+  "connectedAccountsWallet": "Кошелёк",
+  "connectedAccountsRename": "Переименовать",
+  "connectedAccountsRemoveWallet": "Удалить кошелёк",
+  "connectedAccountsEmptyTitle": "Пока нет подключённых кошельков",
+  "connectedAccountsEmptyDescription": "Подключите первый публичный адрес кошелька, чтобы начать формировать портфель Avexa.",
+  "connectedAccountsConnectWallet": "Подключить кошелёк",
+  "connectedAccountsLegacyNotice": "Сохранено старых подключений: {count}. Они перенесены из предыдущей системы Portfolio и не отображаются в новом списке кошельков.",
+  "@connectedAccountsLegacyNotice": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "connectedAccountsSecurityNotice": "Avexa использует только публичные адреса блокчейна. Ваши приватные ключи и средства остаются под вашим контролем. Подключение адреса не даёт разрешения на выполнение транзакций.",
+  "connectedAccountsTitle": "Подключённые аккаунты",
+  "connectedAccountsRefresh": "Обновить",
+  "connectedAccountsYourWallets": "Ваши кошельки",
+  "connectedAccountsAddWallet": "Добавить кошелёк",
+
+  "connectPortfolioSolanaDescription": "Блокчейн Solana",
+  "connectPortfolioEthereumDescription": "Основная сеть Ethereum",
+  "connectPortfolioBaseDescription": "Сеть Base",
+  "connectPortfolioArbitrumDescription": "Arbitrum One",
+  "connectPortfolioPolygonDescription": "Polygon PoS",
+  "connectPortfolioEnterAddress": "Введите адрес кошелька.",
+  "connectPortfolioInvalidSolanaAddress": "Недействительный адрес кошелька Solana.",
+  "connectPortfolioInvalidNetworkAddress": "Недействительный адрес кошелька сети {network}.",
+  "@connectPortfolioInvalidNetworkAddress": {
+    "placeholders": {
+      "network": {
+        "type": "String"
+      }
+    }
+  },
+  "connectPortfolioAlreadyConnected": "Этот адрес уже подключён к сети {network}.",
+  "@connectPortfolioAlreadyConnected": {
+    "placeholders": {
+      "network": {
+        "type": "String"
+      }
+    }
+  },
+  "connectPortfolioSuccess": "Кошелёк {network} успешно подключён.",
+  "@connectPortfolioSuccess": {
+    "placeholders": {
+      "network": {
+        "type": "String"
+      }
+    }
+  },
+  "connectPortfolioError": "Не удалось подключить кошелёк. Попробуйте ещё раз.",
+  "connectPortfolioSelectNetwork": "Выберите сеть",
+  "connectPortfolioChooseNetwork": "Выберите блокчейн-сеть",
+  "connectPortfolioSectionNetwork": "01  Выбор сети",
+  "connectPortfolioSectionNetworkSubtitle": "Выберите блокчейн, в котором находится ваш кошелёк.",
+  "connectPortfolioSectionAddress": "02  Адрес кошелька",
+  "connectPortfolioSectionAddressSubtitle": "Вставьте публичный адрес кошелька.",
+  "connectPortfolioAddressLabel": "Адрес {network}",
+  "@connectPortfolioAddressLabel": {
+    "placeholders": {
+      "network": {
+        "type": "String"
+      }
+    }
+  },
+  "connectPortfolioSolanaAddressHint": "Вставьте адрес Solana",
+  "connectPortfolioSectionWalletName": "03  Название кошелька",
+  "connectPortfolioSectionWalletNameSubtitle": "Необязательно. Укажите понятное название для этого адреса.",
+  "connectPortfolioCustomNameLabel": "Своё название (необязательно)",
+  "connectPortfolioCustomNameHint": "Например, Основной кошелёк",
+  "connectPortfolioSecurityTitle": "Ваши активы остаются вашими.",
+  "connectPortfolioSecurityDescription": "Avexa использует только общедоступные данные блокчейна. Мы никогда не запрашиваем приватные ключи, Secret Keys или учётные данные API и не можем совершать транзакции с вашего кошелька.",
+  "connectPortfolioHeader": "Подключите кошелёк",
+  "connectPortfolioSubtitle": "Добавьте публичный адрес кошелька, чтобы отслеживать активы из нескольких блокчейн-сетей в одном портфолио.",
+  "connectPortfolioButton": "ПОДКЛЮЧИТЬ КОШЕЛЁК",
+
+  "walletTrackerHeroTitle": "Отслеживайте Smart Money",
+  "walletTrackerEnterWalletDetails": "Введите название кошелька и адрес.",
+  "walletTrackerSyncComplete": "Синхронизация завершена: кошельки {wallets}, проверено {checked}, свопы {swaps}, добавлено {inserted}.",
+  "@walletTrackerSyncComplete": {
+    "placeholders": {
+      "wallets": {"type": "int"},
+      "checked": {"type": "int"},
+      "swaps": {"type": "int"},
+      "inserted": {"type": "int"}
+    }
+  },
+  "walletTrackerSyncError": "Ошибка синхронизации кошельков: {error}",
+  "@walletTrackerSyncError": {
+    "placeholders": {
+      "error": {"type": "String"}
+    }
+  },
+
+  "walletDetailsTitle": "Информация о кошельке",
+  "walletDetailsRename": "Переименовать кошелёк",
+  "walletDetailsLiveActivity": "АКТИВНОСТЬ КОШЕЛЬКА В РЕАЛЬНОМ ВРЕМЕНИ",
+  "walletDetailsTransactionCount": "{count} ТРАНЗАКЦИЙ",
+  "@walletDetailsTransactionCount": {
+    "placeholders": {
+      "count": {"type": "int"}
+    }
+  },
+  "walletDetailsRefreshActivity": "Обновить активность кошелька",
+  "walletDetailsNotifications": "УВЕДОМЛЕНИЯ",
+  "walletDetailsSaving": "СОХРАНЕНИЕ...",
+  "walletDetailsActive": "АКТИВНЫ",
+  "walletDetailsRefreshing": "Обновление активности...",
+  "walletDetailsNoTransactions": "Пока нет транзакций",
+  "walletDetailsActivityDescription": "Активность кошелька появится здесь.",
+  "walletDetailsBuy": "ПОКУПКА",
+  "walletDetailsSell": "ПРОДАЖА",
+  "walletDetailsTransaction": "ТРАНЗАКЦИЯ",
+  "walletDetailsWalletAlerts": "Уведомления кошелька",
+  "walletDetailsWalletAlertsDescription": "Включить уведомления для этого кошелька",
+  "walletDetailsBuyAlerts": "Уведомления о покупках",
+  "walletDetailsBuyAlertsDescription": "Уведомлять о покупках с этого кошелька",
+  "walletDetailsSellAlerts": "Уведомления о продажах",
+  "walletDetailsSellAlertsDescription": "Уведомлять о продажах с этого кошелька",
+  "walletDetailsLargeTransactions": "Крупные транзакции",
+  "walletDetailsLargeTransactionsDescription": "Уведомлять о крупных операциях с кошельком",
+  "walletDetailsDeleteWallet": "Удалить кошелёк",
+  "walletDetailsDeleteWalletDescription": "Удалить этот кошелёк и его историю",
+  "walletDetailsDeleteTitle": "Удалить кошелёк?",
+  "walletDetailsDeleteDescription": "Этот кошелёк и история отслеживаемых транзакций будут удалены.",
+  "walletDetailsCancel": "Отмена",
+  "walletDetailsDelete": "Удалить",
+  "walletDetailsSave": "Сохранить",
+  "walletDetailsRenameTitle": "Переименовать кошелёк",
+  "walletDetailsWalletNameHint": "Название кошелька",
+  "walletDetailsUnknownTime": "Неизвестное время",
+  "walletDetailsSyncComplete": "Кошелёк синхронизирован. Проверено транзакций: {count}.",
+  "@walletDetailsSyncComplete": {
+    "placeholders": {
+      "count": {"type": "int"}
+    }
+  },
+  "walletDetailsSyncError": "Не удалось синхронизировать кошелёк. Проверьте журналы.",
+  "walletDetailsUpdateSettingsError": "Не удалось обновить настройки кошелька.",
+  "walletDetailsRenameError": "Не удалось переименовать кошелёк.",
+  "walletDetailsDeleteError": "Не удалось удалить кошелёк.",
+
+  "liveMarketLive": "В ЭФИРЕ",
+  "liveMarketUpdateInterval": "Обновление каждые 30 сек.",
+  "liveMarket24hLabel": "Рынок за 24 ч",
+  "liveMarketLoading": "Загрузка рыночных данных...",
+  "liveMarketError": "Не удалось загрузить рыночные данные.",
+  "liveMarketEmpty": "Нет доступных рыночных данных.",
+
+  "communityPartnersTitle": "СООБЩЕСТВО AVEXA",
+  "communityPartnersSubtitle": "Присоединяйтесь к нашим сообществам",
+  "communityPartnersDefaultName": "Сообщество",
+  "communityPartnersTelegramError": "Не удалось открыть Telegram.",
+
+  "marketSentimentTitle": "Настроение рынка",
+  "marketSentimentLoading": "ЗАГРУЗКА",
+  "marketSentimentFear": "Страх",
+  "marketSentimentNeutral": "Нейтрально",
+  "marketSentimentGreed": "Жадность",
+  "marketSentimentExtremeGreed": "СИЛЬНАЯ ЖАДНОСТЬ",
+  "marketSentimentExtremeFear": "СИЛЬНЫЙ СТРАХ",
+  "marketSentimentBalanced": "Рынок сейчас находится в равновесии.",
+  "marketSentimentStrongBullish": "На рынке наблюдается сильный рост.",
+  "marketSentimentBullish": "На рынке преобладает рост.",
+  "marketSentimentBearish": "Давление продавцов усиливается.",
+  "marketSentimentStrongBearish": "На рынке преобладает сильное падение.",
+  "marketSentimentError": "Не удалось загрузить данные о рынке.",
+  "marketSentimentLoadingDescription": "Анализ текущей ситуации на рынке...",
+  "marketSentimentLiveUpdates": "LIVE • Обновление каждые 30 сек."
+
+}

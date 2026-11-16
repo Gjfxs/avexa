@@ -1,0 +1,1060 @@
+
+{
+  "@@locale": "zh",
+  "appName": "Avexa",
+  "language": "语言",
+  "chooseLanguage": "选择语言",
+  "settings": "设置",
+  "general": "常规",
+  "notifications": "通知",
+  "notificationsSubtitle": "管理提醒和通知偏好设置。",
+  "appearance": "外观",
+  "languageSection": "语言",
+  "lightMode": "浅色",
+  "darkMode": "深色",
+  "systemDefault": "系统默认",
+
+    "alerts": "提醒",
+    "pushNotifications": "推送通知",
+    "pushNotificationsSubtitle": "接收来自 Avexa 的重要通知。",
+    "freeSignals": "FREE 信号",
+    "freeSignalsSubtitle": "生成新的 FREE 信号时接收通知。",
+    "proSignals": "PRO 信号",
+    "proSignalsSubtitle": "生成新的 PRO 信号时接收通知。",
+    "takeProfitHits": "止盈目标触达",
+    "takeProfitHitsSubtitle": "达到 TP1、TP2 或 TP3 时接收通知。",
+    "experience": "使用体验",
+    "hapticFeedback": "触觉反馈",
+    "hapticFeedbackSubtitle": "在重要提醒和操作时使用振动。",
+    "savingPreferences": "正在保存偏好设置...",
+    "notificationPreferences": "通知偏好设置",
+
+    "themeSection": "主题",
+    "darkModeSubtitle": "适合光线较暗的环境。",
+    "lightModeSubtitle": "使用更明亮的外观。",
+    "systemDefaultSubtitle": "遵循设备设置。",
+    "appIconSection": "应用图标",
+    "lightAppIcon": "浅色应用图标",
+    "useLightAvexaIcon": "使用浅色 Avexa 图标。",
+    "useDarkAvexaIcon": "使用深色 Avexa 图标。",
+
+    "contactSupport": "联系支持团队",
+    "supportIntroTitle": "我们随时为你提供帮助",
+    "supportIntroSubtitle": "告诉我们你需要什么帮助，我们的团队会尽快联系你。",
+    "supportTopicQuestion": "我们能为你提供什么帮助？",
+    "supportSelectTopic": "选择主题",
+    "supportTapToChange": "点击更改",
+    "supportYourTopic": "你的主题",
+    "supportCustomTopicHint": "你的问题是什么？",
+    "supportMessage": "消息",
+    "supportMessageHint": "告诉我们如何帮助你...",
+    "supportSendMessage": "发送消息",
+    "supportResponseTime": "我们通常会在24小时内回复。",
+    "supportAccount": "账户",
+    "supportSubscriptionBilling": "订阅与账单",
+    "supportTradingSignals": "交易信号",
+    "supportTechnicalIssue": "技术问题",
+    "supportBugReport": "报告错误",
+    "supportFeatureRequest": "功能建议",
+    "supportOther": "其他",
+    "supportMessageSent": "消息已发送",
+    "supportSuccessDescription": "你的消息已发送给 Avexa 支持团队，我们会尽快回复。",
+    "supportDone": "完成",
+    "supportLoginRequired": "请先登录再联系支持团队。",
+    "supportSelectTopicError": "请选择一个主题。",
+    "supportEnterTopicError": "请输入主题。",
+    "supportEnterMessageError": "请输入消息。",
+    "supportMessageMinLengthError": "消息至少需要包含10个字符。",
+    "supportSendError": "出现问题，请重试。",
+    "supportSending": "正在发送消息...",
+
+    "reportBug": "报告问题",
+    "bugIntroTitle": "发现问题了吗？",
+    "bugIntroSubtitle": "请告诉我们发生了什么，我们会进行检查。",
+    "bugCategorySection": "问题类别",
+    "bugWhatHappened": "发生了什么？",
+    "bugDescriptionHint": "请描述问题、你当时正在进行的操作以及发生的情况...",
+    "bugSendButton": "提交问题报告",
+    "bugFooter": "你的报告将直接发送给 Avexa 支持团队。",
+    "bugPickerTitle": "问题类别",
+    "bugCategoryApp": "应用程序错误",
+    "bugCategorySignals": "交易信号",
+    "bugCategoryTrading": "交易",
+    "bugCategoryAccount": "账户",
+    "bugCategorySubscription": "订阅",
+    "bugCategoryNotifications": "通知",
+    "bugCategoryOther": "其他",
+    "bugPleaseDescribe": "请描述遇到的问题。",
+    "bugLoginRequired": "请先登录再报告问题。",
+    "bugSentSuccess": "问题报告已成功发送。",
+    "bugSendFailed": "报告发送失败，请重试。",
+    "bugSending": "正在发送报告...",
+
+  "helpCenter": "帮助中心",
+  "helpMainTitle": "我们能为您提供什么帮助？",
+  "helpMainSubtitle": "查找答案，了解更多 Avexa 信息。",
+  "helpSearchHint": "搜索帮助...",
+  "helpPopularTopics": "热门主题",
+  "helpSearchResults": "搜索结果",
+  "helpNeedMore": "需要更多帮助？",
+  "helpNoResults": "未找到结果",
+  "helpTryAnotherSearch": "请尝试搜索其他内容。",
+  "helpSupportSubtitle": "我们随时为您提供帮助",
+  "helpFaqTitle": "常见问题",
+  "helpStillNeed": "仍然需要帮助？",
+  "helpContactPrompt": "如果找不到答案，请联系我们的支持团队。",
+  "helpSignals": "交易信号",
+  "helpSignalsSubtitle": "了解 Avexa 信号的工作方式",
+  "helpPro": "Avexa PRO",
+  "helpProSubtitle": "PRO 功能与订阅",
+  "helpTrading": "交易",
+  "helpTradingSubtitle": "交易、TP、SL 和入场点",
+  "helpAccount": "账户",
+  "helpAccountSubtitle": "账户与个人资料",
+  "helpNotifications": "通知",
+  "helpNotificationsSubtitle": "提醒与通知",
+
+  "faqSignalsQ1": "什么是 Avexa 信号？",
+  "faqSignalsA1": "Avexa 信号是根据市场数据和分析生成的交易机会。每个信号可能包含入场价格、止盈目标、止损水平和市场方向等信息。",
+  "faqSignalsQ2": "多久会发布新的信号？",
+  "faqSignalsA2": "可用信号的数量取决于您的 Avexa 计划。免费用户的访问权限有限，而 PRO 用户可以获取额外的高级信号。",
+  "faqSignalsQ3": "Entry、TP 和 SL 分别是什么意思？",
+  "faqSignalsA3": "Entry 是建议的交易入场价格或价格区间。TP（止盈）是可能平仓获利的目标价位。SL（止损）是用于限制潜在亏损的价位。",
+  "faqSignalsQ4": "Avexa 信号能保证盈利吗？",
+  "faqSignalsA4": "不能。任何交易信号都无法保证盈利。信号基于分析和可用的市场数据，但加密货币市场波动较大，每笔交易都存在风险。",
+  "faqSignalsQ5": "在哪里可以查看可用信号？",
+  "faqSignalsA5": "您可以在 Avexa 的信号页面查看可用信号。具体访问权限取决于您当前的计划。",
+
+  "faqProQ1": "什么是 Avexa PRO？",
+  "faqProA1": "Avexa PRO 是 Avexa 的高级版本，提供额外的交易分析、高级信号和免费计划中不可用的进阶功能。",
+  "faqProQ2": "如何升级到 PRO？",
+  "faqProA2": "打开订阅页面并选择升级到 PRO，然后按照付款说明完成订阅。",
+  "faqProQ3": "如何确认自己拥有 PRO？",
+  "faqProA3": "您可以在个人资料或订阅页面查看当前计划。已激活的 PRO 账户会显示有效的 PRO 会员状态。",
+  "faqProQ4": "可以取消 PRO 订阅吗？",
+  "faqProA4": "可以。您可以在订阅页面管理或取消订阅。当前计费周期结束前，您的访问权限可能仍然有效。",
+  "faqProQ5": "PRO 订阅到期后会怎样？",
+  "faqProA5": "PRO 权限到期后，您的账户将恢复为免费计划，在重新激活 PRO 之前无法使用高级功能。",
+
+  "faqTradingQ1": "什么是止盈（TP）？",
+  "faqTradingA1": "止盈是预先设定的目标价格。当市场达到该价位时，交易者可以选择平仓并实现计划中的利润。",
+  "faqTradingQ2": "什么是止损（SL）？",
+  "faqTradingA2": "止损是预先设定的价位，用于在市场走势不利时限制潜在亏损。",
+  "faqTradingQ3": "什么是入场点？",
+  "faqTradingA3": "入场点是信号建议考虑开仓的价格或价格区间。",
+  "faqTradingQ4": "为什么我的交易结果可能与信号不同？",
+  "faqTradingA4": "市场价格可能快速变化。滑点、执行速度、流动性和手续费都可能导致实际入场或出场价格与信号显示的价格不同。",
+  "faqTradingQ5": "Avexa 会自动执行交易吗？",
+  "faqTradingA5": "Avexa 信号旨在提供交易分析信息。除非已启用并支持特定的自动交易功能，否则您仍需自行负责执行和管理交易。",
+
+  "faqAccountQ1": "如何更改用户名？",
+  "faqAccountA1": "打开个人资料并选择个人信息，即可更新与个人资料关联的信息。",
+  "faqAccountQ2": "如何更改密码？",
+  "faqAccountA2": "打开个人资料 → 安全设置，并使用可用的密码管理选项。",
+  "faqAccountQ3": "可以更改电子邮箱地址吗？",
+  "faqAccountA3": "如果账户安全设置中提供此选项，您可以在那里更改电子邮箱地址。可能需要额外验证。",
+  "faqAccountQ4": "如何退出登录？",
+  "faqAccountA4": "打开个人资料并滚动到页面底部，选择退出登录以结束当前会话。",
+  "faqAccountQ5": "可以删除账户吗？",
+  "faqAccountA5": "您可以通过账户或安全设置申请删除账户。请注意，删除账户可能会永久移除相关数据。",
+
+  "faqNotificationsQ1": "如何启用通知？",
+  "faqNotificationsA1": "打开更多 → 应用设置 → 通知。您可以管理常规通知、信号提醒和触觉反馈。",
+  "faqNotificationsQ2": "什么是信号提醒？",
+  "faqNotificationsA2": "信号提醒会在有新的相关交易信号可用时通知您。",
+  "faqNotificationsQ3": "为什么我收不到通知？",
+  "faqNotificationsA3": "请先检查 Avexa 和设备设置中的通知是否已启用。如果需要接收信号通知，也请确认信号提醒已开启。",
+  "faqNotificationsQ4": "什么是触觉反馈？",
+  "faqNotificationsA4": "触觉反馈通过设备振动，为受支持的操作和提醒提供额外反馈。",
+
+  "aboutTitle": "关于 Avexa",
+  "aboutTagline": "由人工智能驱动的加密货币智能分析",
+  "aboutVersion": "版本 1.0.0",
+  "aboutSection": "关于 AVEXA",
+  "aboutDescription": "Avexa 是一个由人工智能驱动的加密货币分析平台，旨在帮助交易者理解市场、发现机会并做出更明智的决策。",
+  "aboutGettingStarted": "开始使用",
+  "aboutViewOnboarding": "查看入门指南",
+  "aboutOnboardingDescription": "通过简短的介绍了解 Avexa 的主要功能。",
+  "aboutWhatWeDo": "我们的功能",
+  "aboutTradingSignals": "交易信号",
+  "aboutTradingSignalsDescription": "通过人工智能驱动的信号，帮助发现潜在的市场机会。",
+  "aboutWhaleTracking": "巨鲸追踪",
+  "aboutWhaleTrackingDescription": "追踪大额钱包活动，发现异常的市场波动。",
+  "aboutMarketIntelligence": "市场分析",
+  "aboutMarketIntelligenceDescription": "借助先进的人工智能分析，了解影响市场走势的因素。",
+  "aboutOurMission": "我们的使命",
+  "aboutMissionStatement": "让每个人都能使用先进的加密货币市场分析。",
+  "aboutBuiltForTraders": "为交易者打造。",
+  "aboutPoweredByIntelligence": "以智能技术驱动。",
+  "aboutCopyright": "© 2026 Avexa",
+
+    "onboardingHomeSection": "首页",
+    "onboardingHomeTitle": "你的加密货币指挥中心",
+    "onboardingHomeDescription": "一目了然地掌握重要信息。追踪市场动态，了解 Avexa 的最新情况。",
+    "onboardingChartsSection": "图表",
+    "onboardingChartsTitle": "探索市场",
+    "onboardingChartsDescription": "探索 DEX、Trending、现货和合约市场，随时关注价格走势。",
+    "onboardingSignalsSection": "交易信号",
+    "onboardingSignalsTitle": "AI 智能交易信号",
+    "onboardingSignalsDescription": "查看 AI 生成的交易方案，包括入场价、止损、止盈和信心评分。",
+    "onboardingAiChartSection": "AI 图表",
+    "onboardingAiChartTitle": "AI 图表分析",
+    "onboardingAiChartDescription": "上传任意加密货币图表，让 Avexa AI 分析趋势、动能、支撑位和阻力位。",
+    "onboardingPortfolioSection": "投资组合",
+    "onboardingPortfolioTitle": "你的投资组合",
+    "onboardingPortfolioDescription": "连接受支持的账户，在一个地方管理你的加密货币投资组合。",
+    "onboardingSkip": "跳过",
+    "onboardingNext": "下一步",
+    "onboardingGetStarted": "开始使用",
+
+    "securityTitle": "安全",
+    "securityAccountTitle": "账户安全",
+    "securityAccountDescription": "管理密码和账户安全设置。",
+    "securityAccountSection": "账户",
+    "securityAccountEmail": "账户电子邮箱",
+    "securityChangePassword": "修改密码",
+    "securityCurrentPassword": "当前密码",
+    "securityNewPassword": "新密码",
+    "securityConfirmNewPassword": "确认新密码",
+    "securityEnterNewPassword": "输入新密码",
+    "securityPasswordLengthError": "密码至少需要 8 个字符。",
+    "securityPasswordsMismatch": "两次输入的密码不一致。",
+    "securityPasswordChanged": "密码已成功修改。",
+    "securityPasswordChangeError": "无法修改密码。",
+    "securityAppLockSection": "应用锁",
+    "securityAppLockTitle": "应用锁",
+    "securityAppLockEnabledDescription": "启动应用时需要进行身份验证。",
+    "securityAppLockDisabledDescription": "使用应用锁保护应用。",
+    "securityVerificationCancelled": "验证已取消。",
+    "securityVerificationRequired": "需要进行身份验证。",
+    "securityAppLockEnabled": "应用锁已启用。",
+    "securityAppLockDisabled": "应用锁已关闭。",
+    "securityAppLockChangeError": "无法更改应用锁设置。",
+    "securitySafetyNotice": "请保护好您的账户。不要与他人分享密码或 PIN 码。",
+    "securityCreatePin": "创建 PIN 码",
+    "securityCreatePinDescription": "创建 PIN 码以保护应用。",
+    "securityEnterPin": "输入 PIN 码",
+    "securityPin": "PIN 码",
+    "securityConfirmPin": "确认 PIN 码",
+    "securityPinLengthError": "PIN 码必须为 4 位数字。",
+    "securityPinDigitsError": "PIN 码只能包含数字。",
+    "securityPinsMismatch": "两次输入的 PIN 码不一致。",
+    "securityCancel": "取消",
+    "securitySave": "保存",
+    "securityUnlock": "解锁",
+
+    "connectedAccountsTitle": "已连接的账户",
+    "connectedAccountsWalletsExchanges": "钱包与交易所",
+    "connectedAccountsDescription": "连接你的钱包和交易所，以使用 Avexa 内的交易功能。",
+    "connectedAccountsSolanaWallet": "Solana 钱包",
+    "connectedAccountsEthereumWallet": "Ethereum 钱包",
+    "connectedAccountsExchanges": "交易所",
+    "connectedAccountsExchangeAccount": "交易所账户",
+    "connectedAccountsSecurityNotice": "切勿向 Avexa 提供登录凭据或私钥。连接将使用安全的身份验证方式。",
+    "connectedAccountsComingSoon": "此连接功能将在 Avexa 的未来版本中推出。",
+    "connectedAccountsOk": "确定",
+
+    "personalInfoTitle": "个人信息",
+    "personalInfoDescription": "管理你的个人资料信息和头像。",
+    "personalInfoDefaultUser": "用户",
+    "personalInfoLoadError": "无法加载个人资料。",
+    "personalInfoAvatarSaveError": "无法保存头像。",
+    "personalInfoAvatarUpdated": "头像已更新。",
+    "personalInfoAvatarUpdateError": "无法更新头像。",
+    "personalInfoNameRequired": "请输入你的姓名。",
+    "personalInfoUsernameRequired": "请输入用户名。",
+    "personalInfoUsernameLengthError": "用户名至少需要 3 个字符。",
+    "personalInfoUpdateError": "无法更新个人资料。",
+    "personalInfoDetailsSection": "个人资料",
+    "personalInfoDisplayName": "显示名称",
+    "personalInfoNameHint": "你的姓名",
+    "personalInfoUsername": "用户名",
+    "personalInfoUsernameHint": "用户名",
+    "personalInfoUsernameDescription": "此用户名将在 Avexa 中显示。",
+    "personalInfoEmailSection": "账户邮箱",
+    "personalInfoVerifiedEmail": "已验证的账户邮箱",
+    "personalInfoEmailCannotChange": "你无法在此处更改电子邮箱地址。",
+    "personalInfoSaveChanges": "保存更改",
+    "personalInfoSecureSaveNotice": "你的更改会安全地保存到账户中。",
+
+    "subscriptionTitle": "订阅",
+    "subscriptionChoosePlan": "选择你的方案",
+    "subscriptionYourPlan": "你的方案",
+    "subscriptionFeatures": "功能",
+    "subscriptionMonthly": "按月",
+    "subscriptionYearly": "按年",
+    "subscriptionSave33": "节省 33%",
+    "subscriptionPerMonth": "/ 月",
+    "subscriptionPerYear": "/ 年",
+    "subscriptionProMonthly": "PRO 月度方案",
+    "subscriptionProYearly": "PRO 年度方案",
+    "subscriptionUpgradeMonthly": "升级至 PRO — {price}/月",
+    "@subscriptionUpgradeMonthly": {
+    "placeholders": {
+        "price": {
+        "type": "String"
+        }
+    }
+    },
+    "subscriptionUpgradeYearly": "升级至 PRO — {price}/年",
+    "@subscriptionUpgradeYearly": {
+    "placeholders": {
+        "price": {
+        "type": "String"
+        }
+    }
+    },
+    "subscriptionManagePurchases": "管理购买项目",
+    "subscriptionRestorePurchases": "恢复购买",
+    "subscriptionManageSubscription": "管理订阅",
+    "subscriptionChangePlan": "更改方案",
+    "subscriptionCancelSubscription": "取消订阅",
+    "subscriptionUnavailable": "当前无法使用订阅服务。",
+    "subscriptionCheckingPurchases": "正在检查之前的购买记录...",
+    "subscriptionManagementComingSoon": "订阅管理功能即将推出。",
+    "subscriptionDailySignals": "每日信号",
+    "subscriptionOnePerDay": "每天 1 条",
+    "subscriptionUnlimited": "不限次数",
+    "subscriptionAiMarketAnalysis": "AI 市场分析",
+    "subscriptionWhaleTracking": "巨鲸追踪",
+    "subscriptionAdvancedCharts": "高级图表",
+    "subscriptionFuturesIntelligence": "合约交易分析",
+    "subscriptionWalletTracker": "钱包追踪",
+    "subscriptionNewsSentiment": "新闻与市场情绪",
+    "subscriptionLimited": "有限",
+    "subscriptionPrioritySupport": "优先支持",
+    "subscriptionFreeInfoTitle": "你正在使用 FREE 方案",
+    "subscriptionFreeInfoDescription": "升级至 PRO，解锁全部功能，让交易更进一步。",
+    "subscriptionActiveTitle": "你的 PRO 订阅已生效",
+    "subscriptionActiveDescription": "所有高级功能目前均已解锁。",
+    "subscriptionProInfoTitle": "你正在使用 PRO",
+    "subscriptionProInfoDescription": "感谢使用 Avexa PRO。让交易更智能。",
+
+    "profileActive": "已激活",
+    "profileProPlan": "PRO 方案",
+    "profileFreePlan": "FREE 方案",
+    "profileMemberSince": "自 {year} 年起加入",
+    "@profileMemberSince": {
+    "placeholders": {
+        "year": {
+        "type": "String"
+        }
+    }
+    },
+    "profileFreeSignals": "FREE 信号",
+    "profileAiAnalyses": "AI 分析",
+    "profileSubscriptionSection": "订阅",
+    "profileAccountSection": "账户",
+    "profilePreferencesSection": "偏好设置",
+    "profileSupportSection": "支持",
+    "profilePersonalInformation": "个人信息",
+    "profileConnectedAccounts": "已连接的账户",
+    "profileSecurity": "安全",
+    "profileAppSettings": "应用设置",
+    "profileRateUs": "为我们评分",
+    "profileAboutAvexa": "关于 Avexa",
+    "profileHelpCenter": "帮助中心",
+    "profileReportBug": "报告错误",
+    "profileContactSupport": "联系支持",
+    "profileLogOut": "退出登录",
+    "profileActiveSubscription": "当前订阅有效",
+    "profileCurrentSubscription": "当前订阅",
+    "profileAvatarSaveError": "无法保存个人头像。",
+    "profileAvatarUpdated": "个人头像已更新。",
+    "profileAvatarUpdateError": "无法更新个人头像。",
+
+  "portfolioHeaderProfile": "个人资料",
+  "portfolioTapToViewProfile": "点击查看个人资料",
+  "portfolioValue": "投资组合价值",
+  "portfolioNoPortfolioConnected": "尚未连接投资组合",
+  "portfolioConnectDescription": "连接交易所或钱包，即可使用实时投资组合追踪、AI 洞察和风险分析。",
+  "portfolioConnectButton": "连接投资组合",
+  "portfolioConnectedSuccessfully": "投资组合连接成功",
+  "portfolioLastSync": "上次同步：刚刚",
+  "portfolioManageConnections": "管理连接",
+  "portfolioRefreshPortfolio": "刷新投资组合",
+  "portfolioSyncComingSoon": "投资组合同步功能即将推出",
+  "portfolioDisconnect": "断开投资组合连接",
+  "portfolioOverview": "投资组合概览",
+  "portfolioTotalValue": "投资组合总价值",
+  "portfolioAssets": "资产",
+  "portfolioChains": "区块链网络",
+  "portfolioNfts": "NFT",
+  "portfolioNoAssetsSynced": "没有已同步的资产",
+  "portfolioConnectToImport": "连接钱包即可自动导入您的加密货币。",
+  "portfolioAiScore": "AI 投资组合评分",
+  "portfolioExcellent": "优秀的投资组合",
+  "portfolioRiskDescription": "投资组合分散良好，风险水平适中。",
+  "portfolioAiInsights": "AI 洞察",
+  "portfolioInsightDiversified": "投资组合在大型市值加密货币之间实现了良好的分散配置。",
+  "portfolioInsightModerateRisk": "当前风险水平为中等。",
+  "portfolioInsightStablecoins": "增加稳定币可能有助于降低波动性。",
+  "portfolioInsightNoSuspiciousTokens": "未发现可疑的代币集中情况。",
+  "portfolioProPlan": "PRO 方案",
+  "portfolioFreePlan": "FREE 方案",
+  "portfolioActive": "活跃",
+  "portfolioNotificationsEnabled": "通知已启用",
+  "portfolioMemberSince": "加入于 {year} 年",
+
+  "aiAssistantClearChat": "清空聊天",
+  "aiAssistantMinimize": "最小化",
+  "aiAssistantTitle": "AI 交易助手",
+  "aiAssistantSubtitle": "您的专属加密货币分析师",
+  "aiAssistantAnalyzeBtc": "📈 分析 BTC",
+  "aiAssistantBestTrade": "🔥 最佳交易",
+  "aiAssistantMarketRisk": "⚠️ 市场风险",
+  "aiAssistantHiddenGems": "💎 潜力币",
+  "aiAssistantWelcome": "今天有什么可以帮您？",
+  "aiAssistantAnalyzeBitcoin": "📈 分析 Bitcoin",
+  "aiAssistantSuggestionMarketRisk": "⚠️ 市场风险",
+  "aiAssistantSuggestionHiddenGems": "💎 潜力币",
+  "aiAssistantSavedAnalyses": "已保存的分析",
+  "aiAssistantNoSavedAnalyses": "没有已保存的分析",
+  "aiAssistantAnalysisRemoved": "已删除分析",
+  "aiAssistantAnalysisSaved": "已保存分析",
+  "aiAssistantFeedbackThanks": "感谢您的反馈！",
+  "aiAssistantFeedbackQuestion": "为什么这个回答没有帮助？",
+  "aiAssistantFeedbackIncorrect": "❌ 信息不正确",
+  "aiAssistantFeedbackGeneric": "🤔 内容过于笼统",
+  "aiAssistantFeedbackNoAnswer": "💬 没有回答我的问题",
+  "aiAssistantFeedbackOutdated": "📉 市场数据已过时",
+  "aiAssistantFeedbackOther": "✍️ 其他",
+  "aiAssistantFeedbackThanksImprove": "感谢您帮助改进 AI！",
+  "aiAssistantInputHint": "您可以询问任何加密货币相关问题...",
+  "aiAssistantAnalyzingMarket": "正在分析市场...",
+
+  "chartsTitle": "图表",
+  "chartsSearchHint": "搜索币种或代币...",
+  "chartsMarketCap": "市值",
+  "chartsVolume": "交易量",
+  "chartsChange24": "24小时涨跌",
+  "chartsRank": "排名",
+  "chartsFavorites": "收藏",
+  "chartsTrending": "热门趋势",
+  "chartsSpot": "现货",
+  "chartsFutures": "合约",
+  "chartsTrendingCoins": "热门币种",
+  "chartsSpotMarket": "现货市场",
+  "chartsFuturesMarket": "合约市场",
+  "chartsMostActive": "当前最活跃",
+  "chartsSpotAssets": "实时现货资产",
+  "chartsFuturesAssets": "可用于合约交易的主要资产",
+  "chartsTopGainers": "涨幅榜",
+  "chartsTopLosers": "跌幅榜",
+  "charts24HourPerformance": "24小时表现",
+  "chartsGainers": "上涨",
+  "chartsLosers": "下跌",
+  "chartsPrice": "价格",
+  "chartsMarketCapShort": "市值",
+  "chartsAiMarketScore": "AI市场评分",
+  "chartsNoFavorites": "暂无收藏币种",
+  "chartsAddFavoritesHint": "添加币种即可在此快速跟踪。",
+  "chartsDexScanner": "DEX扫描器",
+  "chartsDexSubtitle": "发现链上机会",
+  "chartsFilters": "筛选",
+  "chartsFiltersCount": "筛选 {count}",
+  "chartsAllChains": "所有链",
+  "chartsDexPairsCount": "{count} 个交易对",
+  "chartsSortLabel": "排序：{sort}",
+  "chartsDexFilters": "DEX筛选",
+  "chartsDexFiltersSubtitle": "像DEX筛选工具一样调整扫描器。",
+  "chartsPairAge": "交易对年龄",
+  "chartsReset": "重置",
+  "chartsApplyFilters": "应用筛选",
+  "chartsAll": "全部",
+  "chartsNoDexPairs": "未找到DEX交易对",
+  "chartsWidenFilters": "尝试放宽筛选条件。",
+  "chartsMarketCapUpper": "市值",
+  "chartsLiquidity": "流动性",
+  "chartsLiquidityUpper": "流动性",
+  "chartsVolume24Upper": "24小时交易量",
+  "chartsFlow24Upper": "24小时流量",
+  "chartsBuysCount": "买入 {count}",
+  "chartsSellsCount": "卖出 {count}",
+  "@chartsFiltersCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "@chartsDexPairsCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "@chartsSortLabel": {
+    "placeholders": {
+      "sort": {
+        "type": "String"
+      }
+    }
+  },
+  "@chartsBuysCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "@chartsSellsCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+
+    "aiChartTitle": "AI 图表",
+    "aiChartDescription": "拍摄图表照片，让 Avexa 为你分析。",
+    "aiChartAnalysisTitle": "AI 图表分析",
+    "aiChartDone": "完成",
+    "aiChartScannerTitle": "AI 图表扫描器",
+    "aiChartScannerDescription": "将图表放入取景框，并拍摄清晰的照片以供 AI 分析。",
+    "aiChartEnableCamera": "启用相机",
+    "aiChartStartingCamera": "正在启动相机...",
+    "aiChartAnalyze": "分析图表",
+    "aiChartAnalyzing": "正在分析图表...",
+    "aiChartAnalysisHistory": "分析历史记录",
+    "aiChartRecentAnalyses": "最近的图表分析",
+    "aiChartHistoryNotice": "分析历史记录将保留 24 小时。",
+    "aiChartHistoryLoadError": "无法加载历史记录",
+    "aiChartTryAgainLater": "请稍后重试。",
+    "aiChartNoAnalyses": "暂无分析记录",
+    "aiChartHistoryEmptyDescription": "过去 24 小时内的图表分析将显示在这里。",
+    "aiChartHistoryCardTitle": "图表分析",
+    "aiChartCameraUnavailable": "没有可用的相机",
+    "aiChartCameraError": "无法启动相机。请检查相机权限。",
+    "aiChartCaptureError": "无法拍摄照片。请重试。",
+    "aiChartSelectImageError": "无法选择图片。请重试。",
+    "aiChartAnalysisError": "AI 图表错误：{error}",
+    "@aiChartAnalysisError": {
+    "placeholders": {
+        "error": {
+        "type": "String"
+        }
+    }
+    },
+    "aiChartNoImageError": "未选择图片。",
+    "aiChartUnexpectedResponseError": "意外的响应格式：{response}",
+    "@aiChartUnexpectedResponseError": {
+    "placeholders": {
+        "response": {
+        "type": "String"
+        }
+    }
+    },
+    "aiChartEmptyAnalysisError": "AI 返回了空的分析结果。",
+
+  "homeTagline": "AI 加密货币智能分析",
+  "homeRugCheck": "风险检测",
+  "homeRugCheckDescription": "扫描代币，识别潜在风险",
+  "homeWalletTracker": "钱包追踪",
+  "homeWalletTrackerDescription": "追踪钱包并接收实时提醒",
+  "homeLiveMarketData": "📈 实时市场数据",
+  "homeTopMovers": "🚀 涨跌幅领先代币",
+  "homeLiveLiquidations": "💀 实时清算",
+
+  "signalDetailTitle": "信号详情",
+  "signalDetailSolanaMeme": "Solana 模因币",
+  "signalDetailDirection": "方向",
+  "signalDetailTier": "等级",
+  "signalDetailAiConfidence": "AI 置信度",
+  "signalDetailConfidenceDescription": "AI 根据市场状况生成的置信度评分。",
+  "signalDetailTradeLevels": "交易价位",
+  "signalDetailEntry": "入场价",
+  "signalDetailStopLoss": "止损价",
+  "signalDetailTakeProfit1": "止盈目标 1",
+  "signalDetailTakeProfit2": "止盈目标 2",
+  "signalDetailTakeProfit3": "止盈目标 3",
+  "signalDetailRiskLevel": "风险等级",
+  "signalDetailRiskReward": "风险 / 回报",
+  "signalDetailRiskLow": "低",
+  "signalDetailRiskMedium": "中",
+  "signalDetailRiskHigh": "高",
+  "signalDetailTokenAddress": "代币地址",
+  "signalDetailAddressUnavailable": "地址不可用",
+  "signalDetailCopyAddress": "复制代币地址",
+  "signalDetailViewDexScreener": "打开 DEX SCREENER",
+  "signalDetailDexLinkUnavailable": "DexScreener 链接不可用。",
+  "signalDetailDexOpenError": "无法打开 DexScreener。",
+  "signalDetailAddressCopied": "已复制代币地址",
+  "signalDetailAiAnalysis": "AI 分析",
+  "signalDetailDisclaimer": "信号是由 AI 生成的市场分析，\n不构成金融建议。",
+
+  "coinDetailsCoinBadge": "代币",
+  "coinDetailsDexBadge": "DEX",
+  "coinDetailsCurrentPrice": "当前价格",
+  "coinDetails24H": "24小时",
+  "coinDetails24HVolume": "24小时交易量",
+  "coinDetails24HChange": "24小时涨跌幅",
+  "coinDetailsLiquidity": "流动性",
+  "coinDetailsFdv": "FDV",
+  "coinDetailsMarketCap": "市值",
+  "coinDetailsPriceChart": "价格图表",
+  "coinDetailsMarketData": "市场数据",
+  "coinDetails24HHigh": "24小时最高价",
+  "coinDetails24HLow": "24小时最低价",
+  "coinDetailsAllTimeHigh": "历史最高价",
+  "coinDetailsAllTimeLow": "历史最低价",
+  "coinDetailsMarketCapRank": "市值排名",
+  "coinDetailsCirculatingSupply": "流通供应量",
+  "coinDetailsTotalSupply": "总供应量",
+  "coinDetailsMaxSupply": "最大供应量",
+  "coinDetailsSupply": "供应量",
+  "coinDetailsInCirculation": "正在流通",
+  "coinDetailsCirculatingAmount": "流通量：{amount}",
+  "@coinDetailsCirculatingAmount": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "coinDetailsDexPair": "DEX交易对",
+  "coinDetailsNetwork": "网络",
+  "coinDetailsDex": "DEX",
+  "coinDetailsPair": "交易对",
+  "coinDetails24HBuys": "24小时买入",
+  "coinDetails24HSells": "24小时卖出",
+  "coinDetailsPairAge": "交易对创建时间",
+  "coinDetailsDexMetrics": "DEX指标",
+  "coinDetailsDexSourceNotice": "交易对数据由DexScreener提供。",
+  "coinDetailsDays": "{count}天",
+  "@coinDetailsDays": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "coinDetailsHours": "{count}小时",
+  "@coinDetailsHours": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "coinDetailsMinutes": "{count}分钟",
+  "@coinDetailsMinutes": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+
+  "portfolioConnectTitle": "连接投资组合",
+  "portfolioReadOnlyApiConnection": "只读 API 连接",
+  "portfolioWalletAddressConnection": "通过钱包地址连接",
+  "portfolioConnected": "已连接",
+
+  "connectedAccountsWalletsExchanges": "钱包与交易所",
+  "connectedAccountsYourAccounts": "已连接的账户",
+  "connectedAccountsCount": "已连接 {count} 个账户",
+  "@connectedAccountsCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "connectedAccountsConnectDescription": "连接钱包和交易所，以使用 Avexa 的交易功能。",
+  "connectedAccountsRenameTitle": "重命名账户",
+  "connectedAccountsAccountName": "账户名称",
+  "connectedAccountsCancel": "取消",
+  "connectedAccountsSave": "保存",
+  "connectedAccountsRemoveTitle": "删除账户？",
+  "connectedAccountsRemoveConfirmation": "将从 Avexa 的已连接账户列表中移除“{account}”。",
+  "@connectedAccountsRemoveConfirmation": {
+    "placeholders": {
+      "account": {
+        "type": "String"
+      }
+    }
+  },
+  "connectedAccountsRemove": "删除",
+  "connectedAccountsChangeName": "更改名称",
+  "connectedAccountsNoAccounts": "尚未连接账户",
+  "connectedAccountsEmptyDescription": "连接钱包和交易所，在一个地方管理所有关联账户。",
+  "connectedAccountsConnectPortfolio": "连接投资组合",
+  "connectedAccountsBalancesNotice": "你的余额和资产仍会保留在 Portfolio 中。",
+  "connectedAccountsAddAccount": "添加账户",
+  "connectedAccountsSecurityNotice": "移除账户只会断开其与此列表的关联，不会转移资金或删除钱包本身。",
+  "connectedAccountsReadOnlyApi": "只读 API",
+
+  "loginTitle": "登录",
+  "loginSubtitle": "使用你的 Avexa 账户继续",
+  "loginEmail": "电子邮箱",
+  "loginPassword": "密码",
+  "loginButton": "登录",
+  "loginOrContinueWith": "或使用以下方式继续",
+  "loginForgotPassword": "忘记密码？",
+  "loginNoAccount": "还没有账户？",
+  "loginSignUp": "注册",
+  "loginResetPasswordTitle": "重置密码",
+  "loginResetPasswordDescription": "输入你的电子邮箱，我们会发送密码重置链接。",
+  "loginEnterEmail": "输入电子邮箱",
+  "loginSendResetLink": "发送重置链接",
+  "loginCancel": "取消",
+  "loginEnterEmailError": "请输入电子邮箱地址。",
+  "loginInvalidEmailError": "请输入有效的电子邮箱地址。",
+  "loginResetGenericError": "发生错误，请重试。",
+  "loginResetSuccess": "重置链接已发送，请检查收件箱。",
+  "loginAppleSignInFailed": "Apple 登录失败：{message}",
+  "@loginAppleSignInFailed": {
+    "placeholders": {
+      "message": {
+        "type": "String"
+      }
+    }
+  },
+
+  "registerTitle": "创建账户",
+  "registerSubtitle": "开启你的 AI 交易之旅。",
+  "registerEmail": "电子邮箱",
+  "registerPassword": "密码",
+  "registerConfirmPassword": "确认密码",
+  "registerButton": "创建账户",
+  "registerPasswordMismatch": "两次输入的密码不一致",
+  "registerSuccess": "账户创建成功，请检查电子邮箱。",
+  "registerGenericError": "发生错误",
+
+  "rugCheckTitle": "Rug Check",
+  "rugCheckHeadline": "交易前先扫描",
+  "rugCheckDescription": "交易前检查代币可能存在的安全风险。",
+  "rugCheckTokenAddress": "代币地址",
+  "rugCheckAddressHint": "粘贴 Solana 代币地址",
+  "rugCheckScanning": "正在扫描...",
+  "rugCheckScanButton": "扫描代币",
+  "rugCheckWhatWeCheck": "Avexa 检查内容",
+  "rugCheckLiquiditySecurity": "流动性与 LP 安全",
+  "rugCheckHolderConcentration": "持币集中度",
+  "rugCheckAuthorities": "Mint 和 Freeze 权限",
+  "rugCheckDevExposure": "开发者钱包持仓比例",
+  "rugCheckEnterAddress": "请先输入代币地址。",
+  "rugCheckAnalysisTitle": "代币安全分析",
+  "rugCheckTokenOverview": "代币概览",
+  "rugCheckLiquidity": "流动性",
+  "rugCheckLpLocked": "已锁定 LP",
+  "rugCheckHolders": "持币人数",
+  "rugCheckTopHolder": "最大持币者",
+  "rugCheckTop10Holders": "前 10 大持币者",
+  "rugCheckSecurityChecks": "安全检查",
+  "rugCheckMintAuthority": "Mint 权限",
+  "rugCheckFreezeAuthority": "Freeze 权限",
+  "rugCheckDevWallet": "开发者钱包",
+  "rugCheckEnabled": "已启用",
+  "rugCheckDisabled": "已禁用",
+  "rugCheckUnknown": "未知",
+  "rugCheckExposure": "持仓比例：{value}%",
+  "@rugCheckExposure": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "rugCheckDetectedRisks": "检测到的风险",
+  "rugCheckNoRisks": "扫描器未发现明显风险。",
+  "rugCheckRiskDetected": "检测到风险",
+  "rugCheckDisclaimer": "Rug Check 会分析可用的代币安全指标。低风险评分并不保证代币安全。",
+  "rugCheckUnknownToken": "未知代币",
+  "rugCheckUnavailable": "暂无数据",
+
+  "walletTrackerTitle": "钱包追踪器",
+  "walletTrackerAddWallet": "添加钱包",
+  "walletTrackerWalletName": "钱包名称",
+  "walletTrackerWalletNameHint": "例如：Smart Money",
+  "walletTrackerWalletAddress": "钱包地址",
+  "walletTrackerAddressHint": "Solana 钱包地址",
+  "walletTrackerCancel": "取消",
+  "walletTrackerAddError": "无法添加钱包",
+  "walletTrackerYourWallets": "你的钱包",
+  "walletTrackerTracked": "正在追踪",
+  "walletTrackerEyebrow": "钱包智能分析",
+  "walletTrackerHeroTitle": "追踪聪明资金",
+  "walletTrackerHeroDescription": "关注钱包活动，并在发生重要变动时收到通知。",
+  "walletTrackerLoadError": "无法加载钱包",
+  "walletTrackerRetry": "下拉以重试。",
+  "walletTrackerEmptyTitle": "尚未添加钱包",
+  "walletTrackerEmptyDescription": "添加钱包以开始追踪其活动。",
+  "walletTrackerDefaultName": "钱包",
+  "walletTrackerActive": "活跃",
+  "walletTrackerInactive": "未活跃",
+  "walletTrackerAddButton": "添加钱包",
+
+  "languagePickerTitle": "选择语言",
+  "languagePolish": "波兰语",
+  "languageEnglish": "英语",
+  "languageGerman": "德语",
+  "languageJapanese": "日语",
+  "languageRussian": "俄语",
+  "languageArabic": "阿拉伯语",
+  "languageChinese": "中文",
+  "languageSpanish": "西班牙语",
+  "languagePortuguese": "葡萄牙语",
+
+  "portfolioValue": "投资组合价值",
+  "portfolioWalletCount": "{count} / {max} 个钱包",
+  "@portfolioWalletCount": {
+    "placeholders": {
+      "count": {"type": "int"},
+      "max": {"type": "int"}
+    }
+  },
+  "portfolioNoWallets": "尚未连接钱包",
+  "portfolioConnectSolanaWallet": "连接 Solana 钱包以查看余额。",
+  "portfolioConnectWallet": "连接钱包",
+  "portfolioRefreshWallet": "刷新钱包",
+  "portfolioWalletPosition": "第 {current} 个，共 {total} 个钱包",
+  "@portfolioWalletPosition": {
+    "placeholders": {
+      "current": {"type": "int"},
+      "total": {"type": "int"}
+    }
+  },
+  "portfolioLoading": "加载中...",
+  "portfolioUnavailable": "不可用",
+  "portfolioWalletBalance": "钱包余额",
+  "portfolioSwipeWallets": "左右滑动以查看其他钱包",
+  "portfolioCombinedValue": "所有钱包的总价值",
+  "portfolioConnectedWallets": "已连接的钱包",
+  "portfolioConnectedCount": "已连接 {count} 个",
+  "@portfolioConnectedCount": {
+    "placeholders": {
+      "count": {"type": "int"}
+    }
+  },
+  "portfolioWalletAddressesConnected": "钱包地址已连接",
+  "portfolioManageAddressesNetworks": "管理地址和网络",
+  "portfolioConnectPublicAddress": "连接公开钱包地址以开始使用",
+  "portfolioManageConnections": "管理连接",
+  "portfolioMaxWalletsReached": "已达到最多 3 个钱包的限制",
+  "portfolioAddAnotherWallet": "添加另一个钱包",
+  "portfolioConnectToBuild": "连接钱包以开始构建您的投资组合。",
+  "portfolioAssetsSyncPending": "钱包地址已连接。资产同步功能尚未实现。",
+  "portfolioAnalytics": "投资组合分析",
+  "portfolioAnalyticsDescription": "同步真实钱包余额和投资组合历史记录后，将提供历史表现、资产配置分析和 AI 洞察。",
+  "portfolioLoadError": "无法加载投资组合。",
+  "portfolioSyncError": "无法同步钱包余额。",
+  "portfolioDefaultUser": "用户",
+
+  "loginLegalNotice": "创建账户或登录即表示您确认自己已年满16周岁，并知悉以下法律文件。",
+  "loginLegalTerms": "使用条款",
+  "loginLegalPrivacy": "隐私政策",
+  "loginLegalRisk": "风险免责声明",
+
+  "connectedAccountsAddressCopied": "钱包地址已复制。",
+  "connectedAccountsRenameWallet": "重命名钱包",
+  "connectedAccountsWalletNameHint": "例如：主钱包",
+  "connectedAccountsCancel": "取消",
+  "connectedAccountsSave": "保存",
+  "connectedAccountsRenameSuccess": "钱包名称已更新。",
+  "connectedAccountsRenameError": "无法重命名钱包：{error}",
+  "@connectedAccountsRenameError": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "connectedAccountsRemoveWalletTitle": "删除钱包？",
+  "connectedAccountsRemoveWalletDescription": "确定要从 Avexa 中删除此地址吗？你可以随时重新添加。",
+  "connectedAccountsRemove": "删除",
+  "connectedAccountsRemoveSuccess": "钱包已成功删除。",
+  "connectedAccountsRemoveError": "无法删除钱包：{error}",
+  "@connectedAccountsRemoveError": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "connectedAccountsHeader": "已连接的钱包",
+  "connectedAccountsSubtitle": "管理你的区块链地址",
+  "connectedAccountsConnectedCount": "已连接 {count} 个",
+  "@connectedAccountsConnectedCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "connectedAccountsHeaderDescription": "你可以在一个地方管理所有钱包。每个地址都会按照其所属的区块链网络单独追踪。",
+  "connectedAccountsWallet": "钱包",
+  "connectedAccountsRename": "重命名",
+  "connectedAccountsRemoveWallet": "删除钱包",
+  "connectedAccountsEmptyTitle": "尚未连接任何钱包",
+  "connectedAccountsEmptyDescription": "连接你的第一个公开钱包地址，开始建立 Avexa 投资组合。",
+  "connectedAccountsConnectWallet": "连接钱包",
+  "connectedAccountsLegacyNotice": "之前的 Portfolio 系统中保存了 {count} 个旧连接。这些连接已保留，但不会显示在新的钱包列表中。",
+  "@connectedAccountsLegacyNotice": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "connectedAccountsSecurityNotice": "Avexa 仅使用公开的区块链地址。你的私钥和资金始终由你自己掌控。连接地址不会授权任何交易。",
+  "connectedAccountsTitle": "已连接账户",
+  "connectedAccountsRefresh": "刷新",
+  "connectedAccountsYourWallets": "你的钱包",
+  "connectedAccountsAddWallet": "添加钱包",
+
+  "connectPortfolioSolanaDescription": "Solana 区块链",
+  "connectPortfolioEthereumDescription": "Ethereum 主网",
+  "connectPortfolioBaseDescription": "Base 网络",
+  "connectPortfolioArbitrumDescription": "Arbitrum One",
+  "connectPortfolioPolygonDescription": "Polygon PoS",
+  "connectPortfolioEnterAddress": "请输入钱包地址。",
+  "connectPortfolioInvalidSolanaAddress": "Solana 钱包地址无效。",
+  "connectPortfolioInvalidNetworkAddress": "{network} 钱包地址无效。",
+  "@connectPortfolioInvalidNetworkAddress": {
+    "placeholders": {
+      "network": {
+        "type": "String"
+      }
+    }
+  },
+  "connectPortfolioAlreadyConnected": "此地址已连接到 {network}。",
+  "@connectPortfolioAlreadyConnected": {
+    "placeholders": {
+      "network": {
+        "type": "String"
+      }
+    }
+  },
+  "connectPortfolioSuccess": "{network} 钱包已成功连接。",
+  "@connectPortfolioSuccess": {
+    "placeholders": {
+      "network": {
+        "type": "String"
+      }
+    }
+  },
+  "connectPortfolioError": "无法连接钱包，请重试。",
+  "connectPortfolioSelectNetwork": "选择网络",
+  "connectPortfolioChooseNetwork": "选择一个区块链网络",
+  "connectPortfolioSectionNetwork": "01  选择网络",
+  "connectPortfolioSectionNetworkSubtitle": "选择您的钱包所在的区块链。",
+  "connectPortfolioSectionAddress": "02  钱包地址",
+  "connectPortfolioSectionAddressSubtitle": "粘贴您的公开钱包地址。",
+  "connectPortfolioAddressLabel": "{network} 地址",
+  "@connectPortfolioAddressLabel": {
+    "placeholders": {
+      "network": {
+        "type": "String"
+      }
+    }
+  },
+  "connectPortfolioSolanaAddressHint": "粘贴您的 Solana 地址",
+  "connectPortfolioSectionWalletName": "03  钱包名称",
+  "connectPortfolioSectionWalletNameSubtitle": "选填。为此地址设置一个便于识别的名称。",
+  "connectPortfolioCustomNameLabel": "自定义名称（选填）",
+  "connectPortfolioCustomNameHint": "例如：主钱包",
+  "connectPortfolioSecurityTitle": "您的资产始终属于您。",
+  "connectPortfolioSecurityDescription": "Avexa 仅使用公开的区块链数据。我们绝不会要求您提供私钥、Secret Keys 或 API 凭据，也无法通过您的钱包执行交易。",
+  "connectPortfolioHeader": "连接您的钱包",
+  "connectPortfolioSubtitle": "添加公开钱包地址，即可在一个投资组合中追踪多个区块链网络上的资产。",
+  "connectPortfolioButton": "连接钱包",
+
+  "walletTrackerHeroTitle": "追踪聪明资金",
+  "walletTrackerHeroDescription": "关注钱包活动，查看被追踪的钱包正在买入或卖出哪些代币。",
+  "walletTrackerEnterWalletDetails": "请输入钱包名称和地址。",
+  "walletTrackerSyncComplete": "同步完成：钱包 {wallets} 个，已检查 {checked} 个，兑换 {swaps} 笔，新增 {inserted} 笔。",
+  "@walletTrackerSyncComplete": {
+    "placeholders": {
+      "wallets": {"type": "int"},
+      "checked": {"type": "int"},
+      "swaps": {"type": "int"},
+      "inserted": {"type": "int"}
+    }
+  },
+  "walletTrackerSyncError": "钱包同步错误：{error}",
+  "@walletTrackerSyncError": {
+    "placeholders": {
+      "error": {"type": "String"}
+    }
+  },
+
+  "walletDetailsTitle": "钱包详情",
+  "walletDetailsRename": "重命名钱包",
+  "walletDetailsLiveActivity": "钱包实时活动",
+  "walletDetailsTransactionCount": "{count} 笔交易",
+  "@walletDetailsTransactionCount": {
+    "placeholders": {
+      "count": {"type": "int"}
+    }
+  },
+  "walletDetailsRefreshActivity": "刷新钱包活动",
+  "walletDetailsNotifications": "通知",
+  "walletDetailsSaving": "正在保存...",
+  "walletDetailsActive": "已启用",
+  "walletDetailsRefreshing": "正在刷新活动...",
+  "walletDetailsNoTransactions": "暂无交易",
+  "walletDetailsActivityDescription": "钱包活动将在这里显示。",
+  "walletDetailsBuy": "买入",
+  "walletDetailsSell": "卖出",
+  "walletDetailsTransaction": "交易",
+  "walletDetailsWalletAlerts": "钱包提醒",
+  "walletDetailsWalletAlertsDescription": "启用此钱包的通知",
+  "walletDetailsBuyAlerts": "买入提醒",
+  "walletDetailsBuyAlertsDescription": "此钱包买入时发送通知",
+  "walletDetailsSellAlerts": "卖出提醒",
+  "walletDetailsSellAlertsDescription": "此钱包卖出时发送通知",
+  "walletDetailsLargeTransactions": "大额交易",
+  "walletDetailsLargeTransactionsDescription": "大额钱包资金变动时发送通知",
+  "walletDetailsDeleteWallet": "删除钱包",
+  "walletDetailsDeleteWalletDescription": "删除此钱包及其历史记录",
+  "walletDetailsDeleteTitle": "删除钱包？",
+  "walletDetailsDeleteDescription": "此钱包及其已追踪的交易历史记录将被删除。",
+  "walletDetailsCancel": "取消",
+  "walletDetailsDelete": "删除",
+  "walletDetailsSave": "保存",
+  "walletDetailsRenameTitle": "重命名钱包",
+  "walletDetailsWalletNameHint": "钱包名称",
+  "walletDetailsUnknownTime": "时间未知",
+  "walletDetailsSyncComplete": "钱包同步完成。已检查 {count} 笔交易。",
+  "@walletDetailsSyncComplete": {
+    "placeholders": {
+      "count": {"type": "int"}
+    }
+  },
+  "walletDetailsSyncError": "无法同步钱包，请检查日志。",
+  "walletDetailsUpdateSettingsError": "无法更新钱包设置。",
+  "walletDetailsRenameError": "无法重命名钱包。",
+  "walletDetailsDeleteError": "无法删除钱包。",
+
+  "liveMarketLive": "实时",
+  "liveMarketUpdateInterval": "每30秒更新",
+  "liveMarket24hLabel": "24小时市场",
+  "liveMarketLoading": "正在加载市场数据...",
+  "liveMarketError": "无法加载市场数据。",
+  "liveMarketEmpty": "暂无市场数据。",
+
+  "communityPartnersTitle": "AVEXA 社区",
+  "communityPartnersSubtitle": "加入与我们合作的社区",
+  "communityPartnersDefaultName": "社区",
+  "communityPartnersTelegramError": "无法打开 Telegram。",
+
+  "marketSentimentTitle": "市场情绪",
+  "marketSentimentLoading": "加载中",
+  "marketSentimentFear": "恐惧",
+  "marketSentimentNeutral": "中性",
+  "marketSentimentGreed": "贪婪",
+  "marketSentimentExtremeGreed": "极度贪婪",
+  "marketSentimentExtremeFear": "极度恐惧",
+  "marketSentimentBalanced": "当前市场处于平衡状态。",
+  "marketSentimentStrongBullish": "整个市场呈现强劲上涨趋势。",
+  "marketSentimentBullish": "当前市场以上涨趋势为主。",
+  "marketSentimentBearish": "市场下行压力正在增加。",
+  "marketSentimentStrongBearish": "市场受到强烈的下行压力。",
+  "marketSentimentError": "无法加载市场情绪。",
+  "marketSentimentLoadingDescription": "正在分析当前市场状况...",
+  "marketSentimentLiveUpdates": "实时 • 每30秒更新"
+
+}

@@ -1,0 +1,1061 @@
+
+{
+  "@@locale": "de",
+  "appName": "Avexa",
+  "language": "Sprache",
+  "chooseLanguage": "Sprache auswählen",
+  "settings": "Einstellungen",
+  "general": "ALLGEMEIN",
+  "notifications": "Benachrichtigungen",
+  "notificationsSubtitle": "Benachrichtigungen und Einstellungen verwalten.",
+  "appearance": "Darstellung",
+  "languageSection": "SPRACHE",
+  "lightMode": "Hell",
+  "darkMode": "Dunkel",
+  "systemDefault": "System",
+
+    "alerts": "BENACHRICHTIGUNGEN",
+    "pushNotifications": "Push-Benachrichtigungen",
+    "pushNotificationsSubtitle": "Erhalte wichtige Benachrichtigungen von Avexa.",
+    "freeSignals": "FREE-Signale",
+    "freeSignalsSubtitle": "Lass dich über neue FREE-Signale benachrichtigen.",
+    "proSignals": "PRO-Signale",
+    "proSignalsSubtitle": "Lass dich über neue PRO-Signale benachrichtigen.",
+    "takeProfitHits": "Take-Profit-Ziele erreicht",
+    "takeProfitHitsSubtitle": "Lass dich benachrichtigen, wenn TP1, TP2 oder TP3 erreicht wird.",
+    "experience": "NUTZUNG",
+    "hapticFeedback": "Haptisches Feedback",
+    "hapticFeedbackSubtitle": "Nutze Vibrationen bei wichtigen Meldungen und Aktionen.",
+    "savingPreferences": "Einstellungen werden gespeichert...",
+    "notificationPreferences": "Benachrichtigungseinstellungen",
+
+    "themeSection": "DESIGN",
+    "darkModeSubtitle": "Ideal für Umgebungen mit wenig Licht.",
+    "lightModeSubtitle": "Verwende eine hellere Darstellung.",
+    "systemDefaultSubtitle": "Übernimmt die Geräteeinstellungen.",
+    "appIconSection": "APP-SYMBOL",
+    "lightAppIcon": "Helles App-Symbol",
+    "useLightAvexaIcon": "Helles Avexa-Symbol verwenden.",
+    "useDarkAvexaIcon": "Dunkles Avexa-Symbol verwenden.",
+
+    "contactSupport": "Support kontaktieren",
+    "supportIntroTitle": "Wir helfen dir gerne",
+    "supportIntroSubtitle": "Beschreibe, wobei du Hilfe benötigst. Unser Team meldet sich bei dir.",
+    "supportTopicQuestion": "WOBEI KÖNNEN WIR HELFEN?",
+    "supportSelectTopic": "Thema auswählen",
+    "supportTapToChange": "Zum Ändern tippen",
+    "supportYourTopic": "DEIN THEMA",
+    "supportCustomTopicHint": "Worum geht es bei deiner Frage?",
+    "supportMessage": "NACHRICHT",
+    "supportMessageHint": "Wie können wir dir helfen?",
+    "supportSendMessage": "NACHRICHT SENDEN",
+    "supportResponseTime": "Wir antworten normalerweise innerhalb von 24 Stunden.",
+    "supportAccount": "Konto",
+    "supportSubscriptionBilling": "Abonnement und Abrechnung",
+    "supportTradingSignals": "Trading-Signale",
+    "supportTechnicalIssue": "Technisches Problem",
+    "supportBugReport": "Fehler melden",
+    "supportFeatureRequest": "Funktionsvorschlag",
+    "supportOther": "Sonstiges",
+    "supportMessageSent": "Nachricht gesendet",
+    "supportSuccessDescription": "Deine Nachricht wurde an das Avexa-Supportteam gesendet. Wir melden uns so bald wie möglich.",
+    "supportDone": "Fertig",
+    "supportLoginRequired": "Du musst angemeldet sein, um den Support zu kontaktieren.",
+    "supportSelectTopicError": "Bitte wähle ein Thema aus.",
+    "supportEnterTopicError": "Bitte gib dein Thema ein.",
+    "supportEnterMessageError": "Bitte gib deine Nachricht ein.",
+    "supportMessageMinLengthError": "Die Nachricht muss mindestens 10 Zeichen enthalten.",
+    "supportSendError": "Etwas ist schiefgelaufen. Bitte versuche es erneut.",
+    "supportSending": "Nachricht wird gesendet...",
+
+    "reportBug": "Fehler melden",
+    "bugIntroTitle": "Ein Problem entdeckt?",
+    "bugIntroSubtitle": "Beschreibe, was schiefgelaufen ist. Wir werden es überprüfen.",
+    "bugCategorySection": "KATEGORIE",
+    "bugWhatHappened": "WAS IST PASSIERT?",
+    "bugDescriptionHint": "Beschreibe das Problem, was du gerade gemacht hast und was passiert ist...",
+    "bugSendButton": "Fehlerbericht senden",
+    "bugFooter": "Dein Bericht wird direkt an das Avexa-Supportteam gesendet.",
+    "bugPickerTitle": "Fehlerkategorie",
+    "bugCategoryApp": "App-Fehler",
+    "bugCategorySignals": "Signale",
+    "bugCategoryTrading": "Trading",
+    "bugCategoryAccount": "Konto",
+    "bugCategorySubscription": "Abonnement",
+    "bugCategoryNotifications": "Benachrichtigungen",
+    "bugCategoryOther": "Sonstiges",
+    "bugPleaseDescribe": "Bitte beschreibe das Problem.",
+    "bugLoginRequired": "Du musst angemeldet sein, um einen Fehler zu melden.",
+    "bugSentSuccess": "Fehlerbericht erfolgreich gesendet.",
+    "bugSendFailed": "Der Bericht konnte nicht gesendet werden. Bitte versuche es erneut.",
+    "bugSending": "Bericht wird gesendet...",
+
+  "helpCenter": "Hilfe-Center",
+  "helpMainTitle": "Wie können wir helfen?",
+  "helpMainSubtitle": "Finde Antworten und erfahre mehr über Avexa.",
+  "helpSearchHint": "Hilfe durchsuchen...",
+  "helpPopularTopics": "BELIEBTE THEMEN",
+  "helpSearchResults": "SUCHERGEBNISSE",
+  "helpNeedMore": "BENÖTIGST DU WEITERE HILFE?",
+  "helpNoResults": "Keine Ergebnisse gefunden",
+  "helpTryAnotherSearch": "Versuche, nach etwas anderem zu suchen.",
+  "helpSupportSubtitle": "Wir helfen dir gerne",
+  "helpFaqTitle": "Häufig gestellte Fragen",
+  "helpStillNeed": "Brauchst du noch Hilfe?",
+  "helpContactPrompt": "Wenn du keine Antwort findest, kontaktiere unser Support-Team.",
+  "helpSignals": "Signale",
+  "helpSignalsSubtitle": "So funktionieren Avexa-Signale",
+  "helpPro": "Avexa PRO",
+  "helpProSubtitle": "PRO-Funktionen und Abonnement",
+  "helpTrading": "Trading",
+  "helpTradingSubtitle": "Trading, TP, SL und Einstiege",
+  "helpAccount": "Konto",
+  "helpAccountSubtitle": "Konto und Profil",
+  "helpNotifications": "Benachrichtigungen",
+  "helpNotificationsSubtitle": "Alarme und Benachrichtigungen",
+
+  "faqSignalsQ1": "Was sind Avexa-Signale?",
+  "faqSignalsA1": "Avexa-Signale sind Handelsmöglichkeiten, die anhand von Marktdaten und Analysen erstellt werden. Ein Signal kann Einstiegspreis, Take-Profit- und Stop-Loss-Level sowie die Marktrichtung enthalten.",
+  "faqSignalsQ2": "Wie oft werden neue Signale veröffentlicht?",
+  "faqSignalsA2": "Die Anzahl verfügbarer Signale hängt von deinem Avexa-Tarif ab. Nutzer des Free-Tarifs haben eingeschränkten Zugriff, während PRO-Nutzer zusätzliche Premium-Signale erhalten.",
+  "faqSignalsQ3": "Was bedeuten Entry, TP und SL?",
+  "faqSignalsA3": "Entry ist der vorgeschlagene Preis oder Preisbereich für den Einstieg in einen Trade. TP (Take Profit) ist das Kursziel für einen möglichen Gewinnabschluss. SL (Stop Loss) ist das Niveau, mit dem potenzielle Verluste begrenzt werden sollen.",
+  "faqSignalsQ4": "Garantieren Avexa-Signale Gewinne?",
+  "faqSignalsA4": "Nein. Kein Handelssignal kann Gewinne garantieren. Signale basieren auf Analysen und verfügbaren Marktdaten, doch Kryptowährungsmärkte sind volatil und jeder Trade birgt Risiken.",
+  "faqSignalsQ5": "Wo finde ich meine verfügbaren Signale?",
+  "faqSignalsA5": "Deine verfügbaren Signale findest du im Bereich Signale von Avexa. Der Zugriff hängt von deinem aktuellen Tarif ab.",
+
+  "faqProQ1": "Was ist Avexa PRO?",
+  "faqProA1": "Avexa PRO ist die Premium-Version von Avexa. Sie bietet zusätzliche Trading-Analysen, Premium-Signale und erweiterte Funktionen, die im Free-Tarif nicht verfügbar sind.",
+  "faqProQ2": "Wie kann ich auf PRO upgraden?",
+  "faqProA2": "Öffne den Abonnement-Bildschirm und wähle Upgrade auf PRO. Folge den Zahlungsanweisungen, um dein Abonnement abzuschließen.",
+  "faqProQ3": "Wie erkenne ich, ob ich PRO habe?",
+  "faqProA3": "Deinen aktuellen Tarif findest du in deinem Profil oder auf dem Abonnement-Bildschirm. Bei einem aktiven PRO-Konto wird die PRO-Mitgliedschaft angezeigt.",
+  "faqProQ4": "Kann ich mein PRO-Abonnement kündigen?",
+  "faqProA4": "Ja. Du kannst dein Abonnement auf dem Abonnement-Bildschirm verwalten oder kündigen. Dein Zugang kann bis zum Ende des aktuellen Abrechnungszeitraums aktiv bleiben.",
+  "faqProQ5": "Was passiert, wenn mein PRO-Abonnement abläuft?",
+  "faqProA5": "Nach Ablauf deines PRO-Zugangs wird dein Konto auf den Free-Tarif zurückgesetzt. Premium-Funktionen sind erst nach erneuter Aktivierung von PRO wieder verfügbar.",
+
+  "faqTradingQ1": "Was ist Take Profit (TP)?",
+  "faqTradingA1": "Take Profit ist ein vorher festgelegtes Kursziel. Erreicht der Markt dieses Niveau, kann ein Trader die Position schließen und den geplanten Gewinn sichern.",
+  "faqTradingQ2": "Was ist Stop Loss (SL)?",
+  "faqTradingA2": "Stop Loss ist ein vorher festgelegtes Niveau, das potenzielle Verluste begrenzen soll, wenn sich der Markt gegen den Trade bewegt.",
+  "faqTradingQ3": "Was ist ein Entry?",
+  "faqTradingA3": "Entry ist der Preis oder Preisbereich, bei dem das Signal einen möglichen Positionseinstieg vorschlägt.",
+  "faqTradingQ4": "Warum kann mein Ergebnis vom Signal abweichen?",
+  "faqTradingA4": "Marktpreise können sich sehr schnell ändern. Slippage, Ausführungsgeschwindigkeit, Liquidität und Gebühren können dazu führen, dass dein tatsächlicher Ein- oder Ausstiegspreis vom Signalpreis abweicht.",
+  "faqTradingQ5": "Führt Avexa Trades automatisch aus?",
+  "faqTradingA5": "Avexa-Signale liefern Trading-Informationen. Sofern keine unterstützte automatisierte Trading-Funktion aktiviert ist, bist du selbst für die Ausführung und Verwaltung deiner Trades verantwortlich.",
+
+  "faqAccountQ1": "Wie ändere ich meinen Benutzernamen?",
+  "faqAccountA1": "Öffne Profil und wähle Persönliche Informationen. Dort kannst du deine Profildaten aktualisieren.",
+  "faqAccountQ2": "Wie ändere ich mein Passwort?",
+  "faqAccountA2": "Öffne Profil → Sicherheit und nutze die verfügbaren Optionen zur Passwortverwaltung.",
+  "faqAccountQ3": "Kann ich meine E-Mail-Adresse ändern?",
+  "faqAccountA3": "Änderungen der E-Mail-Adresse sollten über die Kontosicherheitseinstellungen vorgenommen werden, sofern diese Option verfügbar ist. Eine zusätzliche Verifizierung kann erforderlich sein.",
+  "faqAccountQ4": "Wie melde ich mich ab?",
+  "faqAccountA4": "Öffne dein Profil und scrolle bis zum unteren Ende des Bildschirms. Wähle ABMELDEN, um deine aktuelle Sitzung zu beenden.",
+  "faqAccountQ5": "Kann ich mein Konto löschen?",
+  "faqAccountA5": "Du kannst die Kontolöschung über den Konto- oder Sicherheitsbereich anfordern. Beachte, dass dabei zugehörige Daten dauerhaft gelöscht werden können.",
+
+  "faqNotificationsQ1": "Wie aktiviere ich Benachrichtigungen?",
+  "faqNotificationsA1": "Öffne Mehr → App-Einstellungen → Benachrichtigungen. Dort kannst du allgemeine Benachrichtigungen, Signal-Alarme und haptisches Feedback verwalten.",
+  "faqNotificationsQ2": "Was sind Signal-Alarme?",
+  "faqNotificationsA2": "Signal-Alarme informieren dich, wenn ein neuer relevanter Trading-Hinweis verfügbar ist.",
+  "faqNotificationsQ3": "Warum erhalte ich keine Benachrichtigungen?",
+  "faqNotificationsA3": "Prüfe zuerst, ob Benachrichtigungen in Avexa und in den Geräteeinstellungen aktiviert sind. Stelle außerdem sicher, dass Signal-Alarme eingeschaltet sind.",
+  "faqNotificationsQ4": "Was ist haptisches Feedback?",
+  "faqNotificationsA4": "Haptisches Feedback nutzt die Vibration deines Geräts, um bei unterstützten Aktionen und Alarmen zusätzliche Rückmeldungen zu geben.",
+
+  "aboutTitle": "Über Avexa",
+  "aboutTagline": "KI-gestützte Krypto-Intelligenz",
+  "aboutVersion": "VERSION 1.0.0",
+  "aboutSection": "ÜBER AVEXA",
+  "aboutDescription": "Avexa ist eine KI-gestützte Plattform für Krypto-Analysen, die Tradern hilft, den Markt zu verstehen, Chancen zu entdecken und fundiertere Entscheidungen zu treffen.",
+  "aboutGettingStarted": "ERSTE SCHRITTE",
+  "aboutViewOnboarding": "Einführung ansehen",
+  "aboutOnboardingDescription": "Entdecke die wichtigsten Funktionen von Avexa in einer kurzen Tour.",
+  "aboutWhatWeDo": "WAS WIR TUN",
+  "aboutTradingSignals": "Trading-Signale",
+  "aboutTradingSignalsDescription": "KI-gestützte Signale, die auf potenzielle Marktchancen aufmerksam machen.",
+  "aboutWhaleTracking": "Whale-Tracking",
+  "aboutWhaleTrackingDescription": "Verfolge die Aktivitäten großer Wallets und entdecke ungewöhnliche Marktbewegungen.",
+  "aboutMarketIntelligence": "Marktanalyse",
+  "aboutMarketIntelligenceDescription": "Verstehe mithilfe fortschrittlicher KI-Analysen, was den Markt bewegt.",
+  "aboutOurMission": "UNSERE MISSION",
+  "aboutMissionStatement": "Fortschrittliche Krypto-Marktanalyse für alle zugänglich machen.",
+  "aboutBuiltForTraders": "Für Trader entwickelt.",
+  "aboutPoweredByIntelligence": "Intelligenz als Antrieb.",
+  "aboutCopyright": "© 2026 Avexa",
+
+    "onboardingHomeSection": "STARTSEITE",
+    "onboardingHomeTitle": "Dein Krypto-Kommandozentrum",
+    "onboardingHomeDescription": "Alles Wichtige auf einen Blick. Verfolge den Markt und entdecke, was bei Avexa passiert.",
+    "onboardingChartsSection": "CHARTS",
+    "onboardingChartsTitle": "Entdecke den Markt",
+    "onboardingChartsDescription": "Erkunde DEX-, Trending-, Spot- und Futures-Märkte und behalte die Kursbewegungen im Blick.",
+    "onboardingSignalsSection": "SIGNALE",
+    "onboardingSignalsTitle": "KI-gestützte Signale",
+    "onboardingSignalsDescription": "Entdecke KI-generierte Setups mit Einstieg, Stop Loss, Take Profit und Konfidenzdaten.",
+    "onboardingAiChartSection": "KI-CHART",
+    "onboardingAiChartTitle": "KI-Chartanalyse",
+    "onboardingAiChartDescription": "Lade einen beliebigen Krypto-Chart hoch und lass Avexa AI Trends, Momentum, Unterstützungen und Widerstände analysieren.",
+    "onboardingPortfolioSection": "PORTFOLIO",
+    "onboardingPortfolioTitle": "Dein Portfolio",
+    "onboardingPortfolioDescription": "Verbinde unterstützte Konten und verwalte dein Krypto-Portfolio an einem Ort.",
+    "onboardingSkip": "ÜBERSPRINGEN",
+    "onboardingNext": "WEITER",
+    "onboardingGetStarted": "LOSLEGEN",
+
+    "securityTitle": "Sicherheit",
+    "securityAccountTitle": "Kontosicherheit",
+    "securityAccountDescription": "Verwalte dein Passwort und die Sicherheit deines Kontos.",
+    "securityAccountSection": "KONTO",
+    "securityAccountEmail": "Konto-E-Mail-Adresse",
+    "securityChangePassword": "PASSWORT ÄNDERN",
+    "securityCurrentPassword": "Aktuelles Passwort",
+    "securityNewPassword": "Neues Passwort",
+    "securityConfirmNewPassword": "Neues Passwort bestätigen",
+    "securityEnterNewPassword": "Neues Passwort eingeben",
+    "securityPasswordLengthError": "Das Passwort muss mindestens 8 Zeichen lang sein.",
+    "securityPasswordsMismatch": "Die Passwörter stimmen nicht überein.",
+    "securityPasswordChanged": "Passwort erfolgreich geändert.",
+    "securityPasswordChangeError": "Passwort konnte nicht geändert werden.",
+    "securityAppLockSection": "APP-SPERRE",
+    "securityAppLockTitle": "App-Sperre",
+    "securityAppLockEnabledDescription": "Beim Öffnen der App ist eine Überprüfung erforderlich.",
+    "securityAppLockDisabledDescription": "Schütze die App mit einer Sperre.",
+    "securityVerificationCancelled": "Überprüfung abgebrochen.",
+    "securityVerificationRequired": "Eine Überprüfung ist erforderlich.",
+    "securityAppLockEnabled": "App-Sperre aktiviert.",
+    "securityAppLockDisabled": "App-Sperre deaktiviert.",
+    "securityAppLockChangeError": "Die Sperreinstellungen konnten nicht geändert werden.",
+    "securitySafetyNotice": "Schütze dein Konto. Teile dein Passwort oder deine PIN niemals mit anderen.",
+    "securityCreatePin": "PIN erstellen",
+    "securityCreatePinDescription": "Erstelle eine PIN, um die App zu schützen.",
+    "securityEnterPin": "PIN eingeben",
+    "securityPin": "PIN",
+    "securityConfirmPin": "PIN bestätigen",
+    "securityPinLengthError": "Die PIN muss aus 4 Ziffern bestehen.",
+    "securityPinDigitsError": "Die PIN darf nur Ziffern enthalten.",
+    "securityPinsMismatch": "Die PINs stimmen nicht überein.",
+    "securityCancel": "Abbrechen",
+    "securitySave": "Speichern",
+    "securityUnlock": "Entsperren",
+
+    "connectedAccountsTitle": "Verbundene Konten",
+    "connectedAccountsWalletsExchanges": "Wallets und Börsen",
+    "connectedAccountsDescription": "Verbinde deine Wallets und Börsen, um die Trading-Funktionen von Avexa zu nutzen.",
+    "connectedAccountsSolanaWallet": "Solana-Wallet",
+    "connectedAccountsEthereumWallet": "Ethereum-Wallet",
+    "connectedAccountsExchanges": "Börsen",
+    "connectedAccountsExchangeAccount": "Börsenkonto",
+    "connectedAccountsSecurityNotice": "Gib deine Zugangsdaten oder privaten Schlüssel niemals an Avexa weiter. Für Verbindungen werden sichere Authentifizierungsmethoden verwendet.",
+    "connectedAccountsComingSoon": "Diese Verbindung wird in einer zukünftigen Version von Avexa verfügbar sein.",
+    "connectedAccountsOk": "OK",
+
+    "personalInfoTitle": "Persönliche Informationen",
+    "personalInfoDescription": "Verwalte deine Profilinformationen und deinen Avatar.",
+    "personalInfoDefaultUser": "Benutzer",
+    "personalInfoLoadError": "Dein Profil konnte nicht geladen werden.",
+    "personalInfoAvatarSaveError": "Das Profilbild konnte nicht gespeichert werden.",
+    "personalInfoAvatarUpdated": "Profilbild aktualisiert.",
+    "personalInfoAvatarUpdateError": "Das Profilbild konnte nicht aktualisiert werden.",
+    "personalInfoNameRequired": "Bitte gib deinen Namen ein.",
+    "personalInfoUsernameRequired": "Bitte gib einen Benutzernamen ein.",
+    "personalInfoUsernameLengthError": "Der Benutzername muss mindestens 3 Zeichen enthalten.",
+    "personalInfoUpdateError": "Dein Profil konnte nicht aktualisiert werden.",
+    "personalInfoDetailsSection": "PERSÖNLICHE DATEN",
+    "personalInfoDisplayName": "ANZEIGENAME",
+    "personalInfoNameHint": "Dein Name",
+    "personalInfoUsername": "BENUTZERNAME",
+    "personalInfoUsernameHint": "Benutzername",
+    "personalInfoUsernameDescription": "Dieser Benutzername ist in ganz Avexa sichtbar.",
+    "personalInfoEmailSection": "KONTO-E-MAIL",
+    "personalInfoVerifiedEmail": "Bestätigte Konto-E-Mail",
+    "personalInfoEmailCannotChange": "Deine E-Mail-Adresse kann hier nicht geändert werden.",
+    "personalInfoSaveChanges": "ÄNDERUNGEN SPEICHERN",
+    "personalInfoSecureSaveNotice": "Deine Änderungen werden sicher in deinem Konto gespeichert.",
+
+    "subscriptionTitle": "Abonnement",
+    "subscriptionChoosePlan": "WÄHLE DEINEN TARIF",
+    "subscriptionYourPlan": "DEIN TARIF",
+    "subscriptionFeatures": "FUNKTIONEN",
+    "subscriptionMonthly": "Monatlich",
+    "subscriptionYearly": "Jährlich",
+    "subscriptionSave33": "33 % SPAREN",
+    "subscriptionPerMonth": "/ Monat",
+    "subscriptionPerYear": "/ Jahr",
+    "subscriptionProMonthly": "PRO MONATLICH",
+    "subscriptionProYearly": "PRO JÄHRLICH",
+    "subscriptionUpgradeMonthly": "Auf PRO upgraden — {price}/Monat",
+    "@subscriptionUpgradeMonthly": {
+    "placeholders": {
+        "price": {
+        "type": "String"
+        }
+    }
+    },
+    "subscriptionUpgradeYearly": "Auf PRO upgraden — {price}/Jahr",
+    "@subscriptionUpgradeYearly": {
+    "placeholders": {
+        "price": {
+        "type": "String"
+        }
+    }
+    },
+    "subscriptionManagePurchases": "Käufe verwalten",
+    "subscriptionRestorePurchases": "Käufe wiederherstellen",
+    "subscriptionManageSubscription": "Abonnement verwalten",
+    "subscriptionChangePlan": "Tarif ändern",
+    "subscriptionCancelSubscription": "Abonnement kündigen",
+    "subscriptionUnavailable": "Das Abonnement ist derzeit nicht verfügbar.",
+    "subscriptionCheckingPurchases": "Vorherige Käufe werden überprüft...",
+    "subscriptionManagementComingSoon": "Die Abonnementverwaltung ist bald verfügbar.",
+    "subscriptionDailySignals": "Tägliche Signale",
+    "subscriptionOnePerDay": "1 pro Tag",
+    "subscriptionUnlimited": "Unbegrenzt",
+    "subscriptionAiMarketAnalysis": "KI-Marktanalyse",
+    "subscriptionWhaleTracking": "Whale-Tracking",
+    "subscriptionAdvancedCharts": "Erweiterte Charts",
+    "subscriptionFuturesIntelligence": "Futures-Analyse",
+    "subscriptionWalletTracker": "Wallet-Tracker",
+    "subscriptionNewsSentiment": "Nachrichten und Sentiment",
+    "subscriptionLimited": "Begrenzt",
+    "subscriptionPrioritySupport": "Priorisierter Support",
+    "subscriptionFreeInfoTitle": "Du nutzt den FREE-Tarif",
+    "subscriptionFreeInfoDescription": "Wechsle zu PRO, um alle Funktionen freizuschalten und dein Trading auf die nächste Stufe zu bringen.",
+    "subscriptionActiveTitle": "Dein PRO-Abonnement ist aktiv",
+    "subscriptionActiveDescription": "Alle Premium-Funktionen sind derzeit freigeschaltet.",
+    "subscriptionProInfoTitle": "Du bist PRO",
+    "subscriptionProInfoDescription": "Danke, dass du Avexa PRO nutzt. Handle noch smarter.",
+
+    "profileActive": "AKTIV",
+    "profileProPlan": "PRO-TARIF",
+    "profileFreePlan": "FREE-TARIF",
+    "profileMemberSince": "Mitglied seit {year}",
+    "@profileMemberSince": {
+    "placeholders": {
+        "year": {
+        "type": "String"
+        }
+    }
+    },
+    "profileFreeSignals": "FREE-Signale",
+    "profileAiAnalyses": "KI-Analysen",
+    "profileSubscriptionSection": "ABONNEMENT",
+    "profileAccountSection": "KONTO",
+    "profilePreferencesSection": "EINSTELLUNGEN",
+    "profileSupportSection": "SUPPORT",
+    "profilePersonalInformation": "Persönliche Informationen",
+    "profileConnectedAccounts": "Verbundene Konten",
+    "profileSecurity": "Sicherheit",
+    "profileAppSettings": "App-Einstellungen",
+    "profileRateUs": "Bewerte uns",
+    "profileAboutAvexa": "Über Avexa",
+    "profileHelpCenter": "Hilfezentrum",
+    "profileReportBug": "Fehler melden",
+    "profileContactSupport": "Support kontaktieren",
+    "profileLogOut": "ABMELDEN",
+    "profileActiveSubscription": "Aktives Abonnement",
+    "profileCurrentSubscription": "Aktuelles Abonnement",
+    "profileAvatarSaveError": "Profilbild konnte nicht gespeichert werden.",
+    "profileAvatarUpdated": "Profilbild wurde aktualisiert.",
+    "profileAvatarUpdateError": "Profilbild konnte nicht aktualisiert werden.",
+
+  "portfolioHeaderProfile": "Profil",
+  "portfolioTapToViewProfile": "Tippe, um dein Profil anzusehen",
+  "portfolioValue": "Portfoliowert",
+  "portfolioNoPortfolioConnected": "Kein Portfolio verbunden",
+  "portfolioConnectDescription": "Verbinde deine Börse oder Wallet, um dein Portfolio live zu verfolgen und KI-Analysen sowie Risikoanalysen zu nutzen.",
+  "portfolioConnectButton": "PORTFOLIO VERBINDEN",
+  "portfolioConnectedSuccessfully": "Portfolio erfolgreich verbunden",
+  "portfolioLastSync": "Letzte Synchronisierung: Gerade eben",
+  "portfolioManageConnections": "VERBINDUNGEN VERWALTEN",
+  "portfolioRefreshPortfolio": "PORTFOLIO AKTUALISIEREN",
+  "portfolioSyncComingSoon": "Portfoliosynchronisierung folgt in Kürze",
+  "portfolioDisconnect": "Portfolio trennen",
+  "portfolioOverview": "Portfolioübersicht",
+  "portfolioTotalValue": "Gesamter Portfoliowert",
+  "portfolioAssets": "Assets",
+  "portfolioChains": "Netzwerke",
+  "portfolioNfts": "NFTs",
+  "portfolioNoAssetsSynced": "Keine Assets synchronisiert",
+  "portfolioConnectToImport": "Verbinde deine Wallet, um deine Kryptowährungen automatisch zu importieren.",
+  "portfolioAiScore": "KI-Portfoliobewertung",
+  "portfolioExcellent": "Ausgezeichnetes Portfolio",
+  "portfolioRiskDescription": "Diversifiziertes Portfolio mit mittlerem Risiko.",
+  "portfolioAiInsights": "KI-Einblicke",
+  "portfolioInsightDiversified": "Das Portfolio ist über große Kryptowährungen hinweg gut diversifiziert.",
+  "portfolioInsightModerateRisk": "Das aktuelle Risikoniveau ist moderat.",
+  "portfolioInsightStablecoins": "Stablecoins könnten die Volatilität reduzieren.",
+  "portfolioInsightNoSuspiciousTokens": "Keine verdächtige Token-Konzentration erkannt.",
+  "portfolioProPlan": "PRO-TARIF",
+  "portfolioFreePlan": "FREE-TARIF",
+  "portfolioActive": "Aktiv",
+  "portfolioNotificationsEnabled": "Benachrichtigungen aktiviert",
+  "portfolioMemberSince": "Mitglied seit {year}",
+
+  "aiAssistantClearChat": "Chat leeren",
+  "aiAssistantMinimize": "Minimieren",
+  "aiAssistantTitle": "KI-Trading-Assistent",
+  "aiAssistantSubtitle": "Dein persönlicher Kryptoanalyst",
+  "aiAssistantAnalyzeBtc": "📈 BTC analysieren",
+  "aiAssistantBestTrade": "🔥 Bester Trade",
+  "aiAssistantMarketRisk": "⚠️ Marktrisiko",
+  "aiAssistantHiddenGems": "💎 Geheimtipps",
+  "aiAssistantWelcome": "Wobei kann ich dir heute helfen?",
+  "aiAssistantAnalyzeBitcoin": "📈 Bitcoin analysieren",
+  "aiAssistantSuggestionMarketRisk": "⚠️ Marktrisiko",
+  "aiAssistantSuggestionHiddenGems": "💎 Geheimtipps",
+  "aiAssistantSavedAnalyses": "Gespeicherte Analysen",
+  "aiAssistantNoSavedAnalyses": "Keine gespeicherten Analysen",
+  "aiAssistantAnalysisRemoved": "Analyse entfernt",
+  "aiAssistantAnalysisSaved": "Analyse gespeichert",
+  "aiAssistantFeedbackThanks": "Danke für dein Feedback!",
+  "aiAssistantFeedbackQuestion": "Warum war diese Antwort nicht hilfreich?",
+  "aiAssistantFeedbackIncorrect": "❌ Falsche Informationen",
+  "aiAssistantFeedbackGeneric": "🤔 Zu allgemein",
+  "aiAssistantFeedbackNoAnswer": "💬 Meine Frage wurde nicht beantwortet",
+  "aiAssistantFeedbackOutdated": "📉 Veraltete Marktdaten",
+  "aiAssistantFeedbackOther": "✍️ Sonstiges",
+  "aiAssistantFeedbackThanksImprove": "Danke, dass du die KI verbesserst!",
+  "aiAssistantInputHint": "Frag alles rund um Kryptowährungen...",
+  "aiAssistantAnalyzingMarket": "Markt wird analysiert...",
+
+  "chartsTitle": "Charts",
+  "chartsSearchHint": "Coin oder Token suchen...",
+  "chartsMarketCap": "Marktkapitalisierung",
+  "chartsVolume": "Volumen",
+  "chartsChange24": "Änderung 24 Std.",
+  "chartsRank": "Rang",
+  "chartsFavorites": "Favoriten",
+  "chartsTrending": "Im Trend",
+  "chartsSpot": "Spot",
+  "chartsFutures": "Futures",
+  "chartsTrendingCoins": "Trendende Coins",
+  "chartsSpotMarket": "Spotmarkt",
+  "chartsFuturesMarket": "Futures-Markt",
+  "chartsMostActive": "Aktuell am aktivsten",
+  "chartsSpotAssets": "Live-Assets am Spotmarkt",
+  "chartsFuturesAssets": "Wichtige Futures-Assets",
+  "chartsTopGainers": "Größte Gewinner",
+  "chartsTopLosers": "Größte Verlierer",
+  "charts24HourPerformance": "Performance der letzten 24 Stunden",
+  "chartsGainers": "Gewinner",
+  "chartsLosers": "Verlierer",
+  "chartsPrice": "Preis",
+  "chartsMarketCapShort": "Marktkap.",
+  "chartsAiMarketScore": "KI-Marktwert",
+  "chartsNoFavorites": "Noch keine Favoriten",
+  "chartsAddFavoritesHint": "Füge Coins hinzu, um sie hier schnell zu verfolgen.",
+  "chartsDexScanner": "DEX-Scanner",
+  "chartsDexSubtitle": "On-Chain-Chancen entdecken",
+  "chartsFilters": "Filter",
+  "chartsFiltersCount": "Filter: {count}",
+  "chartsAllChains": "Alle Chains",
+  "chartsDexPairsCount": "{count} Paare",
+  "chartsSortLabel": "Sortieren: {sort}",
+  "chartsDexFilters": "DEX-Filter",
+  "chartsDexFiltersSubtitle": "Passe den Scanner wie einen DEX-Screener an.",
+  "chartsPairAge": "Alter des Paars",
+  "chartsReset": "Zurücksetzen",
+  "chartsApplyFilters": "Filter anwenden",
+  "chartsAll": "Alle",
+  "chartsNoDexPairs": "Keine DEX-Paare gefunden",
+  "chartsWidenFilters": "Versuche, die Filter zu erweitern.",
+  "chartsMarketCapUpper": "MARKTKAPITALISIERUNG",
+  "chartsLiquidity": "Liquidität",
+  "chartsLiquidityUpper": "LIQUIDITÄT",
+  "chartsVolume24Upper": "VOLUMEN 24 STD.",
+  "chartsFlow24Upper": "FLOW 24 STD.",
+  "chartsBuysCount": "{count} Käufe",
+  "chartsSellsCount": "{count} Verkäufe",
+  "@chartsFiltersCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "@chartsDexPairsCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "@chartsSortLabel": {
+    "placeholders": {
+      "sort": {
+        "type": "String"
+      }
+    }
+  },
+  "@chartsBuysCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "@chartsSellsCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+
+    "aiChartTitle": "KI-Chart",
+    "aiChartDescription": "Mache ein Foto eines Charts und lasse es von Avexa analysieren.",
+    "aiChartAnalysisTitle": "KI-Chartanalyse",
+    "aiChartDone": "Fertig",
+    "aiChartScannerTitle": "KI-Chart-Scanner",
+    "aiChartScannerDescription": "Positioniere deinen Chart im Rahmen und nimm ein klares Bild für die KI-Analyse auf.",
+    "aiChartEnableCamera": "Kamera aktivieren",
+    "aiChartStartingCamera": "Kamera wird gestartet...",
+    "aiChartAnalyze": "Chart analysieren",
+    "aiChartAnalyzing": "Chart wird analysiert...",
+    "aiChartAnalysisHistory": "Analyseverlauf",
+    "aiChartRecentAnalyses": "Deine letzten Chartanalysen",
+    "aiChartHistoryNotice": "Der Analyseverlauf ist 24 Stunden lang verfügbar.",
+    "aiChartHistoryLoadError": "Verlauf konnte nicht geladen werden",
+    "aiChartTryAgainLater": "Bitte versuche es später erneut.",
+    "aiChartNoAnalyses": "Noch keine Analysen",
+    "aiChartHistoryEmptyDescription": "Hier erscheinen deine Chartanalysen der letzten 24 Stunden.",
+    "aiChartHistoryCardTitle": "Chartanalyse",
+    "aiChartCameraUnavailable": "Keine Kamera verfügbar",
+    "aiChartCameraError": "Die Kamera konnte nicht gestartet werden. Bitte überprüfe die Kameraberechtigungen.",
+    "aiChartCaptureError": "Das Foto konnte nicht aufgenommen werden. Bitte versuche es erneut.",
+    "aiChartSelectImageError": "Das Bild konnte nicht ausgewählt werden. Bitte versuche es erneut.",
+    "aiChartAnalysisError": "AI-Chart-Fehler: {error}",
+    "@aiChartAnalysisError": {
+    "placeholders": {
+        "error": {
+        "type": "String"
+        }
+    }
+    },
+    "aiChartNoImageError": "Kein Bild ausgewählt.",
+    "aiChartUnexpectedResponseError": "Unerwartetes Antwortformat: {response}",
+    "@aiChartUnexpectedResponseError": {
+    "placeholders": {
+        "response": {
+        "type": "String"
+        }
+    }
+    },
+    "aiChartEmptyAnalysisError": "Die KI hat eine leere Analyse zurückgegeben.",
+
+  "homeTagline": "KI-Krypto-Intelligenz",
+  "homeRugCheck": "Rug Check",
+  "homeRugCheckDescription": "Token auf potenzielle Risiken prüfen",
+  "homeWalletTracker": "Wallet-Tracker",
+  "homeWalletTrackerDescription": "Wallets verfolgen und Live-Benachrichtigungen erhalten",
+  "homeLiveMarketData": "📈 Live-Marktdaten",
+  "homeTopMovers": "🚀 Stärkste Kursbewegungen",
+  "homeLiveLiquidations": "💀 Live-Liquidationen",
+
+  "signalDetailTitle": "Signaldetails",
+  "signalDetailSolanaMeme": "SOLANA-MEME",
+  "signalDetailDirection": "RICHTUNG",
+  "signalDetailTier": "STUFE",
+  "signalDetailAiConfidence": "KI-PROGNOSESICHERHEIT",
+  "signalDetailConfidenceDescription": "Von der KI anhand der Marktbedingungen berechnete Konfidenzbewertung.",
+  "signalDetailTradeLevels": "HANDELSNIVEAUS",
+  "signalDetailEntry": "EINSTIEG",
+  "signalDetailStopLoss": "STOP-LOSS",
+  "signalDetailTakeProfit1": "KURSZIEL 1",
+  "signalDetailTakeProfit2": "KURSZIEL 2",
+  "signalDetailTakeProfit3": "KURSZIEL 3",
+  "signalDetailRiskLevel": "RISIKOSTUFE",
+  "signalDetailRiskReward": "RISIKO / ERTRAG",
+  "signalDetailRiskLow": "NIEDRIG",
+  "signalDetailRiskMedium": "MITTEL",
+  "signalDetailRiskHigh": "HOCH",
+  "signalDetailTokenAddress": "TOKEN-ADRESSE",
+  "signalDetailAddressUnavailable": "Adresse nicht verfügbar",
+  "signalDetailCopyAddress": "TOKEN-ADRESSE KOPIEREN",
+  "signalDetailViewDexScreener": "DEX SCREENER ÖFFNEN",
+  "signalDetailDexLinkUnavailable": "Der DexScreener-Link ist nicht verfügbar.",
+  "signalDetailDexOpenError": "DexScreener konnte nicht geöffnet werden.",
+  "signalDetailAddressCopied": "Token-Adresse kopiert",
+  "signalDetailAiAnalysis": "KI-ANALYSE",
+  "signalDetailDisclaimer": "Signale sind KI-generierte Marktanalysen\nund keine Finanzberatung.",
+
+  "coinDetailsCoinBadge": "COIN",
+  "coinDetailsDexBadge": "DEX",
+  "coinDetailsCurrentPrice": "Aktueller Preis",
+  "coinDetails24H": "24 Std.",
+  "coinDetails24HVolume": "Handelsvolumen (24 Std.)",
+  "coinDetails24HChange": "Änderung (24 Std.)",
+  "coinDetailsLiquidity": "Liquidität",
+  "coinDetailsFdv": "FDV",
+  "coinDetailsMarketCap": "Marktkapitalisierung",
+  "coinDetailsPriceChart": "Kursdiagramm",
+  "coinDetailsMarketData": "Marktdaten",
+  "coinDetails24HHigh": "24-Std.-Hoch",
+  "coinDetails24HLow": "24-Std.-Tief",
+  "coinDetailsAllTimeHigh": "Allzeithoch",
+  "coinDetailsAllTimeLow": "Allzeittief",
+  "coinDetailsMarketCapRank": "Rang nach Marktkapitalisierung",
+  "coinDetailsCirculatingSupply": "Umlaufmenge",
+  "coinDetailsTotalSupply": "Gesamtangebot",
+  "coinDetailsMaxSupply": "Maximales Angebot",
+  "coinDetailsSupply": "Angebot",
+  "coinDetailsInCirculation": "im Umlauf",
+  "coinDetailsCirculatingAmount": "{amount} im Umlauf",
+  "@coinDetailsCirculatingAmount": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "coinDetailsDexPair": "DEX-Paar",
+  "coinDetailsNetwork": "Netzwerk",
+  "coinDetailsDex": "DEX",
+  "coinDetailsPair": "Handelspaar",
+  "coinDetails24HBuys": "Käufe (24 Std.)",
+  "coinDetails24HSells": "Verkäufe (24 Std.)",
+  "coinDetailsPairAge": "Alter des Handelspaars",
+  "coinDetailsDexMetrics": "DEX-Kennzahlen",
+  "coinDetailsDexSourceNotice": "Die Paar-Daten werden von DexScreener bereitgestellt.",
+  "coinDetailsDays": "{count} T",
+  "@coinDetailsDays": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "coinDetailsHours": "{count} Std.",
+  "@coinDetailsHours": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "coinDetailsMinutes": "{count} Min.",
+  "@coinDetailsMinutes": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+
+  "portfolioConnectTitle": "Portfolio verbinden",
+  "portfolioReadOnlyApiConnection": "API-Verbindung mit Leseberechtigung",
+  "portfolioWalletAddressConnection": "Verbindung über Wallet-Adresse",
+  "portfolioConnected": "Verbunden",
+
+
+  "connectedAccountsWalletsExchanges": "Wallets und Börsen",
+  "connectedAccountsYourAccounts": "Deine verbundenen Konten",
+  "connectedAccountsCount": "{count, plural, =1{1 verbundenes Konto} other{{count} verbundene Konten}}",
+  "@connectedAccountsCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "connectedAccountsConnectDescription": "Verbinde deine Wallets und Börsen, um Trading-Funktionen in Avexa zu nutzen.",
+  "connectedAccountsRenameTitle": "Konto umbenennen",
+  "connectedAccountsAccountName": "Kontoname",
+  "connectedAccountsCancel": "Abbrechen",
+  "connectedAccountsSave": "Speichern",
+  "connectedAccountsRemoveTitle": "Konto entfernen?",
+  "connectedAccountsRemoveConfirmation": "„{account}“ wird aus den verbundenen Konten in Avexa entfernt.",
+  "@connectedAccountsRemoveConfirmation": {
+    "placeholders": {
+      "account": {
+        "type": "String"
+      }
+    }
+  },
+  "connectedAccountsRemove": "Entfernen",
+  "connectedAccountsChangeName": "Namen ändern",
+  "connectedAccountsNoAccounts": "Keine Konten verbunden",
+  "connectedAccountsEmptyDescription": "Verbinde deine Wallets und Börsen, um alle verknüpften Konten an einem Ort zu verwalten.",
+  "connectedAccountsConnectPortfolio": "Portfolio verbinden",
+  "connectedAccountsBalancesNotice": "Deine Guthaben und Assets bleiben im Portfolio verfügbar.",
+  "connectedAccountsAddAccount": "Konto hinzufügen",
+  "connectedAccountsSecurityNotice": "Beim Entfernen wird das Konto aus dieser Liste getrennt. Es werden weder Gelder übertragen noch die Wallet selbst gelöscht.",
+  "connectedAccountsReadOnlyApi": "API nur mit Leseberechtigung",
+
+  "loginTitle": "Anmelden",
+  "loginSubtitle": "Mit deinem Avexa-Konto fortfahren",
+  "loginEmail": "E-Mail",
+  "loginPassword": "Passwort",
+  "loginButton": "ANMELDEN",
+  "loginOrContinueWith": "Oder fortfahren mit",
+  "loginForgotPassword": "Passwort vergessen?",
+  "loginNoAccount": "Du hast noch kein Konto? ",
+  "loginSignUp": "Registrieren",
+  "loginResetPasswordTitle": "Passwort zurücksetzen",
+  "loginResetPasswordDescription": "Gib deine E-Mail-Adresse ein. Wir senden dir einen Link zum Zurücksetzen deines Passworts.",
+  "loginEnterEmail": "E-Mail-Adresse eingeben",
+  "loginSendResetLink": "RESET-LINK SENDEN",
+  "loginCancel": "Abbrechen",
+  "loginEnterEmailError": "Bitte gib deine E-Mail-Adresse ein.",
+  "loginInvalidEmailError": "Bitte gib eine gültige E-Mail-Adresse ein.",
+  "loginResetGenericError": "Etwas ist schiefgelaufen. Bitte versuche es erneut.",
+  "loginResetSuccess": "Der Link zum Zurücksetzen wurde gesendet. Überprüfe deinen Posteingang.",
+  "loginAppleSignInFailed": "Apple-Anmeldung fehlgeschlagen: {message}",
+  "@loginAppleSignInFailed": {
+    "placeholders": {
+      "message": {
+        "type": "String"
+      }
+    }
+  },
+
+  "registerTitle": "Konto erstellen",
+  "registerSubtitle": "Starte deine KI-Trading-Reise.",
+  "registerEmail": "E-Mail",
+  "registerPassword": "Passwort",
+  "registerConfirmPassword": "Passwort bestätigen",
+  "registerButton": "KONTO ERSTELLEN",
+  "registerPasswordMismatch": "Die Passwörter stimmen nicht überein",
+  "registerSuccess": "Konto erfolgreich erstellt. Überprüfe deine E-Mails.",
+  "registerGenericError": "Etwas ist schiefgelaufen",
+
+  "rugCheckTitle": "Rug Check",
+  "rugCheckHeadline": "Erst prüfen, dann handeln",
+  "rugCheckDescription": "Prüfe einen Token auf mögliche Sicherheitsrisiken, bevor du handelst.",
+  "rugCheckTokenAddress": "TOKEN-ADRESSE",
+  "rugCheckAddressHint": "Solana-Token-Adresse einfügen",
+  "rugCheckScanning": "SCAN LÄUFT...",
+  "rugCheckScanButton": "TOKEN SCANNEN",
+  "rugCheckWhatWeCheck": "Was Avexa prüft",
+  "rugCheckLiquiditySecurity": "Liquidität und LP-Sicherheit",
+  "rugCheckHolderConcentration": "Holder-Konzentration",
+  "rugCheckAuthorities": "Mint- und Freeze-Berechtigungen",
+  "rugCheckDevExposure": "Exposure der Entwickler-Wallet",
+  "rugCheckEnterAddress": "Gib zuerst eine Token-Adresse ein.",
+  "rugCheckAnalysisTitle": "Token-Sicherheitsanalyse",
+  "rugCheckTokenOverview": "TOKEN-ÜBERSICHT",
+  "rugCheckLiquidity": "Liquidität",
+  "rugCheckLpLocked": "Gesperrte LP",
+  "rugCheckHolders": "Holder",
+  "rugCheckTopHolder": "Größter Holder",
+  "rugCheckTop10Holders": "Top 10 Holder",
+  "rugCheckSecurityChecks": "SICHERHEITSPRÜFUNGEN",
+  "rugCheckMintAuthority": "Mint-Berechtigung",
+  "rugCheckFreezeAuthority": "Freeze-Berechtigung",
+  "rugCheckDevWallet": "Entwickler-Wallet",
+  "rugCheckEnabled": "Aktiviert",
+  "rugCheckDisabled": "Deaktiviert",
+  "rugCheckUnknown": "Unbekannt",
+  "rugCheckExposure": "{value}% Exposure",
+  "@rugCheckExposure": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "rugCheckDetectedRisks": "ERKANNTE RISIKEN",
+  "rugCheckNoRisks": "Der Scanner hat keine wesentlichen Risiken erkannt.",
+  "rugCheckRiskDetected": "Risiko erkannt",
+  "rugCheckDisclaimer": "Rug Check analysiert verfügbare Sicherheitsindikatoren. Ein niedriges Risiko bedeutet nicht, dass ein Token sicher ist.",
+  "rugCheckUnknownToken": "Unbekannter Token",
+  "rugCheckUnavailable": "N. V.",
+
+  "walletTrackerTitle": "Wallet-Tracker",
+  "walletTrackerAddWallet": "Wallet hinzufügen",
+  "walletTrackerWalletName": "Wallet-Name",
+  "walletTrackerWalletNameHint": "z. B. Smart Money",
+  "walletTrackerWalletAddress": "Wallet-Adresse",
+  "walletTrackerAddressHint": "Solana-Wallet-Adresse",
+  "walletTrackerCancel": "Abbrechen",
+  "walletTrackerAddError": "Wallet konnte nicht hinzugefügt werden",
+  "walletTrackerYourWallets": "DEINE WALLETS",
+  "walletTrackerTracked": "ÜBERWACHT",
+  "walletTrackerEyebrow": "WALLET-INTELLIGENZ",
+  "walletTrackerHeroTitle": "Smart Money verfolgen",
+  "walletTrackerHeroDescription": "Verfolge Wallet-Aktivitäten und erhalte Benachrichtigungen über wichtige Bewegungen.",
+  "walletTrackerLoadError": "Wallets konnten nicht geladen werden",
+  "walletTrackerRetry": "Zum erneuten Versuch nach unten ziehen.",
+  "walletTrackerEmptyTitle": "Noch keine Wallets hinzugefügt",
+  "walletTrackerEmptyDescription": "Füge eine Wallet hinzu, um ihre Aktivitäten zu verfolgen.",
+  "walletTrackerDefaultName": "Wallet",
+  "walletTrackerActive": "AKTIV",
+  "walletTrackerInactive": "INAKTIV",
+  "walletTrackerAddButton": "WALLET HINZUFÜGEN",
+
+  "languagePickerTitle": "Sprache auswählen",
+  "languagePolish": "Polnisch",
+  "languageEnglish": "Englisch",
+  "languageGerman": "Deutsch",
+  "languageJapanese": "Japanisch",
+  "languageRussian": "Russisch",
+  "languageArabic": "Arabisch",
+  "languageChinese": "Chinesisch",
+  "languageSpanish": "Spanisch",
+  "languagePortuguese": "Portugiesisch",
+
+  "portfolioValue": "Portfoliowert",
+  "portfolioWalletCount": "{count} / {max} Wallets",
+  "@portfolioWalletCount": {
+    "placeholders": {
+      "count": {"type": "int"},
+      "max": {"type": "int"}
+    }
+  },
+  "portfolioNoWallets": "Keine Wallets verbunden",
+  "portfolioConnectSolanaWallet": "Verbinde eine Solana-Wallet, um ihr Guthaben anzuzeigen.",
+  "portfolioConnectWallet": "Wallet verbinden",
+  "portfolioRefreshWallet": "Wallet aktualisieren",
+  "portfolioWalletPosition": "Wallet {current} von {total}",
+  "@portfolioWalletPosition": {
+    "placeholders": {
+      "current": {"type": "int"},
+      "total": {"type": "int"}
+    }
+  },
+  "portfolioLoading": "Wird geladen...",
+  "portfolioUnavailable": "Nicht verfügbar",
+  "portfolioWalletBalance": "Wallet-Guthaben",
+  "portfolioSwipeWallets": "Wische seitlich, um eine weitere Wallet anzuzeigen",
+  "portfolioCombinedValue": "Gesamtwert aller Wallets",
+  "portfolioConnectedWallets": "Verbundene Wallets",
+  "portfolioConnectedCount": "{count} verbunden",
+  "@portfolioConnectedCount": {
+    "placeholders": {
+      "count": {"type": "int"}
+    }
+  },
+  "portfolioWalletAddressesConnected": "Wallet-Adressen verbunden",
+  "portfolioManageAddressesNetworks": "Verwalte deine Adressen und Netzwerke",
+  "portfolioConnectPublicAddress": "Verbinde eine öffentliche Wallet-Adresse, um zu beginnen",
+  "portfolioManageConnections": "Verbindungen verwalten",
+  "portfolioMaxWalletsReached": "Maximal 3 Wallets erreicht",
+  "portfolioAddAnotherWallet": "Weitere Wallet hinzufügen",
+  "portfolioConnectToBuild": "Verbinde eine Wallet, um dein Portfolio aufzubauen.",
+  "portfolioAssetsSyncPending": "Wallet-Adressen sind verbunden. Die Synchronisierung von Assets wurde noch nicht implementiert.",
+  "portfolioAnalytics": "Portfolio-Analyse",
+  "portfolioAnalyticsDescription": "Die historische Performance, Allokationsanalyse und KI-Einblicke werden verfügbar sein, sobald echte Wallet-Guthaben und die Portfoliohistorie synchronisiert wurden.",
+  "portfolioLoadError": "Portfolio konnte nicht geladen werden.",
+  "portfolioSyncError": "Wallet-Guthaben konnten nicht synchronisiert werden.",
+  "portfolioDefaultUser": "Benutzer",
+
+  "loginLegalNotice": "Mit der Erstellung eines Kontos oder der Anmeldung bestätigst du, dass du mindestens 16 Jahre alt bist und die nachstehenden rechtlichen Dokumente zur Kenntnis nimmst.",
+  "loginLegalTerms": "Nutzungsbedingungen",
+  "loginLegalPrivacy": "Datenschutzerklärung",
+  "loginLegalRisk": "Risikohinweis",
+
+  "connectedAccountsAddressCopied": "Wallet-Adresse kopiert.",
+  "connectedAccountsRenameWallet": "Wallet umbenennen",
+  "connectedAccountsWalletNameHint": "z. B. Haupt-Wallet",
+  "connectedAccountsCancel": "Abbrechen",
+  "connectedAccountsSave": "Speichern",
+  "connectedAccountsRenameSuccess": "Wallet-Name wurde aktualisiert.",
+  "connectedAccountsRenameError": "Wallet konnte nicht umbenannt werden: {error}",
+  "@connectedAccountsRenameError": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "connectedAccountsRemoveWalletTitle": "Wallet entfernen?",
+  "connectedAccountsRemoveWalletDescription": "Möchtest du diese Adresse wirklich aus Avexa entfernen? Du kannst sie jederzeit erneut hinzufügen.",
+  "connectedAccountsRemove": "Entfernen",
+  "connectedAccountsRemoveSuccess": "Wallet erfolgreich entfernt.",
+  "connectedAccountsRemoveError": "Wallet konnte nicht entfernt werden: {error}",
+  "@connectedAccountsRemoveError": {
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "connectedAccountsHeader": "Verbundene Wallets",
+  "connectedAccountsSubtitle": "Verwalte deine Blockchain-Adressen",
+  "connectedAccountsConnectedCount": "{count} VERBUNDEN",
+  "@connectedAccountsConnectedCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "connectedAccountsHeaderDescription": "Alle deine Wallets werden an einem Ort verwaltet. Jede Adresse wird separat innerhalb ihres Blockchain-Netzwerks verfolgt.",
+  "connectedAccountsWallet": "Wallet",
+  "connectedAccountsRename": "Umbenennen",
+  "connectedAccountsRemoveWallet": "Wallet entfernen",
+  "connectedAccountsEmptyTitle": "Noch keine Wallets verbunden",
+  "connectedAccountsEmptyDescription": "Verbinde deine erste öffentliche Wallet-Adresse, um dein Avexa-Portfolio aufzubauen.",
+  "connectedAccountsConnectWallet": "Wallet verbinden",
+  "connectedAccountsLegacyNotice": "{count} ältere Verbindung(en) aus dem vorherigen Portfolio-System wurden gespeichert. Sie bleiben erhalten und werden nicht in der neuen Wallet-Liste angezeigt.",
+  "@connectedAccountsLegacyNotice": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "connectedAccountsSecurityNotice": "Avexa verwendet ausschließlich öffentliche Blockchain-Adressen. Deine privaten Schlüssel und Guthaben bleiben unter deiner Kontrolle. Das Verbinden einer Adresse autorisiert keine Transaktionen.",
+  "connectedAccountsTitle": "Verbundene Konten",
+  "connectedAccountsRefresh": "Aktualisieren",
+  "connectedAccountsYourWallets": "Deine Wallets",
+  "connectedAccountsAddWallet": "Wallet hinzufügen",
+
+  "connectPortfolioSolanaDescription": "Solana-Blockchain",
+  "connectPortfolioEthereumDescription": "Ethereum-Hauptnetzwerk",
+  "connectPortfolioBaseDescription": "Base-Netzwerk",
+  "connectPortfolioArbitrumDescription": "Arbitrum One",
+  "connectPortfolioPolygonDescription": "Polygon PoS",
+  "connectPortfolioEnterAddress": "Bitte gib eine Wallet-Adresse ein.",
+  "connectPortfolioInvalidSolanaAddress": "Ungültige Solana-Wallet-Adresse.",
+  "connectPortfolioInvalidNetworkAddress": "Ungültige {network}-Wallet-Adresse.",
+  "@connectPortfolioInvalidNetworkAddress": {
+    "placeholders": {
+      "network": {
+        "type": "String"
+      }
+    }
+  },
+  "connectPortfolioAlreadyConnected": "Diese Adresse ist bereits mit {network} verbunden.",
+  "@connectPortfolioAlreadyConnected": {
+    "placeholders": {
+      "network": {
+        "type": "String"
+      }
+    }
+  },
+  "connectPortfolioSuccess": "Die {network}-Wallet wurde erfolgreich verbunden.",
+  "@connectPortfolioSuccess": {
+    "placeholders": {
+      "network": {
+        "type": "String"
+      }
+    }
+  },
+  "connectPortfolioError": "Wallet konnte nicht verbunden werden. Bitte versuche es erneut.",
+  "connectPortfolioSelectNetwork": "Netzwerk auswählen",
+  "connectPortfolioChooseNetwork": "Wähle ein Blockchain-Netzwerk",
+  "connectPortfolioSectionNetwork": "01  Netzwerk auswählen",
+  "connectPortfolioSectionNetworkSubtitle": "Wähle die Blockchain aus, auf der sich deine Wallet befindet.",
+  "connectPortfolioSectionAddress": "02  Wallet-Adresse",
+  "connectPortfolioSectionAddressSubtitle": "Füge deine öffentliche Wallet-Adresse ein.",
+  "connectPortfolioAddressLabel": "{network}-Adresse",
+  "@connectPortfolioAddressLabel": {
+    "placeholders": {
+      "network": {
+        "type": "String"
+      }
+    }
+  },
+  "connectPortfolioSolanaAddressHint": "Füge deine Solana-Adresse ein",
+  "connectPortfolioSectionWalletName": "03  Wallet-Name",
+  "connectPortfolioSectionWalletNameSubtitle": "Optional. Gib dieser Adresse einen leicht erkennbaren Namen.",
+  "connectPortfolioCustomNameLabel": "Eigener Name (optional)",
+  "connectPortfolioCustomNameHint": "z. B. Haupt-Wallet",
+  "connectPortfolioSecurityTitle": "Deine Assets bleiben deine.",
+  "connectPortfolioSecurityDescription": "Avexa verwendet ausschließlich öffentlich verfügbare Blockchain-Daten. Wir fragen niemals nach privaten Schlüsseln, Secret Keys oder API-Zugangsdaten und können keine Transaktionen über deine Wallet ausführen.",
+  "connectPortfolioHeader": "Wallet verbinden",
+  "connectPortfolioSubtitle": "Füge eine öffentliche Wallet-Adresse hinzu, um deine Assets über mehrere Blockchain-Netzwerke hinweg in einem Portfolio zu verfolgen.",
+  "connectPortfolioButton": "WALLET VERBINDEN",
+
+  "walletTrackerHeroTitle": "Smart Money verfolgen",
+  "walletTrackerHeroDescription": "Verfolge Wallet-Aktivitäten und sieh, welche Token die beobachteten Wallets kaufen oder verkaufen.",
+  "walletTrackerEnterWalletDetails": "Gib einen Wallet-Namen und eine Adresse ein.",
+  "walletTrackerSyncComplete": "Synchronisierung abgeschlossen: Wallets {wallets}, geprüft {checked}, Swaps {swaps}, eingefügt {inserted}.",
+  "@walletTrackerSyncComplete": {
+    "placeholders": {
+      "wallets": {"type": "int"},
+      "checked": {"type": "int"},
+      "swaps": {"type": "int"},
+      "inserted": {"type": "int"}
+    }
+  },
+  "walletTrackerSyncError": "Fehler bei der Wallet-Synchronisierung: {error}",
+  "@walletTrackerSyncError": {
+    "placeholders": {
+      "error": {"type": "String"}
+    }
+  },
+
+  "walletDetailsTitle": "Wallet-Details",
+  "walletDetailsRename": "Wallet umbenennen",
+  "walletDetailsLiveActivity": "LIVE-WALLET-AKTIVITÄT",
+  "walletDetailsTransactionCount": "{count} TRANSAKTIONEN",
+  "@walletDetailsTransactionCount": {
+    "placeholders": {
+      "count": {"type": "int"}
+    }
+  },
+  "walletDetailsRefreshActivity": "Wallet-Aktivität aktualisieren",
+  "walletDetailsNotifications": "BENACHRICHTIGUNGEN",
+  "walletDetailsSaving": "WIRD GESPEICHERT...",
+  "walletDetailsActive": "AKTIV",
+  "walletDetailsRefreshing": "Aktivität wird aktualisiert...",
+  "walletDetailsNoTransactions": "Noch keine Transaktionen",
+  "walletDetailsActivityDescription": "Die Wallet-Aktivität wird hier angezeigt.",
+  "walletDetailsBuy": "KAUF",
+  "walletDetailsSell": "VERKAUF",
+  "walletDetailsTransaction": "TRANSAKTION",
+  "walletDetailsWalletAlerts": "Wallet-Benachrichtigungen",
+  "walletDetailsWalletAlertsDescription": "Benachrichtigungen für dieses Wallet aktivieren",
+  "walletDetailsBuyAlerts": "Kaufbenachrichtigungen",
+  "walletDetailsBuyAlertsDescription": "Benachrichtigung bei Käufen dieses Wallets",
+  "walletDetailsSellAlerts": "Verkaufsbenachrichtigungen",
+  "walletDetailsSellAlertsDescription": "Benachrichtigung bei Verkäufen dieses Wallets",
+  "walletDetailsLargeTransactions": "Große Transaktionen",
+  "walletDetailsLargeTransactionsDescription": "Benachrichtigungen über große Wallet-Bewegungen",
+  "walletDetailsDeleteWallet": "Wallet löschen",
+  "walletDetailsDeleteWalletDescription": "Dieses Wallet und seinen Verlauf entfernen",
+  "walletDetailsDeleteTitle": "Wallet löschen?",
+  "walletDetailsDeleteDescription": "Dieses Wallet und sein Verlauf der verfolgten Transaktionen werden gelöscht.",
+  "walletDetailsCancel": "Abbrechen",
+  "walletDetailsDelete": "Löschen",
+  "walletDetailsSave": "Speichern",
+  "walletDetailsRenameTitle": "Wallet umbenennen",
+  "walletDetailsWalletNameHint": "Wallet-Name",
+  "walletDetailsUnknownTime": "Unbekannte Zeit",
+  "walletDetailsSyncComplete": "Wallet synchronisiert. {count} Transaktionen geprüft.",
+  "@walletDetailsSyncComplete": {
+    "placeholders": {
+      "count": {"type": "int"}
+    }
+  },
+  "walletDetailsSyncError": "Wallet konnte nicht synchronisiert werden. Bitte überprüfe die Logs.",
+  "walletDetailsUpdateSettingsError": "Wallet-Einstellungen konnten nicht aktualisiert werden.",
+  "walletDetailsRenameError": "Wallet konnte nicht umbenannt werden.",
+  "walletDetailsDeleteError": "Wallet konnte nicht gelöscht werden.",
+
+  "liveMarketLive": "LIVE",
+  "liveMarketUpdateInterval": "Update alle 30 Sek.",
+  "liveMarket24hLabel": "24h-Markt",
+  "liveMarketLoading": "Live-Marktdaten werden geladen...",
+  "liveMarketError": "Live-Marktdaten konnten nicht geladen werden.",
+  "liveMarketEmpty": "Keine Marktdaten verfügbar.",
+
+  "communityPartnersTitle": "AVEXA COMMUNITY",
+  "communityPartnersSubtitle": "Entdecke unsere Partner-Communitys",
+  "communityPartnersDefaultName": "Community",
+  "communityPartnersTelegramError": "Telegram konnte nicht geöffnet werden.",
+
+  "marketSentimentTitle": "Marktstimmung",
+  "marketSentimentLoading": "LÄDT",
+  "marketSentimentFear": "Angst",
+  "marketSentimentNeutral": "Neutral",
+  "marketSentimentGreed": "Gier",
+  "marketSentimentExtremeGreed": "EXTREME GIER",
+  "marketSentimentExtremeFear": "EXTREME ANGST",
+  "marketSentimentBalanced": "Die Marktbedingungen sind derzeit ausgeglichen.",
+  "marketSentimentStrongBullish": "Ein starker Aufwärtstrend ist am gesamten Markt erkennbar.",
+  "marketSentimentBullish": "Der Aufwärtstrend dominiert derzeit den Markt.",
+  "marketSentimentBearish": "Der Verkaufsdruck am Markt nimmt zu.",
+  "marketSentimentStrongBearish": "Starker Verkaufsdruck dominiert den Markt.",
+  "marketSentimentError": "Die Marktstimmung konnte nicht geladen werden.",
+  "marketSentimentLoadingDescription": "Aktuelle Marktbedingungen werden analysiert...",
+  "marketSentimentLiveUpdates": "LIVE • Aktualisierung alle 30 Sek."
+
+}
