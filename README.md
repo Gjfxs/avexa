@@ -1,17 +1,30 @@
-# crypto_ai_app
+# Avexa
 
-A new Flutter project.
+**Avexa – AI-powered Crypto Analysis & Trading Platform**
 
-## Getting Started
+Avexa is a cryptocurrency analysis application designed to help users explore crypto markets, analyze charts, track wallets, and discover trading opportunities using AI-powered tools.
 
-This project is a starting point for a Flutter application.
+## Features
 
-A few resources to get you started if this is your first Flutter project:
+- AI-powered chart analysis
+- Cryptocurrency market data and charts
+- AI-generated trading signals
+- Memecoin discovery and analysis
+- Wallet tracking and portfolio monitoring
+- FREE and PRO subscription plans
+- Multi-language support
 
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
+## Technology Stack
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- Flutter / Dart
+- Supabase
+- Firebase
+- Apple StoreKit
+
+## Project
+
+This repository contains the Avexa application source code, including mobile platform configurations and backend Supabase functions.
+
+---
+
+© Avexa – Nex Start
