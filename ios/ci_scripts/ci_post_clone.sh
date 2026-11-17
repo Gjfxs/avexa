@@ -1,27 +1,29 @@
 #!/bin/sh
-
 set -e
 
-echo "=== Preparing Avexa for Xcode Cloud ==="
+echo "=== AVEXA: XCODE CLOUD SETUP ==="
 
 cd "$CI_PRIMARY_REPOSITORY_PATH"
 
 echo "=== Installing Flutter ==="
-git clone https://github.com/flutter/flutter.git --depth 1 -b stable "$HOME/flutter"
+git clone https://github.com/flutter/flutter.git \
+  --depth 1 \
+  --branch 3.41.6 \
+  "$HOME/flutter"
 
 export PATH="$HOME/flutter/bin:$PATH"
 
-echo "=== Preparing iOS Flutter artifacts ==="
+echo "=== Flutter version ==="
+flutter --version
+
+echo "=== Preparing iOS artifacts ==="
 flutter precache --ios
 
 echo "=== Installing Flutter dependencies ==="
 flutter pub get
 
-echo "=== Installing CocoaPods ==="
-HOMEBREW_NO_AUTO_UPDATE=1 brew install cocoapods
-
-echo "=== Installing iOS Pods ==="
+echo "=== Installing CocoaPods dependencies ==="
 cd ios
 pod install
 
-echo "=== Avexa environment ready ==="
+echo "=== AVEXA SETUP COMPLETED ==="
