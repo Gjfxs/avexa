@@ -37,15 +37,23 @@ class _ReportBugScreenState extends State<ReportBugScreen> {
     super.dispose();
   }
 
+  
   Future<void> _submitBug() async {
-    final l10n = AppLocalizations.of(context)!;
-
     final description = _descriptionController.text.trim();
 
-    if (description.isEmpty) {
+    if (description.length < 10) {
       ScaffoldMessenger.of(context).showSnackBar(
         const SnackBar(
-          content: Text('Please describe the problem.'),
+          content: Text('Please enter at least 10 characters.'),
+        ),
+      );
+      return;
+    }
+
+    if (description.length > 1000) {
+      ScaffoldMessenger.of(context).showSnackBar(
+        const SnackBar(
+          content: Text('Description cannot exceed 1000 characters.'),
         ),
       );
       return;
@@ -67,19 +75,53 @@ class _ReportBugScreenState extends State<ReportBugScreen> {
     });
 
     try {
+      final profile = await supabase
+          .from('profiles')
+          .select('username')
+          .eq('id', user.id)
+          .maybeSingle();
+
+      final username =
+          profile?['username'] ??
+          user.email?.split('@').first ??
+          'User';
+
+      // Step 1: Save the report in Supabase.
       await supabase.from('support_messages').insert({
         'user_id': user.id,
         'email': user.email,
-        'subject': 'Bug Report: $selectedCategory',
+        'username': username,
+        'topic': 'Bug Report',
+        'custom_topic': selectedCategory,
         'message': description,
-        'category': 'bug',
       });
+
+      // Step 2: Send the email.
+      final emailResponse = await supabase.functions.invoke(
+        'contact_support_email',
+        body: {
+          'topic': 'Bug Report',
+          'custom_topic': selectedCategory,
+          'message': description,
+        },
+      );
+
+      final responseData = emailResponse.data;
+
+      if (emailResponse.status < 200 ||
+          emailResponse.status >= 300 ||
+          responseData is! Map ||
+          responseData['success'] != true) {
+        throw Exception(
+          responseData is Map
+              ? responseData['error'] ?? 'Email delivery failed.'
+              : 'Invalid response from support server.',
+        );
+      }
+
+      debugPrint('BUG REPORT: Saved and email sent successfully.');
 
       if (!mounted) return;
-
-      setState(() {
-        isSending = false;
-      });
 
       ScaffoldMessenger.of(context).showSnackBar(
         const SnackBar(
@@ -89,19 +131,24 @@ class _ReportBugScreenState extends State<ReportBugScreen> {
 
       Navigator.pop(context);
     } catch (e) {
-      if (!mounted) return;
+      debugPrint('BUG REPORT ERROR: $e');
 
-      setState(() {
-        isSending = false;
-      });
+      if (!mounted) return;
 
       ScaffoldMessenger.of(context).showSnackBar(
         SnackBar(
           content: Text('Failed to send report: $e'),
         ),
       );
+    } finally {
+      if (mounted) {
+        setState(() {
+          isSending = false;
+        });
+      }
     }
   }
+
 
   @override
   Widget build(BuildContext context) {

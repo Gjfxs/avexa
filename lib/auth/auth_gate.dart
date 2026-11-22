@@ -46,6 +46,8 @@ class _AuthGateState extends State<AuthGate>
   void initState() {
     super.initState();
 
+    debugPrint('AUTH GATE: WIDGET INITIALIZED');
+
     WidgetsBinding.instance.addObserver(this);
 
     debugPrint('AUTH GATE: INIT');
@@ -54,6 +56,9 @@ class _AuthGateState extends State<AuthGate>
         Supabase.instance.client.auth.onAuthStateChange.listen(
       (data) {
         debugPrint('AUTH GATE EVENT: ${data.event}');
+        debugPrint(
+          'AUTH GATE SESSION: ${data.session != null}',
+        );
 
         if (data.event == AuthChangeEvent.signedIn) {
           _handleSignedIn();
@@ -62,6 +67,10 @@ class _AuthGateState extends State<AuthGate>
         if (data.event == AuthChangeEvent.signedOut) {
           _handleSignedOut();
         }
+      },
+      onError: (error, stackTrace) {
+        debugPrint('AUTH GATE STREAM ERROR: $error');
+        debugPrintStack(stackTrace: stackTrace);
       },
     );
 
@@ -72,6 +81,7 @@ class _AuthGateState extends State<AuthGate>
   // INITIAL SESSION
   // ============================================================
 
+  
   Future<void> _checkInitialSession() async {
     final session =
         Supabase.instance.client.auth.currentSession;
@@ -80,40 +90,55 @@ class _AuthGateState extends State<AuthGate>
       'AUTH GATE INITIAL SESSION: ${session != null}',
     );
 
-    if (session == null) {
-      final selected =
-          await FirstLaunchService.instance.hasSelectedLanguage();
-
-      bool onboardingCompleted = false;
-
-      if (selected) {
-        onboardingCompleted =
-            await OnboardingService.instance.isCompleted();
+    if (session != null) {
+      if (mounted) {
+        setState(() {
+          _checkingLanguage = false;
+          _languageSelected = true;
+        });
       }
 
-      if (!mounted) return;
-
-      setState(() {
-        _checkingLanguage = false;
-        _languageSelected = selected;
-        _onboardingCompleted = onboardingCompleted;
-        _checkingAuth = false;
-        _authenticated = false;
-        _checkingOnboarding = false;
-      });
-
+      await _handleSignedIn();
       return;
     }
 
-    if (mounted) {
+    final selected =
+        await FirstLaunchService.instance.hasSelectedLanguage();
+
+    bool onboardingCompleted = false;
+
+    if (selected) {
+      onboardingCompleted =
+          await OnboardingService.instance.isCompleted();
+    }
+
+    if (!mounted) return;
+
+    // Ponownie sprawdzamy sesję, ponieważ użytkownik
+    // mógł zalogować się podczas odczytywania ustawień.
+    final currentSession =
+        Supabase.instance.client.auth.currentSession;
+
+    if (currentSession != null) {
       setState(() {
         _checkingLanguage = false;
         _languageSelected = true;
       });
+
+      await _handleSignedIn();
+      return;
     }
 
-    await _handleSignedIn();
+    setState(() {
+      _checkingLanguage = false;
+      _languageSelected = selected;
+      _onboardingCompleted = onboardingCompleted;
+      _checkingAuth = false;
+      _authenticated = false;
+      _checkingOnboarding = false;
+    });
   }
+
 
   // ============================================================
   // LANGUAGE SELECTION
@@ -146,6 +171,12 @@ class _AuthGateState extends State<AuthGate>
   void didChangeAppLifecycleState(
     AppLifecycleState state,
   ) {
+    debugPrint('AUTH GATE LIFECYCLE: $state');
+    debugPrint(
+      'AUTH GATE LIFECYCLE SESSION: '
+      '${Supabase.instance.client.auth.currentSession != null}',
+    );
+
     if (state == AppLifecycleState.paused ||
         state == AppLifecycleState.hidden) {
       _wasInBackground = true;
@@ -290,10 +321,18 @@ class _AuthGateState extends State<AuthGate>
   // ============================================================
 
   Future<void> _handleSignedIn() async {
-    if (_authInProgress) return;
+    debugPrint('AUTH GATE: HANDLE SIGNED IN CALLED');
+    debugPrint('AUTH GATE: IN PROGRESS = $_authInProgress');
+
+    if (_authInProgress) {
+      debugPrint('AUTH GATE: SIGN IN SKIPPED - ALREADY IN PROGRESS');
+      return;
+    }
 
     final session =
         Supabase.instance.client.auth.currentSession;
+
+    debugPrint('AUTH GATE: SESSION EXISTS = ${session != null}');
 
     if (session == null) return;
 
@@ -392,6 +431,8 @@ class _AuthGateState extends State<AuthGate>
 
   @override
   void dispose() {
+    debugPrint('AUTH GATE: WIDGET DISPOSED');
+
     WidgetsBinding.instance.removeObserver(this);
     _authSubscription?.cancel();
 

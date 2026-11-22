@@ -1,39 +1,64 @@
 
 import 'dart:convert';
+import 'dart:async';
 
 import 'package:shared_preferences/shared_preferences.dart';
+import 'package:supabase_flutter/supabase_flutter.dart';
 
 import '../models/connected_account.dart';
 
 class ConnectionService {
-  ConnectionService._();
+  ConnectionService._() {
+    _authSubscription =
+        _supabase.auth.onAuthStateChange.listen((data) {
+      final nextUserId = data.session?.user.id;
+
+      if (nextUserId != _loadedUserId) {
+        _loadVersion++;
+
+        _walletAccounts.clear();
+        _legacyAccounts.clear();
+        _walletRowIds.clear();
+
+        _loadedUserId = null;
+      }
+    });
+  }
 
   static final instance = ConnectionService._();
 
-  final List<ConnectedAccount> _accounts = [];
+  final SupabaseClient _supabase = Supabase.instance.client;
 
-  static const _storageKey = 'connected_accounts';
+  late final StreamSubscription<AuthState> _authSubscription;
+
+  final List<ConnectedAccount> _walletAccounts = [];
+  final List<ConnectedAccount> _legacyAccounts = [];
+
+  final Map<String, String> _walletRowIds = {};
+
+  String? _loadedUserId;
+  int _loadVersion = 0;
 
   List<ConnectedAccount> get accounts =>
-      List.unmodifiable(_accounts);
+      List.unmodifiable([..._walletAccounts, ..._legacyAccounts]);
 
   List<ConnectedAccount> get walletAccounts =>
-      List.unmodifiable(
-        _accounts.where((account) => account.isWalletAddress),
-      );
+      List.unmodifiable(_walletAccounts);
 
   List<ConnectedAccount> get legacyAccounts =>
-      List.unmodifiable(
-        _accounts.where((account) => !account.isWalletAddress),
-      );
+      List.unmodifiable(_legacyAccounts);
+
+  String _userStorageKey(String userId) =>
+      'connected_accounts_$userId';
 
   ConnectedAccount? getConnectedAccount() {
-    if (_accounts.isEmpty) return null;
-    return _accounts.first;
+    if (_walletAccounts.isNotEmpty) return _walletAccounts.first;
+    if (_legacyAccounts.isNotEmpty) return _legacyAccounts.first;
+    return null;
   }
 
   bool isConnected(String provider) {
-    return _accounts.any(
+    return _legacyAccounts.any(
       (account) => account.provider == provider,
     );
   }
@@ -42,9 +67,7 @@ class ConnectionService {
     required String network,
     required String address,
   }) {
-    return _accounts.any((account) {
-      if (!account.isWalletAddress) return false;
-
+    return _walletAccounts.any((account) {
       return account.network!.toLowerCase() ==
               network.toLowerCase() &&
           _normalizeAddress(network, account.walletAddress!) ==
@@ -52,71 +75,92 @@ class ConnectionService {
     });
   }
 
+  // --------------------------------------------------
+  // LOAD CURRENT USER DATA
+  // --------------------------------------------------
+
   Future<void> load() async {
-    final prefs = await SharedPreferences.getInstance();
-    final storedAccounts =
-        prefs.getStringList(_storageKey) ?? [];
+    final userId = _supabase.auth.currentUser?.id;
+    final version = ++_loadVersion;
 
-    _accounts.clear();
+    _walletAccounts.clear();
+    _legacyAccounts.clear();
+    _walletRowIds.clear();
+    _loadedUserId = userId;
 
-    for (final rawAccount in storedAccounts) {
-      try {
-        final data =
-            jsonDecode(rawAccount) as Map<String, dynamic>;
+    if (userId == null) return;
 
-        final provider = data['provider']?.toString() ?? '';
-        final walletAddress =
-            data['walletAddress']?.toString();
+    try {
+      final rows = await _supabase
+          .from('portfolio_wallets')
+          .select()
+          .eq('user_id', userId);
 
-        final storedNetwork = data['network']?.toString();
+      if (!_isCurrentSession(userId, version)) return;
 
-        final network = storedNetwork?.isNotEmpty == true
-            ? storedNetwork!.toLowerCase()
-            : _inferLegacyNetwork(provider, walletAddress);
+      for (final row in rows) {
+        final network = row['network']?.toString() ?? '';
+        final address = row['address']?.toString() ?? '';
+        final rowId = row['id']?.toString();
 
-        _accounts.add(
-          ConnectedAccount(
-            provider: provider,
-            connected: data['connected'] == true,
-            walletAddress: walletAddress,
-            apiKey: data['apiKey']?.toString(),
-            customName: data['customName']?.toString(),
-            connectedAt: data['connectedAt'] != null
-                ? DateTime.tryParse(
-                    data['connectedAt'].toString(),
-                  )
-                : null,
-            lastSync: data['lastSync'] != null
-                ? DateTime.tryParse(
-                    data['lastSync'].toString(),
-                  )
-                : null,
-            network: network,
-          ),
+        if (network.isEmpty || address.isEmpty || rowId == null) {
+          continue;
+        }
+
+        final account = ConnectedAccount(
+          provider: network,
+          connected: true,
+          walletAddress: address,
+          customName: row['custom_name']?.toString(),
+          connectedAt: row['created_at'] == null
+              ? null
+              : DateTime.tryParse(row['created_at'].toString()),
+          network: network,
         );
-      } catch (_) {
-        // Pomijamy uszkodzony wpis.
+
+        _walletAccounts.add(account);
+        _walletRowIds[account.connectionId] = rowId;
       }
+
+      await _loadLegacyAccounts(userId, version);
+    } catch (_) {
+      if (_isCurrentSession(userId, version)) {
+        _walletAccounts.clear();
+        _walletRowIds.clear();
+        _legacyAccounts.clear();
+      }
+      rethrow;
     }
   }
+
+  // --------------------------------------------------
+  // CONNECT WALLET
+  // --------------------------------------------------
 
   Future<void> connectWallet({
     required String network,
     required String address,
     String? customName,
   }) async {
+    final user = _requireUser();
+    final userId = user.id;
+
     final normalizedNetwork = network.trim().toLowerCase();
     final normalizedAddress = address.trim();
+    final name = customName?.trim();
 
-    if (normalizedNetwork.isEmpty || normalizedAddress.isEmpty) {
-      throw ArgumentError('Network and address are required.');
+    if (!_isSupportedNetwork(normalizedNetwork)) {
+      throw ArgumentError('Unsupported network: $normalizedNetwork');
     }
 
-    final existingIndex = _accounts.indexWhere((account) {
-      if (!account.isWalletAddress) return false;
+    if (normalizedAddress.isEmpty) {
+      throw ArgumentError('Wallet address is required.');
+    }
 
-      return account.network!.toLowerCase() ==
-              normalizedNetwork &&
+    await _ensureLoadedForUser(userId);
+
+    final existing = _walletAccounts.where((account) {
+      return account.network!.toLowerCase() == normalizedNetwork &&
           _normalizeAddress(
                 normalizedNetwork,
                 account.walletAddress!,
@@ -127,92 +171,151 @@ class ConnectionService {
               );
     });
 
-    final account = ConnectedAccount(
-      provider: normalizedNetwork,
-      connected: true,
-      walletAddress: normalizedAddress,
-      customName: customName?.trim(),
-      connectedAt: DateTime.now(),
-      lastSync: null,
-      network: normalizedNetwork,
-    );
+    final existingAccount = existing.isEmpty ? null : existing.first;
 
-    if (existingIndex >= 0) {
-      _accounts[existingIndex] = account;
+    if (existingAccount != null) {
+      final rowId = _walletRowIds[existingAccount.connectionId];
+
+      if (rowId == null) {
+        throw StateError('Could not identify the existing wallet.');
+      }
+
+      await _supabase
+          .from('portfolio_wallets')
+          .update({
+            'custom_name': name == null || name.isEmpty ? null : name,
+          })
+          .eq('id', rowId)
+          .eq('user_id', userId);
     } else {
-      _accounts.add(account);
+      await _supabase.from('portfolio_wallets').insert({
+        'user_id': userId,
+        'network': normalizedNetwork,
+        'address': normalizedAddress,
+        'custom_name': name == null || name.isEmpty ? null : name,
+      });
     }
 
-    await _save();
+    _ensureSameUser(userId);
+    await load();
   }
+
+  // --------------------------------------------------
+  // DISCONNECT WALLET
+  // --------------------------------------------------
 
   Future<void> disconnectWallet({
     required String network,
     required String address,
   }) async {
+    final user = _requireUser();
+    final userId = user.id;
     final normalizedNetwork = network.trim().toLowerCase();
+    final normalizedAddress = address.trim();
 
-    _accounts.removeWhere((account) {
-      if (!account.isWalletAddress) return false;
+    await _ensureLoadedForUser(userId);
 
-      return account.network!.toLowerCase() ==
-              normalizedNetwork &&
+    final matches = _walletAccounts.where((account) {
+      return account.network!.toLowerCase() == normalizedNetwork &&
           _normalizeAddress(
                 normalizedNetwork,
                 account.walletAddress!,
               ) ==
               _normalizeAddress(
                 normalizedNetwork,
-                address,
+                normalizedAddress,
               );
     });
 
-    await _save();
+    if (matches.isEmpty) return;
+
+    final rowId = _walletRowIds[matches.first.connectionId];
+
+    if (rowId == null) {
+      throw StateError('Could not identify the wallet to delete.');
+    }
+
+    await _supabase
+        .from('portfolio_wallets')
+        .delete()
+        .eq('id', rowId)
+        .eq('user_id', userId);
+
+    _ensureSameUser(userId);
+    await load();
   }
+
+  // --------------------------------------------------
+  // RENAME WALLET
+  // --------------------------------------------------
 
   Future<void> renameWallet({
     required String network,
     required String address,
     required String customName,
   }) async {
+    final user = _requireUser();
+    final userId = user.id;
     final normalizedNetwork = network.trim().toLowerCase();
+    final normalizedAddress = address.trim();
 
-    final index = _accounts.indexWhere((account) {
-      if (!account.isWalletAddress) return false;
+    await _ensureLoadedForUser(userId);
 
-      return account.network!.toLowerCase() ==
-              normalizedNetwork &&
+    final matches = _walletAccounts.where((account) {
+      return account.network!.toLowerCase() == normalizedNetwork &&
           _normalizeAddress(
                 normalizedNetwork,
                 account.walletAddress!,
               ) ==
               _normalizeAddress(
                 normalizedNetwork,
-                address,
+                normalizedAddress,
               );
     });
 
-    if (index == -1) return;
+    if (matches.isEmpty) return;
 
-    _accounts[index] = _accounts[index].copyWith(
-      customName: customName.trim(),
-    );
+    final rowId = _walletRowIds[matches.first.connectionId];
 
-    await _save();
+    if (rowId == null) {
+      throw StateError('Could not identify the wallet to rename.');
+    }
+
+    final name = customName.trim();
+
+    await _supabase
+        .from('portfolio_wallets')
+        .update({
+          'custom_name': name.isEmpty ? null : name,
+        })
+        .eq('id', rowId)
+        .eq('user_id', userId);
+
+    _ensureSameUser(userId);
+    await load();
   }
 
-  // Zachowane metody starszego systemu.
+  // --------------------------------------------------
+  // LEGACY CONNECTIONS
+  // Exchange/API connections remain local and are
+  // separated by authenticated user ID.
+  // --------------------------------------------------
+
   Future<void> connect(
     String provider, {
     String? walletAddress,
     String? apiKey,
     String? customName,
   }) async {
-    _accounts.removeWhere(
+    final user = _requireUser();
+
+    await _ensureLoadedForUser(user.id);
+
+    _legacyAccounts.removeWhere(
       (account) => account.provider == provider,
     );
 
-    _accounts.add(
+    _legacyAccounts.add(
       ConnectedAccount(
         provider: provider,
         connected: true,
@@ -224,50 +327,124 @@ class ConnectionService {
       ),
     );
 
-    await _save();
+    await _saveLegacyAccounts(user.id);
   }
 
   Future<void> disconnect(String provider) async {
-    _accounts.removeWhere(
+    final user = _requireUser();
+
+    await _ensureLoadedForUser(user.id);
+
+    _legacyAccounts.removeWhere(
       (account) => account.provider == provider,
     );
 
-    await _save();
+    await _saveLegacyAccounts(user.id);
   }
 
   Future<void> rename(
     String provider,
     String customName,
   ) async {
-    final index = _accounts.indexWhere(
+    final user = _requireUser();
+
+    await _ensureLoadedForUser(user.id);
+
+    final index = _legacyAccounts.indexWhere(
       (account) => account.provider == provider,
     );
 
     if (index == -1) return;
 
-    _accounts[index] = _accounts[index].copyWith(
+    _legacyAccounts[index] = _legacyAccounts[index].copyWith(
       customName: customName.trim(),
     );
 
-    await _save();
+    await _saveLegacyAccounts(user.id);
   }
+
+  // --------------------------------------------------
+  // CLEAR DATA
+  // clearAll deletes current user's remote wallets.
+  // clearLocalState only clears local memory/storage.
+  // --------------------------------------------------
 
   Future<void> clearAll() async {
-    _accounts.clear();
+    final user = _requireUser();
+    final userId = user.id;
 
-    final prefs = await SharedPreferences.getInstance();
-    await prefs.remove(_storageKey);
+    await _supabase
+        .from('portfolio_wallets')
+        .delete()
+        .eq('user_id', userId);
+
+    await clearLocalState(userId: userId);
   }
 
-  Future<void> _save() async {
+  Future<void> clearLocalState({String? userId}) async {
+    final targetUserId = userId ?? _supabase.auth.currentUser?.id;
+
+    _loadVersion++;
+
+    _walletAccounts.clear();
+    _legacyAccounts.clear();
+    _walletRowIds.clear();
+    _loadedUserId = null;
+
+    if (targetUserId != null) {
+      final prefs = await SharedPreferences.getInstance();
+      await prefs.remove(_userStorageKey(targetUserId));
+    }
+  }
+
+  // --------------------------------------------------
+  // LEGACY LOCAL STORAGE
+  // --------------------------------------------------
+
+  Future<void> _loadLegacyAccounts(
+    String userId,
+    int version,
+  ) async {
     final prefs = await SharedPreferences.getInstance();
 
-    if (_accounts.isEmpty) {
-      await prefs.remove(_storageKey);
-      return;
-    }
+    if (!_isCurrentSession(userId, version)) return;
 
-    final encodedAccounts = _accounts.map((account) {
+    final stored = prefs.getStringList(_userStorageKey(userId)) ?? [];
+
+    for (final raw in stored) {
+      try {
+        final data = jsonDecode(raw) as Map<String, dynamic>;
+
+        _legacyAccounts.add(
+          ConnectedAccount(
+            provider: data['provider']?.toString() ?? '',
+            connected: data['connected'] == true,
+            walletAddress: data['walletAddress']?.toString(),
+            apiKey: data['apiKey']?.toString(),
+            customName: data['customName']?.toString(),
+            connectedAt: data['connectedAt'] == null
+                ? null
+                : DateTime.tryParse(data['connectedAt'].toString()),
+            lastSync: data['lastSync'] == null
+                ? null
+                : DateTime.tryParse(data['lastSync'].toString()),
+            network: data['network']?.toString(),
+          ),
+        );
+      } catch (_) {
+        // Ignore malformed legacy entries.
+      }
+    }
+  }
+
+  Future<void> _saveLegacyAccounts(String userId) async {
+    _ensureSameUser(userId);
+
+    final prefs = await SharedPreferences.getInstance();
+
+    _ensureSameUser(userId);
+
+    final stored = _legacyAccounts.map((account) {
       return jsonEncode({
         'provider': account.provider,
         'connected': account.connected,
@@ -280,28 +457,54 @@ class ConnectionService {
       });
     }).toList();
 
-    await prefs.setStringList(
-      _storageKey,
-      encodedAccounts,
-    );
+    await prefs.setStringList(_userStorageKey(userId), stored);
   }
 
-  String? _inferLegacyNetwork(
-    String provider,
-    String? walletAddress,
-  ) {
-    if (walletAddress == null || walletAddress.isEmpty) {
-      return null;
+  // --------------------------------------------------
+  // HELPERS
+  // --------------------------------------------------
+
+  User _requireUser() {
+    final user = _supabase.auth.currentUser;
+
+    if (user == null) {
+      throw StateError('You must be logged in to manage connections.');
     }
 
-    switch (provider.toLowerCase()) {
-      case 'phantom':
-        return 'solana';
-      case 'metamask':
-        return 'ethereum';
-      default:
-        return null;
+    return user;
+  }
+
+  void _ensureSameUser(String userId) {
+    if (_supabase.auth.currentUser?.id != userId) {
+      throw StateError('User session changed. Please try again.');
     }
+  }
+
+  bool _isCurrentSession(String userId, int version) {
+    return _supabase.auth.currentUser?.id == userId &&
+        _loadVersion == version;
+  }
+
+  Future<void> _ensureLoadedForUser(String userId) async {
+    if (_loadedUserId != userId) {
+      await load();
+    }
+
+    _ensureSameUser(userId);
+
+    if (_loadedUserId != userId) {
+      throw StateError('Could not load data for the current user.');
+    }
+  }
+
+  bool _isSupportedNetwork(String network) {
+    return const {
+      'solana',
+      'ethereum',
+      'base',
+      'arbitrum',
+      'polygon',
+    }.contains(network);
   }
 
   String _normalizeAddress(String network, String address) {

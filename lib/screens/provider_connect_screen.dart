@@ -39,6 +39,10 @@ class _ProviderConnectScreenState
     return address.length >= 32 && address.length <= 44;
   }
 
+  bool isValidEthereumAddress(String address) {
+    return RegExp(r'^0x[a-fA-F0-9]{40}$').hasMatch(address);
+  }
+
   Future<String?> _askForAccountName() async {
     nameController.clear();
 
@@ -162,6 +166,7 @@ class _ProviderConnectScreenState
     );
   }
 
+  
   Future<void> _connect() async {
     if (loading) return;
 
@@ -173,50 +178,52 @@ class _ProviderConnectScreenState
       if (!isExchange) {
         final address = walletController.text.trim();
 
-        if (!isValidSolanaAddress(address)) {
-          if (!mounted) return;
+        final provider = widget.provider.toLowerCase();
 
-          ScaffoldMessenger.of(context).showSnackBar(
-            const SnackBar(
-              content: Text(
-                "Invalid Solana wallet address",
-              ),
-            ),
-          );
+        String network;
 
-          return;
+        if (provider == 'phantom') {
+          network = 'solana';
+
+          if (!isValidSolanaAddress(address)) {
+            throw Exception('Invalid Solana wallet address.');
+          }
+        } else if (provider == 'metamask') {
+          network = 'ethereum';
+
+          if (!isValidEthereumAddress(address)) {
+            throw Exception('Invalid Ethereum wallet address.');
+          }
+        } else {
+          throw Exception('Unsupported wallet provider.');
         }
 
-        try {
-          if (widget.provider == "Phantom") {
+        if (provider == 'phantom') {
+          try {
             final assets = await WalletService.instance
                 .getSolanaPortfolio(address);
 
             PortfolioService.instance.setAssets(assets);
-          }
-        } catch (e) {
-          if (!mounted) return;
+          } catch (e) {
+            if (!mounted) return;
 
-          ScaffoldMessenger.of(context).showSnackBar(
-            SnackBar(
-              content: Text(
-                "Failed to load wallet: ${e.toString()}",
+            ScaffoldMessenger.of(context).showSnackBar(
+              SnackBar(
+                content: Text('Failed to load wallet: $e'),
               ),
-            ),
-          );
+            );
 
-          return;
+            return;
+          }
         }
 
         final customName = await _askForAccountName();
 
-        if (customName == null) {
-          return;
-        }
+        if (customName == null) return;
 
-        await connectionService.connect(
-          widget.provider,
-          walletAddress: address,
+        await connectionService.connectWallet(
+          network: network,
+          address: address,
           customName: customName,
         );
       } else {
@@ -229,7 +236,7 @@ class _ProviderConnectScreenState
           ScaffoldMessenger.of(context).showSnackBar(
             const SnackBar(
               content: Text(
-                "Please enter your API Key and Secret Key.",
+                'Please enter your API Key and Secret Key.',
               ),
             ),
           );
@@ -239,9 +246,7 @@ class _ProviderConnectScreenState
 
         final customName = await _askForAccountName();
 
-        if (customName == null) {
-          return;
-        }
+        if (customName == null) return;
 
         await connectionService.connect(
           widget.provider,
@@ -258,9 +263,7 @@ class _ProviderConnectScreenState
 
       ScaffoldMessenger.of(context).showSnackBar(
         SnackBar(
-          content: Text(
-            "Connection failed: $e",
-          ),
+          content: Text('Connection failed: $e'),
         ),
       );
     } finally {
@@ -271,6 +274,7 @@ class _ProviderConnectScreenState
       }
     }
   }
+
 
   @override
   Widget build(BuildContext context) {

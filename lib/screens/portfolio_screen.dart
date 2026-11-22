@@ -467,6 +467,10 @@ class _PortfolioScreenState extends State<PortfolioScreen>
                 final address = wallet.walletAddress!.toString();
                 final walletValue = walletValues[address] ?? 0.0;
 
+                final walletName = wallet.customName?.trim().isNotEmpty == true
+                    ? wallet.customName!.trim()
+                    : l10n.portfolioValue;
+
                 return Padding(
                   padding: const EdgeInsets.only(right: 2),
                   child: Container(
@@ -497,7 +501,9 @@ class _PortfolioScreenState extends State<PortfolioScreen>
                           children: [
                             Expanded(
                               child: Text(
-                                l10n.portfolioValue,
+                                walletName,
+                                maxLines: 1,
+                                overflow: TextOverflow.ellipsis,
                                 style: GoogleFonts.poppins(
                                   color: colors.primaryText,
                                   fontSize: 18,

@@ -12,6 +12,7 @@ import '../theme.dart';
 import 'signal_detail_screen.dart';
 import '../widgets/app_page_header.dart';
 import '../services/subscription_state.dart';
+import 'subscription_screen.dart';
 
 class SignalsScreen extends StatefulWidget {
   const SignalsScreen({super.key});
@@ -1005,11 +1006,11 @@ class _SignalsScreenState extends State<SignalsScreen> {
   }
 
   void _showProPaywall() {
-    showModalBottomSheet(
-      context: context,
-      backgroundColor: Colors.transparent,
-      isScrollControlled: true,
-      builder: (_) => _buildProPaywall(),
+    Navigator.push(
+      context,
+      MaterialPageRoute(
+        builder: (_) => const SubscriptionScreen(),
+      ),
     );
   }
 

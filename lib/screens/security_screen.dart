@@ -31,6 +31,9 @@ class _SecurityScreenState extends State<SecurityScreen> {
   bool appLockEnabled = false;
   bool loadingLock = true;
 
+  AvexaColors get _colors =>
+      Theme.of(context).extension<AvexaColors>()!;
+
   @override
   void initState() {
     super.initState();
@@ -48,11 +51,16 @@ class _SecurityScreenState extends State<SecurityScreen> {
     });
   }
 
+  // ============================================================
+  // CREATE PIN DIALOG
+  // ============================================================
+
   Future<String?> _showCreatePinDialog(
     AppLocalizations l10n,
   ) async {
     final controller = TextEditingController();
     final confirmController = TextEditingController();
+    final colors = _colors;
 
     String? error;
 
@@ -63,15 +71,15 @@ class _SecurityScreenState extends State<SecurityScreen> {
         return StatefulBuilder(
           builder: (context, setDialogState) {
             return AlertDialog(
-              backgroundColor: cardElevated,
+              backgroundColor: colors.elevatedCard,
               shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(24),
-                side: const BorderSide(color: borderColor),
+                side: BorderSide(color: colors.border),
               ),
               title: Text(
                 l10n.securityCreatePin,
                 style: GoogleFonts.poppins(
-                  color: textPrimary,
+                  color: colors.primaryText,
                   fontWeight: FontWeight.w700,
                 ),
               ),
@@ -81,7 +89,7 @@ class _SecurityScreenState extends State<SecurityScreen> {
                   Text(
                     l10n.securityCreatePinDescription,
                     style: GoogleFonts.poppins(
-                      color: textSecondary,
+                      color: colors.secondaryText,
                       fontSize: 13,
                       height: 1.5,
                     ),
@@ -92,10 +100,12 @@ class _SecurityScreenState extends State<SecurityScreen> {
                     keyboardType: TextInputType.number,
                     obscureText: true,
                     maxLength: 6,
-                    style: GoogleFonts.poppins(color: textPrimary),
+                    style: GoogleFonts.poppins(
+                      color: colors.primaryText,
+                    ),
                     decoration: _dialogInputDecoration(
                       l10n.securityPin,
-                      l10n,
+                      colors,
                     ),
                   ),
                   const SizedBox(height: 10),
@@ -104,10 +114,12 @@ class _SecurityScreenState extends State<SecurityScreen> {
                     keyboardType: TextInputType.number,
                     obscureText: true,
                     maxLength: 6,
-                    style: GoogleFonts.poppins(color: textPrimary),
+                    style: GoogleFonts.poppins(
+                      color: colors.primaryText,
+                    ),
                     decoration: _dialogInputDecoration(
                       l10n.securityConfirmPin,
-                      l10n,
+                      colors,
                     ),
                   ),
                   if (error != null) ...[
@@ -124,16 +136,20 @@ class _SecurityScreenState extends State<SecurityScreen> {
               ),
               actions: [
                 TextButton(
-                  onPressed: () => Navigator.pop(dialogContext),
+                  onPressed: () =>
+                      Navigator.pop(dialogContext),
                   child: Text(
                     l10n.securityCancel.toUpperCase(),
-                    style: const TextStyle(color: textSecondary),
+                    style: TextStyle(
+                      color: colors.secondaryText,
+                    ),
                   ),
                 ),
                 TextButton(
                   onPressed: () {
                     final pin = controller.text.trim();
-                    final confirm = confirmController.text.trim();
+                    final confirm =
+                        confirmController.text.trim();
 
                     if (pin.length < 4 || pin.length > 6) {
                       setDialogState(() {
@@ -179,25 +195,30 @@ class _SecurityScreenState extends State<SecurityScreen> {
     return result;
   }
 
+  // ============================================================
+  // PIN DIALOG
+  // ============================================================
+
   Future<String?> _showPinDialog(
     AppLocalizations l10n,
   ) async {
     final controller = TextEditingController();
+    final colors = _colors;
 
     final result = await showDialog<String>(
       context: context,
       barrierDismissible: false,
       builder: (dialogContext) {
         return AlertDialog(
-          backgroundColor: cardElevated,
+          backgroundColor: colors.elevatedCard,
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(24),
-            side: const BorderSide(color: borderColor),
+            side: BorderSide(color: colors.border),
           ),
           title: Text(
             l10n.securityEnterPin,
             style: GoogleFonts.poppins(
-              color: textPrimary,
+              color: colors.primaryText,
               fontWeight: FontWeight.w700,
             ),
           ),
@@ -207,18 +228,23 @@ class _SecurityScreenState extends State<SecurityScreen> {
             obscureText: true,
             maxLength: 6,
             autofocus: true,
-            style: GoogleFonts.poppins(color: textPrimary),
+            style: GoogleFonts.poppins(
+              color: colors.primaryText,
+            ),
             decoration: _dialogInputDecoration(
               l10n.securityPin,
-              l10n,
+              colors,
             ),
           ),
           actions: [
             TextButton(
-              onPressed: () => Navigator.pop(dialogContext),
+              onPressed: () =>
+                  Navigator.pop(dialogContext),
               child: Text(
                 l10n.securityCancel.toUpperCase(),
-                style: const TextStyle(color: textSecondary),
+                style: TextStyle(
+                  color: colors.secondaryText,
+                ),
               ),
             ),
             TextButton(
@@ -228,7 +254,7 @@ class _SecurityScreenState extends State<SecurityScreen> {
               ),
               child: Text(
                 l10n.securityUnlock.toUpperCase(),
-                style: const TextStyle(
+                style: TextStyle(
                   color: neonBlue,
                   fontWeight: FontWeight.w700,
                 ),
@@ -245,17 +271,19 @@ class _SecurityScreenState extends State<SecurityScreen> {
 
   InputDecoration _dialogInputDecoration(
     String hint,
-    AppLocalizations l10n,
+    AvexaColors colors,
   ) {
     return InputDecoration(
       hintText: hint,
       counterText: '',
-      hintStyle: GoogleFonts.poppins(color: textMuted),
+      hintStyle: GoogleFonts.poppins(
+        color: colors.mutedText,
+      ),
       filled: true,
-      fillColor: cardDark,
+      fillColor: colors.card,
       enabledBorder: OutlineInputBorder(
         borderRadius: BorderRadius.circular(14),
-        borderSide: const BorderSide(color: borderColor),
+        borderSide: BorderSide(color: colors.border),
       ),
       focusedBorder: OutlineInputBorder(
         borderRadius: BorderRadius.circular(14),
@@ -263,6 +291,10 @@ class _SecurityScreenState extends State<SecurityScreen> {
       ),
     );
   }
+
+  // ============================================================
+  // APP LOCK
+  // ============================================================
 
   Future<void> _toggleAppLock(bool value) async {
     if (loadingLock) return;
@@ -274,7 +306,8 @@ class _SecurityScreenState extends State<SecurityScreen> {
     });
 
     try {
-      final authenticated = await LocalAuthService.authenticate();
+      final authenticated =
+          await LocalAuthService.authenticate();
 
       if (!authenticated) {
         if (!mounted) return;
@@ -317,11 +350,16 @@ class _SecurityScreenState extends State<SecurityScreen> {
     }
   }
 
+  // ============================================================
+  // CHANGE PASSWORD
+  // ============================================================
+
   Future<void> _changePassword() async {
     final l10n = AppLocalizations.of(context)!;
 
     final newPassword = newPasswordController.text.trim();
-    final confirmPassword = confirmPasswordController.text.trim();
+    final confirmPassword =
+        confirmPasswordController.text.trim();
 
     if (newPassword.isEmpty || confirmPassword.isEmpty) {
       _showMessage(l10n.securityEnterNewPassword);
@@ -368,21 +406,27 @@ class _SecurityScreenState extends State<SecurityScreen> {
     }
   }
 
+  // ============================================================
+  // SNACKBAR
+  // ============================================================
+
   void _showMessage(String message) {
+    final colors = _colors;
+
     ScaffoldMessenger.of(context).showSnackBar(
       SnackBar(
         content: Text(
           message,
           style: GoogleFonts.poppins(
-            color: textPrimary,
+            color: colors.primaryText,
             fontSize: 13,
           ),
         ),
-        backgroundColor: cardElevated,
+        backgroundColor: colors.elevatedCard,
         behavior: SnackBarBehavior.floating,
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(14),
-          side: const BorderSide(color: borderColor),
+          side: BorderSide(color: colors.border),
         ),
       ),
     );
@@ -396,27 +440,32 @@ class _SecurityScreenState extends State<SecurityScreen> {
     super.dispose();
   }
 
+  // ============================================================
+  // BUILD
+  // ============================================================
+
   @override
   Widget build(BuildContext context) {
     final l10n = AppLocalizations.of(context)!;
     final user = supabase.auth.currentUser;
+    final colors = _colors;
 
     return Scaffold(
-      backgroundColor: bgColor,
+      backgroundColor: colors.background,
       appBar: AppBar(
-        backgroundColor: bgColor,
+        backgroundColor: colors.background,
         elevation: 0,
         leading: IconButton(
-          icon: const Icon(
+          icon: Icon(
             Icons.arrow_back_ios_new,
-            color: textPrimary,
+            color: colors.primaryText,
           ),
           onPressed: () => Navigator.pop(context),
         ),
         title: Text(
           l10n.securityTitle,
           style: GoogleFonts.poppins(
-            color: textPrimary,
+            color: colors.primaryText,
             fontWeight: FontWeight.w600,
             fontSize: 19,
           ),
@@ -430,7 +479,7 @@ class _SecurityScreenState extends State<SecurityScreen> {
             Text(
               l10n.securityAccountTitle,
               style: GoogleFonts.poppins(
-                color: textPrimary,
+                color: colors.primaryText,
                 fontSize: 22,
                 fontWeight: FontWeight.w600,
               ),
@@ -439,7 +488,7 @@ class _SecurityScreenState extends State<SecurityScreen> {
             Text(
               l10n.securityAccountDescription,
               style: GoogleFonts.poppins(
-                color: textSecondary,
+                color: colors.secondaryText,
                 fontSize: 14,
                 height: 1.5,
               ),
@@ -461,7 +510,8 @@ class _SecurityScreenState extends State<SecurityScreen> {
               visible: currentPasswordVisible,
               onVisibilityChanged: () {
                 setState(() {
-                  currentPasswordVisible = !currentPasswordVisible;
+                  currentPasswordVisible =
+                      !currentPasswordVisible;
                 });
               },
             ),
@@ -485,7 +535,8 @@ class _SecurityScreenState extends State<SecurityScreen> {
               visible: confirmPasswordVisible,
               onVisibilityChanged: () {
                 setState(() {
-                  confirmPasswordVisible = !confirmPasswordVisible;
+                  confirmPasswordVisible =
+                      !confirmPasswordVisible;
                 });
               },
             ),
@@ -500,7 +551,8 @@ class _SecurityScreenState extends State<SecurityScreen> {
                 style: ElevatedButton.styleFrom(
                   backgroundColor: neonBlue,
                   foregroundColor: Colors.white,
-                  disabledBackgroundColor: neonBlue.withOpacity(.4),
+                  disabledBackgroundColor:
+                      neonBlue.withOpacity(.4),
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(18),
                   ),
@@ -555,7 +607,7 @@ class _SecurityScreenState extends State<SecurityScreen> {
                     child: Text(
                       l10n.securitySafetyNotice,
                       style: GoogleFonts.poppins(
-                        color: textSecondary,
+                        color: colors.secondaryText,
                         fontSize: 12,
                         height: 1.5,
                       ),
@@ -572,17 +624,23 @@ class _SecurityScreenState extends State<SecurityScreen> {
     );
   }
 
+  // ============================================================
+  // ACCOUNT CARD
+  // ============================================================
+
   Widget _accountCard(
     String email,
     AppLocalizations l10n,
   ) {
+    final colors = _colors;
+
     return Container(
       width: double.infinity,
       padding: const EdgeInsets.all(18),
       decoration: BoxDecoration(
-        color: cardDark,
+        color: colors.card,
         borderRadius: BorderRadius.circular(20),
-        border: Border.all(color: borderColor),
+        border: Border.all(color: colors.border),
       ),
       child: Row(
         children: [
@@ -609,7 +667,7 @@ class _SecurityScreenState extends State<SecurityScreen> {
                 Text(
                   l10n.securityAccountEmail,
                   style: GoogleFonts.poppins(
-                    color: textMuted,
+                    color: colors.mutedText,
                     fontSize: 12,
                   ),
                 ),
@@ -617,7 +675,7 @@ class _SecurityScreenState extends State<SecurityScreen> {
                 Text(
                   email,
                   style: GoogleFonts.poppins(
-                    color: textPrimary,
+                    color: colors.primaryText,
                     fontSize: 14,
                   ),
                 ),
@@ -634,14 +692,20 @@ class _SecurityScreenState extends State<SecurityScreen> {
     );
   }
 
+  // ============================================================
+  // APP LOCK CARD
+  // ============================================================
+
   Widget _appLockCard(AppLocalizations l10n) {
+    final colors = _colors;
+
     return Container(
       width: double.infinity,
       padding: const EdgeInsets.all(18),
       decoration: BoxDecoration(
-        color: cardDark,
+        color: colors.card,
         borderRadius: BorderRadius.circular(20),
-        border: Border.all(color: borderColor),
+        border: Border.all(color: colors.border),
         boxShadow: [
           BoxShadow(
             color: neonBlue.withOpacity(.035),
@@ -673,7 +737,7 @@ class _SecurityScreenState extends State<SecurityScreen> {
                 Text(
                   l10n.securityAppLockTitle,
                   style: GoogleFonts.poppins(
-                    color: textPrimary,
+                    color: colors.primaryText,
                     fontSize: 15,
                     fontWeight: FontWeight.w600,
                   ),
@@ -684,7 +748,7 @@ class _SecurityScreenState extends State<SecurityScreen> {
                       ? l10n.securityAppLockEnabledDescription
                       : l10n.securityAppLockDisabledDescription,
                   style: GoogleFonts.poppins(
-                    color: textMuted,
+                    color: colors.mutedText,
                     fontSize: 12,
                   ),
                 ),
@@ -706,19 +770,23 @@ class _SecurityScreenState extends State<SecurityScreen> {
               onChanged: _toggleAppLock,
               activeThumbColor: Colors.white,
               activeTrackColor: neonBlue,
-              inactiveThumbColor: textSecondary,
-              inactiveTrackColor: cardElevated,
+              inactiveThumbColor: colors.secondaryText,
+              inactiveTrackColor: colors.elevatedCard,
             ),
         ],
       ),
     );
   }
 
+  // ============================================================
+  // SECTION TITLE
+  // ============================================================
+
   Widget _sectionTitle(String text) {
     return Text(
       text,
       style: GoogleFonts.poppins(
-        color: textSecondary,
+        color: _colors.secondaryText,
         fontSize: 12,
         fontWeight: FontWeight.w600,
         letterSpacing: 1,
@@ -726,17 +794,23 @@ class _SecurityScreenState extends State<SecurityScreen> {
     );
   }
 
+  // ============================================================
+  // PASSWORD FIELD
+  // ============================================================
+
   Widget _passwordField({
     required TextEditingController controller,
     required String hint,
     required bool visible,
     required VoidCallback onVisibilityChanged,
   }) {
+    final colors = _colors;
+
     return TextField(
       controller: controller,
       obscureText: !visible,
       style: GoogleFonts.poppins(
-        color: textPrimary,
+        color: colors.primaryText,
         fontSize: 15,
       ),
       cursorColor: neonBlue,
@@ -751,23 +825,23 @@ class _SecurityScreenState extends State<SecurityScreen> {
             visible
                 ? Icons.visibility_off_outlined
                 : Icons.visibility_outlined,
-            color: textMuted,
+            color: colors.mutedText,
           ),
         ),
         hintText: hint,
         hintStyle: GoogleFonts.poppins(
-          color: textMuted,
+          color: colors.mutedText,
           fontSize: 14,
         ),
         filled: true,
-        fillColor: cardDark,
+        fillColor: colors.card,
         border: OutlineInputBorder(
           borderRadius: BorderRadius.circular(18),
           borderSide: BorderSide.none,
         ),
         enabledBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(18),
-          borderSide: const BorderSide(color: borderColor),
+          borderSide: BorderSide(color: colors.border),
         ),
         focusedBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(18),

@@ -196,6 +196,7 @@ class _ConnectPortfolioScreenState
         SnackBar(
           backgroundColor: neonGreen,
           behavior: SnackBarBehavior.floating,
+          margin: const EdgeInsets.fromLTRB(16, 0, 16, 118),
           content: Text(
             l10n.connectPortfolioSuccess(network.name),
             style: GoogleFonts.poppins(
@@ -226,6 +227,7 @@ class _ConnectPortfolioScreenState
     ScaffoldMessenger.of(context).showSnackBar(
       SnackBar(
         behavior: SnackBarBehavior.floating,
+        margin: const EdgeInsets.fromLTRB(16, 0, 16, 118),
         backgroundColor: Theme.of(context)
             .extension<AvexaColors>()!
             .elevatedCard,

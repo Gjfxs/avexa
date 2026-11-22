@@ -1,3 +1,4 @@
+
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
@@ -34,8 +35,10 @@ class _ContactSupportScreenState
   ];
 
   String? selectedTopic;
-
   bool isSending = false;
+
+  AvexaColors get _colors =>
+      Theme.of(context).extension<AvexaColors>()!;
 
   @override
   void dispose() {
@@ -50,44 +53,33 @@ class _ContactSupportScreenState
 
   Future<void> _sendMessage() async {
     final l10n = AppLocalizations.of(context)!;
-
     final user = supabase.auth.currentUser;
 
     if (user == null) {
-      _showMessage(
-        l10n.supportLoginRequired,
-      );
+      _showMessage(l10n.supportLoginRequired);
       return;
     }
 
     if (selectedTopic == null) {
-      _showMessage(
-        l10n.supportSelectTopicError,
-      );
+      _showMessage(l10n.supportSelectTopicError);
       return;
     }
 
     if (selectedTopic == 'Other' &&
         customTopicController.text.trim().isEmpty) {
-      _showMessage(
-        l10n.supportEnterTopicError,
-      );
+      _showMessage(l10n.supportEnterTopicError);
       return;
     }
 
     final message = messageController.text.trim();
 
     if (message.isEmpty) {
-      _showMessage(
-        l10n.supportEnterMessageError,
-      );
+      _showMessage(l10n.supportEnterMessageError);
       return;
     }
 
     if (message.length < 10) {
-      _showMessage(
-        l10n.supportMessageMinLengthError,
-      );
+      _showMessage(l10n.supportMessageMinLengthError);
       return;
     }
 
@@ -107,22 +99,19 @@ class _ContactSupportScreenState
           user.email?.split('@').first ??
           'User';
 
-      await supabase
-          .from('support_messages')
-          .insert({
+      await supabase.from('support_messages').insert({
         'user_id': user.id,
         'email': user.email,
         'username': username,
         'topic': selectedTopic,
-        'custom_topic':
-            selectedTopic == 'Other'
-                ? customTopicController.text.trim()
-                : null,
+        'custom_topic': selectedTopic == 'Other'
+            ? customTopicController.text.trim()
+            : null,
         'message': message,
       });
 
-
-      final emailResponse = await supabase.functions.invoke(
+      final emailResponse =
+          await supabase.functions.invoke(
         'contact_support_email',
         body: {
           'topic': selectedTopic!,
@@ -144,7 +133,6 @@ class _ContactSupportScreenState
 
       debugPrint('SUPPORT EMAIL: Sent successfully.');
 
-
       if (!mounted) return;
 
       setState(() {
@@ -159,13 +147,9 @@ class _ContactSupportScreenState
         isSending = false;
       });
 
-      _showMessage(
-        l10n.supportSendError,
-      );
+      _showMessage(l10n.supportSendError);
 
-      debugPrint(
-        'SUPPORT MESSAGE ERROR: $error',
-      );
+      debugPrint('SUPPORT MESSAGE ERROR: $error');
     }
   }
 
@@ -175,23 +159,22 @@ class _ContactSupportScreenState
 
   Future<void> _showSuccessDialog() async {
     final l10n = AppLocalizations.of(context)!;
+    final colors = _colors;
+
     await showDialog(
       context: context,
       barrierDismissible: false,
-      builder: (context) {
+      builder: (dialogContext) {
         return AlertDialog(
-          backgroundColor: cardDark,
+          backgroundColor: colors.card,
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(24),
-            side: BorderSide(
-              color: borderColor,
-            ),
+            side: BorderSide(color: colors.border),
           ),
           contentPadding: const EdgeInsets.all(28),
           content: Column(
             mainAxisSize: MainAxisSize.min,
             children: [
-
               Container(
                 width: 64,
                 height: 64,
@@ -214,46 +197,39 @@ class _ContactSupportScreenState
                   size: 34,
                 ),
               ),
-
               const SizedBox(height: 20),
-
               Text(
                 l10n.supportMessageSent,
                 style: GoogleFonts.poppins(
-                  color: textPrimary,
+                  color: colors.primaryText,
                   fontSize: 21,
                   fontWeight: FontWeight.w700,
                 ),
               ),
-
               const SizedBox(height: 10),
-
               Text(
                 l10n.supportSuccessDescription,
                 textAlign: TextAlign.center,
                 style: GoogleFonts.poppins(
-                  color: textSecondary,
+                  color: colors.secondaryText,
                   fontSize: 13,
                   height: 1.5,
                 ),
               ),
-
               const SizedBox(height: 24),
-
               SizedBox(
                 width: double.infinity,
                 height: 48,
                 child: ElevatedButton(
                   onPressed: () {
-                    Navigator.pop(context);
+                    Navigator.pop(dialogContext);
                     Navigator.pop(context);
                   },
                   style: ElevatedButton.styleFrom(
                     backgroundColor: neonBlue,
                     foregroundColor: Colors.white,
                     elevation: 0,
-                    shadowColor:
-                        neonBlue.withOpacity(.30),
+                    shadowColor: neonBlue.withOpacity(.30),
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(16),
                     ),
@@ -278,21 +254,21 @@ class _ContactSupportScreenState
   // ============================================================
 
   void _showMessage(String message) {
+    final colors = _colors;
+
     ScaffoldMessenger.of(context).showSnackBar(
       SnackBar(
         content: Text(
           message,
           style: GoogleFonts.poppins(
-            color: textPrimary,
+            color: colors.primaryText,
           ),
         ),
-        backgroundColor: cardElevated,
+        backgroundColor: colors.elevatedCard,
         behavior: SnackBarBehavior.floating,
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(14),
-          side: BorderSide(
-            color: borderColor,
-          ),
+          side: BorderSide(color: colors.border),
         ),
       ),
     );
@@ -305,61 +281,47 @@ class _ContactSupportScreenState
   @override
   Widget build(BuildContext context) {
     final l10n = AppLocalizations.of(context)!;
+    final colors = _colors;
 
     return Scaffold(
-      backgroundColor: bgColor,
-
+      backgroundColor: colors.background,
       appBar: AppBar(
-        backgroundColor: bgColor,
+        backgroundColor: colors.background,
         elevation: 0,
         centerTitle: true,
-
         leading: IconButton(
-          icon: const Icon(
+          icon: Icon(
             Icons.arrow_back_ios_new,
-            color: textPrimary,
+            color: colors.primaryText,
           ),
           onPressed: () {
             Navigator.pop(context);
           },
         ),
-
         title: Text(
           l10n.contactSupport,
           style: GoogleFonts.poppins(
-            color: textPrimary,
+            color: colors.primaryText,
             fontSize: 21,
             fontWeight: FontWeight.w700,
           ),
         ),
       ),
-
       body: SafeArea(
         top: false,
         child: SingleChildScrollView(
-          padding: const EdgeInsets.fromLTRB(
-            24,
-            16,
-            24,
-            40,
-          ),
+          padding: const EdgeInsets.fromLTRB(24, 16, 24, 40),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-
-              // ========================================================
               // INTRO
-              // ========================================================
-
               Container(
                 width: double.infinity,
                 padding: const EdgeInsets.all(22),
                 decoration: BoxDecoration(
-                  color: cardDark,
+                  color: colors.card,
                   borderRadius: BorderRadius.circular(24),
-                  border: Border.all(
-                    color: borderColor,
-                  ),
+                  border: Border.all(color: colors.border),
                   boxShadow: [
                     BoxShadow(
                       color: neonBlue.withOpacity(.05),
@@ -370,17 +332,14 @@ class _ContactSupportScreenState
                 ),
                 child: Row(
                   children: [
-
                     Container(
                       width: 52,
                       height: 52,
                       decoration: BoxDecoration(
                         color: neonBlue.withOpacity(.10),
-                        borderRadius:
-                            BorderRadius.circular(16),
+                        borderRadius: BorderRadius.circular(16),
                         border: Border.all(
-                          color:
-                              neonBlue.withOpacity(.20),
+                          color: neonBlue.withOpacity(.20),
                         ),
                       ),
                       child: const Icon(
@@ -389,30 +348,24 @@ class _ContactSupportScreenState
                         size: 27,
                       ),
                     ),
-
                     const SizedBox(width: 16),
-
                     Expanded(
                       child: Column(
-                        crossAxisAlignment:
-                            CrossAxisAlignment.start,
+                        crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-
                           Text(
                             l10n.supportIntroTitle,
                             style: GoogleFonts.poppins(
-                              color: textPrimary,
+                              color: colors.primaryText,
                               fontSize: 17,
                               fontWeight: FontWeight.w600,
                             ),
                           ),
-
                           const SizedBox(height: 5),
-
                           Text(
                             l10n.supportIntroSubtitle,
                             style: GoogleFonts.poppins(
-                              color: textSecondary,
+                              color: colors.secondaryText,
                               fontSize: 12,
                               height: 1.4,
                             ),
@@ -426,14 +379,9 @@ class _ContactSupportScreenState
 
               const SizedBox(height: 32),
 
-              // ========================================================
               // TOPIC
-              // ========================================================
-
               _sectionTitle(l10n.supportTopicQuestion),
-
               const SizedBox(height: 14),
-
               GestureDetector(
                 onTap: _showTopicPicker,
                 child: Container(
@@ -443,19 +391,17 @@ class _ContactSupportScreenState
                     vertical: 19,
                   ),
                   decoration: BoxDecoration(
-                    color: cardDark,
-                    borderRadius:
-                        BorderRadius.circular(20),
+                    color: colors.card,
+                    borderRadius: BorderRadius.circular(20),
                     border: Border.all(
                       color: selectedTopic != null
                           ? neonBlue.withOpacity(.35)
-                          : borderColor,
+                          : colors.border,
                     ),
                     boxShadow: selectedTopic != null
                         ? [
                             BoxShadow(
-                              color:
-                                  neonBlue.withOpacity(.05),
+                              color: neonBlue.withOpacity(.05),
                               blurRadius: 16,
                             ),
                           ]
@@ -463,7 +409,6 @@ class _ContactSupportScreenState
                   ),
                   child: Row(
                     children: [
-
                       Container(
                         width: 42,
                         height: 42,
@@ -471,8 +416,7 @@ class _ContactSupportScreenState
                           color: neonBlue.withOpacity(.10),
                           shape: BoxShape.circle,
                           border: Border.all(
-                            color:
-                                neonBlue.withOpacity(.18),
+                            color: neonBlue.withOpacity(.18),
                           ),
                         ),
                         child: const Icon(
@@ -481,49 +425,41 @@ class _ContactSupportScreenState
                           size: 22,
                         ),
                       ),
-
                       const SizedBox(width: 14),
-
                       Expanded(
                         child: Column(
-                          crossAxisAlignment:
-                              CrossAxisAlignment.start,
+                          crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
-
                             Text(
-                              selectedTopic == null ?
-                              l10n.supportSelectTopic :
-                              _topicLabel(selectedTopic!,
-                              l10n),
+                              selectedTopic == null
+                                  ? l10n.supportSelectTopic
+                                  : _topicLabel(selectedTopic!, l10n),
                               style: GoogleFonts.poppins(
                                 color: selectedTopic != null
-                                    ? textPrimary
-                                    : textSecondary,
+                                    ? colors.primaryText
+                                    : colors.secondaryText,
                                 fontSize: 15,
                                 fontWeight: FontWeight.w500,
                               ),
                             ),
-
                             if (selectedTopic != null &&
                                 selectedTopic != 'Other')
                               const SizedBox(height: 3),
-
                             if (selectedTopic != null &&
                                 selectedTopic != 'Other')
                               Text(
                                 l10n.supportTapToChange,
                                 style: GoogleFonts.poppins(
-                                  color: textMuted,
+                                  color: colors.mutedText,
                                   fontSize: 11,
                                 ),
                               ),
                           ],
                         ),
                       ),
-
-                      const Icon(
+                      Icon(
                         Icons.chevron_right_rounded,
-                        color: textMuted,
+                        color: colors.mutedText,
                         size: 27,
                       ),
                     ],
@@ -531,17 +467,11 @@ class _ContactSupportScreenState
                 ),
               ),
 
-              // ========================================================
               // CUSTOM TOPIC
-              // ========================================================
-
               if (selectedTopic == 'Other') ...[
                 const SizedBox(height: 16),
-
                 _sectionTitle(l10n.supportYourTopic),
-
                 const SizedBox(height: 12),
-
                 _textField(
                   controller: customTopicController,
                   hint: l10n.supportCustomTopicHint,
@@ -551,22 +481,15 @@ class _ContactSupportScreenState
 
               const SizedBox(height: 32),
 
-              // ========================================================
               // MESSAGE
-              // ========================================================
-
               _sectionTitle(l10n.supportMessage),
-
               const SizedBox(height: 14),
-
               _textField(
                 controller: messageController,
                 hint: l10n.supportMessageHint,
                 maxLines: 7,
               ),
-
               const SizedBox(height: 8),
-
               Align(
                 alignment: Alignment.centerRight,
                 child: ValueListenableBuilder(
@@ -575,7 +498,7 @@ class _ContactSupportScreenState
                     return Text(
                       '${messageController.text.length} / 1000',
                       style: GoogleFonts.poppins(
-                        color: textMuted,
+                        color: colors.mutedText,
                         fontSize: 11,
                       ),
                     );
@@ -585,24 +508,19 @@ class _ContactSupportScreenState
 
               const SizedBox(height: 28),
 
-              // ========================================================
               // SEND
-              // ========================================================
-
               SizedBox(
                 width: double.infinity,
                 height: 56,
                 child: ElevatedButton(
-                  onPressed:
-                      isSending ? null : _sendMessage,
+                  onPressed: isSending ? null : _sendMessage,
                   style: ElevatedButton.styleFrom(
                     backgroundColor: neonBlue,
                     disabledBackgroundColor:
                         neonBlue.withOpacity(.30),
                     foregroundColor: Colors.white,
                     elevation: 0,
-                    shadowColor:
-                        neonBlue.withOpacity(.25),
+                    shadowColor: neonBlue.withOpacity(.25),
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(18),
                     ),
@@ -627,12 +545,11 @@ class _ContactSupportScreenState
               ),
 
               const SizedBox(height: 16),
-
               Center(
                 child: Text(
                   l10n.supportResponseTime,
                   style: GoogleFonts.poppins(
-                    color: textMuted,
+                    color: colors.mutedText,
                     fontSize: 11,
                   ),
                 ),
@@ -645,7 +562,7 @@ class _ContactSupportScreenState
   }
 
   // ============================================================
-  // SECTION TITLE
+  // TOPIC LABEL
   // ============================================================
 
   String _topicLabel(String topic, AppLocalizations l10n) {
@@ -673,7 +590,7 @@ class _ContactSupportScreenState
     return Text(
       title,
       style: GoogleFonts.poppins(
-        color: textSecondary,
+        color: _colors.secondaryText,
         fontSize: 12,
         fontWeight: FontWeight.w600,
         letterSpacing: 1.3,
@@ -690,29 +607,30 @@ class _ContactSupportScreenState
     required String hint,
     required int maxLines,
   }) {
+    final colors = _colors;
+
     return TextField(
       controller: controller,
       maxLines: maxLines,
       maxLength: maxLines > 1 ? 1000 : null,
       style: GoogleFonts.poppins(
-        color: textPrimary,
+        color: colors.primaryText,
         fontSize: 14,
       ),
+      cursorColor: neonBlue,
       decoration: InputDecoration(
         hintText: hint,
         hintStyle: GoogleFonts.poppins(
-          color: textMuted,
+          color: colors.mutedText,
           fontSize: 14,
         ),
         counterText: '',
         filled: true,
-        fillColor: cardDark,
+        fillColor: colors.card,
         contentPadding: const EdgeInsets.all(18),
         enabledBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(20),
-          borderSide: BorderSide(
-            color: borderColor,
-          ),
+          borderSide: BorderSide(color: colors.border),
         ),
         focusedBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(20),
@@ -730,54 +648,50 @@ class _ContactSupportScreenState
 
   void _showTopicPicker() {
     final l10n = AppLocalizations.of(context)!;
+
     showModalBottomSheet(
       context: context,
       backgroundColor: Colors.transparent,
       isScrollControlled: true,
-      builder: (context) {
+      builder: (sheetContext) {
+        final colors =
+            Theme.of(sheetContext).extension<AvexaColors>()!;
+
         return Container(
-          padding: const EdgeInsets.fromLTRB(
-            24,
-            14,
-            24,
-            30,
-          ),
-          decoration: const BoxDecoration(
-            color: Color(0xff10151F),
-            borderRadius: BorderRadius.vertical(
+          padding: const EdgeInsets.fromLTRB(24, 14, 24, 30),
+          decoration: BoxDecoration(
+            color: colors.card,
+            borderRadius: const BorderRadius.vertical(
               top: Radius.circular(28),
+            ),
+            border: Border(
+              top: BorderSide(color: colors.border),
+              left: BorderSide(color: colors.border),
+              right: BorderSide(color: colors.border),
             ),
           ),
           child: Column(
             mainAxisSize: MainAxisSize.min,
             children: [
-
               Container(
                 width: 42,
                 height: 5,
                 decoration: BoxDecoration(
-                  color: borderColor,
-                  borderRadius:
-                      BorderRadius.circular(10),
+                  color: colors.border,
+                  borderRadius: BorderRadius.circular(10),
                 ),
               ),
-
               const SizedBox(height: 22),
-
               Text(
                 l10n.supportTopicQuestion,
                 style: GoogleFonts.poppins(
-                  color: textPrimary,
+                  color: colors.primaryText,
                   fontSize: 20,
                   fontWeight: FontWeight.w600,
                 ),
               ),
-
               const SizedBox(height: 20),
-
-              ...topics.map(
-                (topic) => _topicOption(topic),
-              ),
+              ...topics.map((topic) => _topicOption(topic)),
             ],
           ),
         );
@@ -791,6 +705,7 @@ class _ContactSupportScreenState
 
   Widget _topicOption(String topic) {
     final selected = selectedTopic == topic;
+    final colors = _colors;
 
     return GestureDetector(
       onTap: () {
@@ -810,17 +725,16 @@ class _ContactSupportScreenState
         decoration: BoxDecoration(
           color: selected
               ? neonBlue.withOpacity(.10)
-              : cardDark,
+              : colors.elevatedCard,
           borderRadius: BorderRadius.circular(16),
           border: Border.all(
             color: selected
                 ? neonBlue.withOpacity(.35)
-                : borderColor,
+                : colors.border,
           ),
         ),
         child: Row(
           children: [
-
             Expanded(
               child: Text(
                 _topicLabel(
@@ -828,7 +742,7 @@ class _ContactSupportScreenState
                   AppLocalizations.of(context)!,
                 ),
                 style: GoogleFonts.poppins(
-                  color: textPrimary,
+                  color: colors.primaryText,
                   fontSize: 14,
                   fontWeight: selected
                       ? FontWeight.w600
@@ -836,7 +750,6 @@ class _ContactSupportScreenState
                 ),
               ),
             ),
-
             if (selected)
               const Icon(
                 Icons.check_circle_rounded,

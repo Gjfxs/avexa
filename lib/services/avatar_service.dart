@@ -1,58 +1,63 @@
+
 import 'dart:io';
 
+import 'package:flutter/foundation.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
+
+import 'profile_service.dart';
 
 class AvatarService {
   static final supabase = Supabase.instance.client;
 
-  // ============================================================
-  // SAVE AVATAR TO PROFILE
-  // ============================================================
-
+  // SAVE SELECTED AVATAR
   static Future<String?> saveAvatar(String avatar) async {
     try {
       final user = supabase.auth.currentUser;
 
       if (user == null) {
-        print('SAVE AVATAR: NO USER');
-        return null;
+        throw Exception('User is not authenticated.');
       }
 
-      print('SAVE AVATAR USER: ${user.id}');
-      print('SAVE AVATAR VALUE: $avatar');
+      await ProfileService.createProfileIfNeeded();
 
       final response = await supabase
           .from('profiles')
-          .update({
-            'avatar_url': avatar,
-          })
+          .update({'avatar_url': avatar})
           .eq('id', user.id)
           .select('avatar_url')
-          .single();
+          .maybeSingle();
 
-      print('SAVE AVATAR RESPONSE: $response');
+      if (response == null) {
+        throw Exception('Profile was not found after creation.');
+      }
 
-      return response['avatar_url']?.toString();
+      final savedAvatar = response['avatar_url']?.toString();
+
+      if (savedAvatar == null || savedAvatar.isEmpty) {
+        throw Exception('Avatar URL was not saved.');
+      }
+
+      debugPrint('AVATAR SAVED: $savedAvatar');
+
+      return savedAvatar;
     } catch (e, stackTrace) {
-      print('====================================');
-      print('SAVE AVATAR ERROR: $e');
-      print('SAVE AVATAR STACK: $stackTrace');
-      print('====================================');
-
+      debugPrint('SAVE AVATAR ERROR: $e');
+      debugPrint('$stackTrace');
       return null;
     }
   }
 
-  // ============================================================
-  // UPLOAD CUSTOM PROFILE PHOTO
-  // ============================================================
-
+  // UPLOAD CUSTOM PRO PHOTO
   static Future<String?> uploadAvatar() async {
     try {
       final user = supabase.auth.currentUser;
 
-      if (user == null) return null;
+      if (user == null) {
+        throw Exception('User is not authenticated.');
+      }
+
+      await ProfileService.createProfileIfNeeded();
 
       final profile = await supabase
           .from('profiles')
@@ -63,7 +68,7 @@ class AvatarService {
       final plan = profile?['plan']?.toString().toLowerCase();
 
       if (plan != 'pro') {
-        return null;
+        throw Exception('PRO subscription required.');
       }
 
       final picker = ImagePicker();
@@ -78,14 +83,7 @@ class AvatarService {
       if (picked == null) return null;
 
       final file = File(picked.path);
-
       final path = '${user.id}/custom_avatar.jpg';
-
-      try {
-        await supabase.storage
-            .from('avatars')
-            .remove([path]);
-      } catch (_) {}
 
       await supabase.storage
           .from('avatars')
@@ -102,30 +100,39 @@ class AvatarService {
           .from('avatars')
           .getPublicUrl(path);
 
-      return url;
-    } catch (e) {
-      print('UPLOAD AVATAR ERROR: $e');
+      final savedUrl = await saveAvatar(url);
+
+      if (savedUrl == null) {
+        throw Exception('Could not save custom avatar URL.');
+      }
+
+      debugPrint('CUSTOM AVATAR SAVED: $savedUrl');
+
+      return savedUrl;
+    } catch (e, stackTrace) {
+      debugPrint('UPLOAD AVATAR ERROR: $e');
+      debugPrint('$stackTrace');
       return null;
     }
   }
 
-  // ============================================================
-  // LOAD AVATAR FROM PROFILE
-  // ============================================================
-
+  // LOAD AVATAR
   static Future<String?> getAvatar() async {
     final user = supabase.auth.currentUser;
 
     if (user == null) return null;
 
-    final profile = await supabase
-        .from('profiles')
-        .select('avatar_url')
-        .eq('id', user.id)
-        .maybeSingle();
+    try {
+      final profile = await supabase
+          .from('profiles')
+          .select('avatar_url')
+          .eq('id', user.id)
+          .maybeSingle();
 
-    if (profile == null) return null;
-
-    return profile['avatar_url']?.toString();
+      return profile?['avatar_url']?.toString();
+    } catch (e) {
+      debugPrint('GET AVATAR ERROR: $e');
+      return null;
+    }
   }
 }

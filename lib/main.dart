@@ -155,7 +155,12 @@ class _MyAppState extends State<MyApp> {
 
       themeMode: _themeMode,
 
-      home: const AuthGate(),
+      home: Builder(
+        builder: (context) {
+          debugPrint('MAIN: BUILDING AUTH GATE');
+          return const AuthGate();
+        },
+      ),
 
       locale: LocaleController.instance.locale,
       supportedLocales: AppLocalizations.supportedLocales,

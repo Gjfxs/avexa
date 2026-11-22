@@ -1,36 +1,39 @@
 
+import 'package:flutter/foundation.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
 
 class ProfileService {
   static final _supabase = Supabase.instance.client;
 
   static Future<void> createProfileIfNeeded() async {
-    print("CREATE PROFILE START");
-
     final user = _supabase.auth.currentUser;
 
     if (user == null) {
-      print("USER IS NULL");
-      return;
+      debugPrint('PROFILE: No authenticated user.');
+      throw Exception('User is not authenticated.');
     }
 
-    print("USER ID: ${user.id}");
+    final username =
+        user.userMetadata?['full_name']?.toString() ??
+        user.userMetadata?['name']?.toString() ??
+        user.email?.split('@').first ??
+        'User';
 
-    final existing = await _supabase
-        .from('profiles')
-        .select()
-        .eq('id', user.id)
-        .maybeSingle();
+    try {
+      await _supabase.from('profiles').upsert(
+        {
+          'id': user.id,
+          'username': username,
+        },
+        onConflict: 'id',
+        ignoreDuplicates: true,
+      );
 
-    if (existing != null) return;
-
-    await _supabase.from('profiles').insert({
-      'id': user.id,
-      'username':
-          user.userMetadata?['full_name'] ??
-          user.email?.split('@').first ??
-          'User',
-      'avatar_url': user.userMetadata?['avatar_url'],
-    });
+      debugPrint('PROFILE: Profile ensured for ${user.id}');
+    } catch (e, stackTrace) {
+      debugPrint('PROFILE CREATION ERROR: $e');
+      debugPrint('$stackTrace');
+      rethrow;
+    }
   }
 }

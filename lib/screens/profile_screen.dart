@@ -14,7 +14,6 @@ import '../widgets/avatar_picker_sheet.dart';
 import 'personal_information_screen.dart';
 import 'connected_accounts_screen.dart';
 import 'security_screen.dart';
-import 'login_screen.dart';
 import 'subscription_screen.dart';
 import 'settings_screen.dart';
 import 'help_center_screen.dart';
@@ -612,18 +611,18 @@ class _ProfileScreenState extends State<ProfileScreen> {
                       borderRadius: BorderRadius.circular(18),
                     ),
                   ),
+                  
                   onPressed: () async {
                     await AuthService.logout(context);
 
                     if (!context.mounted) return;
 
-                    Navigator.of(context).pushAndRemoveUntil(
-                      MaterialPageRoute(
-                        builder: (_) => const LoginScreen(),
-                      ),
-                      (route) => false,
-                    );
+                    Navigator.of(
+                      context,
+                      rootNavigator: true,
+                    ).popUntil((route) => route.isFirst);
                   },
+
                   child: Text(
                     l10n.profileLogOut,
                     style: GoogleFonts.poppins(

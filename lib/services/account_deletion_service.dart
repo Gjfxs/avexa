@@ -47,7 +47,9 @@ class AccountDeletionService {
 
     // Backend potwierdził usunięcie konta.
     // Czyścimy lokalne połączenia i zapisane klucze API.
-    await ConnectionService.instance.clearAll();
+    await ConnectionService.instance.clearLocalState(
+      userId: session.user.id,
+    );
 
     // Czyścimy lokalną sesję bez ponownego żądania
     // usunięcia użytkownika z serwera.
