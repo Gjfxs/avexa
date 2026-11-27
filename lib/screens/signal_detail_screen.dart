@@ -21,6 +21,7 @@ class SignalDetailScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final l = AppLocalizations.of(context)!;
+    final isFutures = signal.market.toUpperCase() == 'FUTURES';
 
     return Scaffold(
       backgroundColor: bgColor,
@@ -53,24 +54,20 @@ class SignalDetailScreen extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              _buildTokenHeader(l),
+              _buildTokenHeader(l, isFutures),
               const SizedBox(height: 24),
               _buildConfidence(l),
               const SizedBox(height: 20),
               _buildPriceLevels(l),
               const SizedBox(height: 16),
               _buildRiskSection(l),
-              const SizedBox(height: 16),
-              _buildTokenAddress(l),
-              const SizedBox(height: 18),
-              _buildActions(context, l),
-              if (signal.reason != null &&
-                  signal.reason!.trim().isNotEmpty) ...[
-                const SizedBox(height: 24),
-                _buildAnalysis(l),
+
+              if (!isFutures) ...[
+                const SizedBox(height: 16),
+                _buildTokenAddress(l),
+                const SizedBox(height: 18),
+                _buildActions(context, l),
               ],
-              const SizedBox(height: 24),
-              _buildDisclaimer(l),
             ],
           ),
         ),
@@ -80,7 +77,7 @@ class SignalDetailScreen extends StatelessWidget {
 
   // TOKEN HEADER
 
-  Widget _buildTokenHeader(AppLocalizations l) {
+  Widget _buildTokenHeader(AppLocalizations l, bool isFutures) {
     return Container(
       width: double.infinity,
       padding: const EdgeInsets.all(22),
@@ -118,7 +115,7 @@ class SignalDetailScreen extends StatelessWidget {
                     ),
                     const SizedBox(height: 4),
                     Text(
-                      '${l.signalDetailSolanaMeme}  •  ${signal.timeframe}',
+                      '${isFutures ? 'OKX FUTURES' : l.signalDetailSolanaMeme}  •  ${signal.timeframe}',
                       style: GoogleFonts.poppins(
                         color: textMuted,
                         fontSize: 10,

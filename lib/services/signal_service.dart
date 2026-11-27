@@ -169,4 +169,30 @@ class SignalService {
 
     return data;
   }
+  // ============================================================
+  // GET ACTIVE FUTURES PRO SIGNALS
+  // ============================================================
+
+  static Future<List<Map<String, dynamic>>> getActiveFuturesSignals({
+    int limit = 5,
+  }) async {
+    final now = DateTime.now().toUtc().toIso8601String();
+
+    final response = await _supabase
+        .from('signals')
+        .select()
+        .eq('market', 'FUTURES')
+        .inFilter(
+          'status',
+          ['ACTIVE', 'TP1_HIT', 'TP2_HIT'],
+        )
+        .gt('expires_at', now)
+        .order('created_at', ascending: false)
+        .limit(limit);
+
+    return (response as List)
+        .map((item) => Map<String, dynamic>.from(item))
+        .toList();
+  }
+
 }

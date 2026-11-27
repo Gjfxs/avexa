@@ -13,6 +13,7 @@ import 'signal_detail_screen.dart';
 import '../widgets/app_page_header.dart';
 import '../services/subscription_state.dart';
 import 'subscription_screen.dart';
+import '../services/signal_service.dart';
 
 class SignalsScreen extends StatefulWidget {
   const SignalsScreen({super.key});
@@ -518,6 +519,7 @@ class _SignalsScreenState extends State<SignalsScreen> {
   bool freeUnlocked = false;
   bool isLoadingFree = true;
   bool isLoadingProSignals = false;
+  bool isLoadingProFuturesSignals = false;
   bool _isRefillingPro = false;
 
   int freeSignalsUsed = 0;
@@ -528,6 +530,7 @@ class _SignalsScreenState extends State<SignalsScreen> {
 
   MemeSignal? freeSignal;
   List<MemeSignal> proSignals = [];
+  List<MemeSignal> proFuturesSignals = [];
   Duration _freeSignalRemaining = Duration.zero;
 
   final FreeSignalGenerationService _freeGenerationService =
@@ -544,6 +547,9 @@ class _SignalsScreenState extends State<SignalsScreen> {
   late final PageController _proPageController;
   int _proPage = 0;
 
+  late final PageController _futuresPageController;
+  int _futuresPage = 0;
+
   @override
   void initState() {
     super.initState();
@@ -556,6 +562,7 @@ class _SignalsScreenState extends State<SignalsScreen> {
     );
 
     _proPageController = PageController(viewportFraction: .92);
+    _futuresPageController = PageController(viewportFraction: .92);
 
     _freeDisplayTimer = Timer.periodic(
       const Duration(seconds: 1),
@@ -602,6 +609,7 @@ class _SignalsScreenState extends State<SignalsScreen> {
     _freeDisplayTimer?.cancel();
     _signalExpiryTimer?.cancel();
     _proPageController.dispose();
+    _futuresPageController.dispose();
 
     super.dispose();
   }
@@ -620,17 +628,23 @@ class _SignalsScreenState extends State<SignalsScreen> {
 
       if (wasPro && !nowPro) {
         proSignals = [];
+        proFuturesSignals = [];
         isLoadingProSignals = false;
+        isLoadingProFuturesSignals = false;
         _proPage = 0;
       }
 
       if (!wasPro && nowPro) {
         isLoadingProSignals = true;
+        isLoadingProFuturesSignals = true;
       }
     });
 
     if (!wasPro && nowPro && !subscription.isLoading) {
-      _loadExistingProSignals().then((_) {
+      Future.wait([
+        _loadExistingProSignals(),
+        _loadExistingProFuturesSignals(),
+      ]).then((_) {
         if (mounted && isPro) {
           _ensureProSignals();
         }
@@ -788,6 +802,15 @@ class _SignalsScreenState extends State<SignalsScreen> {
           remaining.isNegative ? Duration.zero : remaining;
     }
 
+    for (final signal in proFuturesSignals) {
+      if (signal.expiresAt == null) continue;
+
+      final remaining = signal.expiresAt!.difference(now);
+
+      updated[signal.id] =
+          remaining.isNegative ? Duration.zero : remaining;
+    }
+
     if (!mounted) return;
     setState(() {
       _signalRemaining
@@ -908,10 +931,14 @@ class _SignalsScreenState extends State<SignalsScreen> {
       _loadFreeSignal(),
       _loadFreeUsage(),
       _loadExistingProSignals(),
+      _loadExistingProFuturesSignals(),
       _refreshFreeCooldown(),
     ]);
+
     if (!mounted) return;
+
     _startSignalExpiryTimer();
+
     if (isPro) _ensureProSignals();
   }
 
@@ -954,32 +981,41 @@ class _SignalsScreenState extends State<SignalsScreen> {
     }
   }
 
+  
   Future<void> _loadExistingProSignals() async {
     if (!isPro) {
-    if (mounted) {
-      setState(() {
-        isLoadingProSignals = false;
-      });
+      if (mounted) {
+        setState(() {
+          isLoadingProSignals = false;
+        });
+      }
+      return;
     }
-    return;
-  }
 
-  if (isLoadingProSignals && _isRefillingPro) return;
+    if (isLoadingProSignals && _isRefillingPro) return;
+
     try {
       final signals = await MemeSignalService.instance.getProSignals();
+
       if (!mounted) return;
+
       setState(() {
         proSignals = signals;
         isLoadingProSignals = false;
+
         if (_proPage >= proSignals.length && proSignals.isNotEmpty) {
           _proPage = proSignals.length - 1;
         }
+
         if (proSignals.isEmpty) _proPage = 0;
       });
+
       _updateSignalRemaining();
     } catch (e) {
       debugPrint('PRO EXISTING SIGNALS ERROR: $e');
+
       if (!mounted) return;
+
       setState(() {
         proSignals = [];
         isLoadingProSignals = false;
@@ -988,6 +1024,58 @@ class _SignalsScreenState extends State<SignalsScreen> {
     }
   }
 
+  Future<void> _loadExistingProFuturesSignals() async {
+    if (!isPro) {
+      if (!mounted) return;
+
+      setState(() {
+        proFuturesSignals = [];
+        isLoadingProFuturesSignals = false;
+      });
+
+      return;
+    }
+
+    if (mounted) {
+      setState(() => isLoadingProFuturesSignals = true);
+    }
+
+    try {
+      final rows =
+          await SignalService.getActiveFuturesSignals(limit: 5);
+
+      final signals = rows
+          .map((row) => MemeSignal.fromMap(row))
+          .where((signal) => !signal.isExpired)
+          .toList();
+
+      if (!mounted) return;
+
+      if (!mounted) return;
+
+      setState(() {
+        proFuturesSignals = signals;
+        isLoadingProFuturesSignals = false;
+
+        if (_futuresPage >= signals.length) {
+          _futuresPage = signals.isEmpty ? 0 : signals.length - 1;
+        }
+      });
+
+      if (_futuresPageController.hasClients) {
+        _futuresPageController.jumpToPage(_futuresPage);
+      }
+    } catch (e) {
+      debugPrint('FUTURES PRO SIGNALS ERROR: $e');
+
+      if (!mounted) return;
+
+      setState(() {
+        proFuturesSignals = [];
+        isLoadingProFuturesSignals = false;
+      });
+    }
+  }
 
 
   Future<void> _refreshSignals() async {
@@ -1603,38 +1691,7 @@ class _SignalsScreenState extends State<SignalsScreen> {
               ],
             ),
           ),
-          SizedBox(
-            height: 420,
-            child: PageView.builder(
-              controller: _proPageController,
-              itemCount: 5,
-              onPageChanged: (index) {
-                if (!mounted) return;
-                setState(() => _proPage = index);
-              },
-              itemBuilder: (_, index) {
-                final signal = index < proSignals.length ? proSignals[index] : null;
-                return Padding(
-                  padding: const EdgeInsets.all(14),
-                  child: signal != null
-                      ? _buildSignalCard(
-                          signal: signal,
-                          color: neonBlue,
-                          compact: true,
-                          onViewDetails: () {
-                            Navigator.push(
-                              context,
-                              MaterialPageRoute(
-                                builder: (_) => SignalDetailScreen(signal: signal),
-                              ),
-                            );
-                          },
-                        )
-                      : _buildProEmptyCard(color: neonBlue, index: index),
-                );
-              },
-            ),
-          ),
+          _buildProMemeCarousel(),
           Padding(
             padding: const EdgeInsets.only(bottom: 17),
             child: Row(
@@ -1655,10 +1712,258 @@ class _SignalsScreenState extends State<SignalsScreen> {
               ),
             ),
           ),
+          
+          const SizedBox(height: 12),
+
+          Padding(
+            padding: const EdgeInsets.fromLTRB(18, 12, 18, 4),
+            child: Row(
+              children: [
+                const Icon(
+                  Icons.show_chart_rounded,
+                  color: neonBlue,
+                  size: 17,
+                ),
+                const SizedBox(width: 9),
+                Text(
+                  'OKX FUTURES',
+                  style: GoogleFonts.poppins(
+                    color: neonBlue,
+                    fontSize: 11,
+                    fontWeight: FontWeight.w800,
+                    letterSpacing: 1,
+                  ),
+                ),
+                const Spacer(),
+                Text(
+                  'PRO',
+                  style: GoogleFonts.poppins(
+                    color: colors.secondaryText,
+                    fontSize: 9,
+                    fontWeight: FontWeight.w700,
+                  ),
+                ),
+              ],
+            ),
+          ),
+
+          _buildProFuturesSection(),
+          const SizedBox(height: 16),
         ],
       ),
     );
   }
+
+
+  Widget _buildProMemeCarousel() {
+    if (proSignals.isEmpty) {
+      return Padding(
+        padding: const EdgeInsets.fromLTRB(18, 12, 18, 16),
+        child: Container(
+          width: double.infinity,
+          padding: const EdgeInsets.all(20),
+          decoration: BoxDecoration(
+            color: colors.background,
+            borderRadius: BorderRadius.circular(18),
+            border: Border.all(
+              color: colors.border.withOpacity(.55),
+            ),
+          ),
+          child: Column(
+            children: [
+              const Icon(
+                Icons.auto_awesome_rounded,
+                color: neonBlue,
+                size: 27,
+              ),
+              const SizedBox(height: 10),
+              Text(
+                'PRO MEME signals are being prepared',
+                textAlign: TextAlign.center,
+                style: GoogleFonts.poppins(
+                  color: colors.secondaryText,
+                  fontSize: 10,
+                  fontWeight: FontWeight.w600,
+                ),
+              ),
+            ],
+          ),
+        ),
+      );
+    }
+
+    final pageCount = proSignals.length;
+
+    return Column(
+      children: [
+        SizedBox(
+          height: 420,
+          child: PageView.builder(
+            controller: _proPageController,
+            itemCount: pageCount,
+            onPageChanged: (index) {
+              if (!mounted) return;
+              setState(() => _proPage = index);
+            },
+            itemBuilder: (context, index) {
+              final signal = proSignals[index];
+
+              return Padding(
+                padding: const EdgeInsets.all(14),
+                child: _buildSignalCard(
+                  signal: signal,
+                  color: neonBlue,
+                  compact: true,
+                  onViewDetails: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (_) =>
+                            SignalDetailScreen(signal: signal),
+                      ),
+                    );
+                  },
+                ),
+              );
+            },
+          ),
+        ),
+        Padding(
+          padding: const EdgeInsets.only(bottom: 17),
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: List.generate(
+              pageCount,
+              (index) => AnimatedContainer(
+                duration: const Duration(milliseconds: 200),
+                margin: const EdgeInsets.symmetric(horizontal: 3),
+                width: index == _proPage ? 18 : 5,
+                height: 5,
+                decoration: BoxDecoration(
+                  color: index == _proPage
+                      ? neonBlue
+                      : colors.border.withOpacity(.35),
+                  borderRadius: BorderRadius.circular(10),
+                ),
+              ),
+            ),
+          ),
+        ),
+      ],
+    );
+  }
+
+  
+  Widget _buildProFuturesSection() {
+    if (isLoadingProFuturesSignals) {
+      return const Padding(
+        padding: EdgeInsets.all(25),
+        child: Center(
+          child: CircularProgressIndicator(
+            strokeWidth: 2,
+            color: neonBlue,
+          ),
+        ),
+      );
+    }
+
+    if (proFuturesSignals.isEmpty) {
+      return Padding(
+        padding: const EdgeInsets.fromLTRB(18, 12, 18, 20),
+        child: Container(
+          width: double.infinity,
+          padding: const EdgeInsets.all(20),
+          decoration: BoxDecoration(
+            color: colors.background,
+            borderRadius: BorderRadius.circular(18),
+            border: Border.all(
+              color: colors.border.withOpacity(.55),
+            ),
+          ),
+          child: Column(
+            children: [
+              Icon(
+                Icons.show_chart_rounded,
+                color: colors.mutedText,
+                size: 27,
+              ),
+              const SizedBox(height: 10),
+              Text(
+                'No active Futures signals',
+                textAlign: TextAlign.center,
+                style: GoogleFonts.poppins(
+                  color: colors.secondaryText,
+                  fontSize: 10,
+                  fontWeight: FontWeight.w600,
+                ),
+              ),
+            ],
+          ),
+        ),
+      );
+    }
+
+    final pageCount = proFuturesSignals.length;
+
+    return Column(
+      children: [
+        SizedBox(
+          height: 420,
+          child: PageView.builder(
+            controller: _futuresPageController,
+            itemCount: pageCount,
+            onPageChanged: (index) {
+              if (!mounted) return;
+              setState(() => _futuresPage = index);
+            },
+            itemBuilder: (context, index) {
+              final signal = proFuturesSignals[index];
+
+              return Padding(
+                padding: const EdgeInsets.all(14),
+                child: _buildSignalCard(
+                  signal: signal,
+                  color: neonBlue,
+                  compact: true,
+                  onViewDetails: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (_) =>
+                            SignalDetailScreen(signal: signal),
+                      ),
+                    );
+                  },
+                ),
+              );
+            },
+          ),
+        ),
+        Padding(
+          padding: const EdgeInsets.only(bottom: 12),
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: List.generate(
+              pageCount,
+              (index) => AnimatedContainer(
+                duration: const Duration(milliseconds: 200),
+                margin: const EdgeInsets.symmetric(horizontal: 3),
+                width: index == _futuresPage ? 18 : 5,
+                height: 5,
+                decoration: BoxDecoration(
+                  color: index == _futuresPage
+                      ? neonBlue
+                      : colors.border.withOpacity(.35),
+                  borderRadius: BorderRadius.circular(10),
+                ),
+              ),
+            ),
+          ),
+        ),
+      ],
+    );
+  }
+
 
   Widget _buildProEmptyCard({required Color color, required int index}) {
     return Container(
@@ -1692,12 +1997,23 @@ class _SignalsScreenState extends State<SignalsScreen> {
     );
   }
 
+  String _displaySignalSymbol(MemeSignal signal) {
+    if (signal.market.toUpperCase() != 'FUTURES') {
+      return signal.symbol;
+    }
+
+    // OKX: NOT-USDT-SWAP -> NOT
+    return signal.symbol.split('-').first.toUpperCase();
+  }
+
   Widget _buildSignalCard({
     required MemeSignal signal,
     required Color color,
     bool compact = false,
     VoidCallback? onViewDetails,
   }) {
+    final displaySymbol = _displaySignalSymbol(signal);
+    final isFutures = signal.market.toUpperCase() == 'FUTURES';
     return Container(
       width: double.infinity,
       padding: const EdgeInsets.all(20),
@@ -1724,14 +2040,46 @@ class _SignalsScreenState extends State<SignalsScreen> {
                         child: Image.network(
                           signal.imageUrl!,
                           fit: BoxFit.cover,
-                          errorBuilder: (_, __, ___) => Icon(
+                          errorBuilder: (context, error, stackTrace) {
+                            return isFutures
+                                ? Center(
+                                    child: Text(
+                                      displaySymbol.length > 4
+                                          ? displaySymbol.substring(0, 4)
+                                          : displaySymbol,
+                                      style: GoogleFonts.poppins(
+                                        color: color,
+                                        fontSize: 12,
+                                        fontWeight: FontWeight.w800,
+                                      ),
+                                    ),
+                                  )
+                                : Icon(
+                                    Icons.currency_bitcoin_rounded,
+                                    color: color,
+                                    size: 25,
+                                  );
+                          },
+                        ),
+                      )
+                    : isFutures
+                        ? Center(
+                            child: Text(
+                              displaySymbol.length > 4
+                                  ? displaySymbol.substring(0, 4)
+                                  : displaySymbol,
+                              style: GoogleFonts.poppins(
+                                color: color,
+                                fontSize: 12,
+                                fontWeight: FontWeight.w800,
+                              ),
+                            ),
+                          )
+                        : Icon(
                             Icons.currency_bitcoin_rounded,
                             color: color,
                             size: 25,
                           ),
-                        ),
-                      )
-                    : Icon(Icons.currency_bitcoin_rounded, color: color, size: 25),
               ),
               const SizedBox(width: 12),
               Expanded(
@@ -1739,7 +2087,7 @@ class _SignalsScreenState extends State<SignalsScreen> {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Text(
-                      signal.symbol,
+                      displaySymbol,
                       maxLines: 1,
                       overflow: TextOverflow.ellipsis,
                       style: GoogleFonts.poppins(
@@ -1750,8 +2098,11 @@ class _SignalsScreenState extends State<SignalsScreen> {
                     ),
                     const SizedBox(height: 3),
                     Text(
-                      '${_t('solanaMeme')}  •  ${signal.timeframe}',
-                      style: GoogleFonts.poppins(color: colors.mutedText, fontSize: 9),
+                      '${signal.market.toUpperCase() == 'FUTURES' ? 'OKX FUTURES' : _t('solanaMeme')}  •  ${signal.timeframe}',
+                      style: GoogleFonts.poppins(
+                        color: colors.mutedText,
+                        fontSize: 9,
+                      ),
                     ),
                   ],
                 ),

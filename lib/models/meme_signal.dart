@@ -54,7 +54,10 @@ class MemeSignal {
       id: map['id']?.toString() ?? '',
       symbol: map['symbol']?.toString() ?? 'UNKNOWN',
       market: map['market']?.toString() ?? 'MEME',
-      tier: map['tier']?.toString() ?? 'FREE',
+      tier: map['tier']?.toString() ??
+          (map['market']?.toString().toUpperCase() == 'FUTURES'
+              ? 'PRO'
+              : 'FREE'),
       timeframe: map['timeframe']?.toString() ?? '1h',
       direction: map['direction']?.toString() ?? 'LONG',
 
